@@ -1,4 +1,0 @@
-// Call of Duty Warzone options.3.cod24.cst snippet for Ryzen 7 9800X3D
-RendererWorkerCount = 8
-SpotCache = "Ultra"
-VideoMemoryScale = 0.70
