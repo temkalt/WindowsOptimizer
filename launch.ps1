@@ -50,8 +50,33 @@ if (-not (Test-Path $AppDir)) {
 if (Test-Path $AppDir) {
     Set-Location -Path $AppDir
     Start-Process -FilePath "node.exe" -ArgumentList "server/standalone_launcher.js" -WindowStyle Hidden -ErrorAction SilentlyContinue
-    Start-Sleep -Seconds 1
-    
+
+    Write-Host ""
+    Write-Host "============================================================================" -ForegroundColor Cyan
+    Write-Host "         WindowsOptimizer - ГЛУБОКИЙ АУДИТ НАСТРОЕК СИСТЕМЫ" -ForegroundColor Cyan
+    Write-Host "============================================================================" -ForegroundColor Cyan
+    Write-Host "[1/6] Сканирование параметров ядра Windows, VBS и изоляции памяти..." -ForegroundColor DarkGray
+    Write-Host "[2/6] Сканирование квантов Win32PrioritySeparation и таймеров BCD..." -ForegroundColor DarkGray
+    Write-Host "[3/6] Сканирование видеокарты, DirectFlip Mode 2, MPO и HAGS..." -ForegroundColor DarkGray
+    Write-Host "[4/6] Сканирование схем электропитания и параметров ACPI..." -ForegroundColor DarkGray
+    Write-Host "[5/6] Сканирование сетевого стека TCP/IP, Nagle и задержки пакетов..." -ForegroundColor DarkGray
+    Write-Host "[6/6] Сканирование фоновых служб, задач планировщика и устройств ввода..." -ForegroundColor DarkGray
+
+    # Ожидание готовности сервера и получение точного аудита
+    $audit = $null
+    for ($i = 0; $i -lt 15; $i++) {
+        Start-Sleep -Milliseconds 400
+        try {
+            $audit = Invoke-RestMethod -Uri "http://localhost:5050/api/system/status" -TimeoutSec 3 -ErrorAction Stop
+            if ($audit) { break }
+        } catch {}
+    }
+
+    if ($audit) {
+        Write-Host "----------------------------------------------------------------------------" -ForegroundColor DarkGray
+        Write-Host "[✓] Аудит завершен: применено $($audit.appliedCount) из $($audit.totalCount) настроек ($($audit.optimizationPercentage)% оптимизировано)" -ForegroundColor Green
+    }
+
     # Открытие строго единого окна приложения (App Mode)
     $appLaunched = $false
     try {

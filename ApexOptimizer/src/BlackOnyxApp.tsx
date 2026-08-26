@@ -23,6 +23,8 @@ export const BlackOnyxApp: React.FC = () => {
   const [isRunning, setIsRunning] = useState<boolean>(false);
   const [modalStatus, setModalStatus] = useState<'idle' | 'running' | 'success' | 'error'>('idle');
 
+  const [totalAuditedCount, setTotalAuditedCount] = useState<number>(46);
+
   // Live System Audit: Scans Windows Registry, Services, BCD & Power
   const performSystemAudit = () => {
     setIsScanning(true);
@@ -34,10 +36,10 @@ export const BlackOnyxApp: React.FC = () => {
           if (data.activePowerPlan) setActivePowerPlan(data.activePowerPlan);
           if (data.vbsStatus) setVbsStatus(data.vbsStatus);
           if (data.appliedTweaks) {
-            setAppliedTweaks(prev => ({
-              ...prev,
-              ...data.appliedTweaks
-            }));
+            setAppliedTweaks(data.appliedTweaks);
+          }
+          if (typeof data.totalCount === 'number') {
+            setTotalAuditedCount(data.totalCount);
           }
           if (typeof data.optimizationPercentage === 'number') {
             setOptimizationPercentage(data.optimizationPercentage);
@@ -243,10 +245,10 @@ export const BlackOnyxApp: React.FC = () => {
 
   const calculatedPercentage = useMemo(() => {
     const activeCount = Object.values(appliedTweaks).filter(Boolean).length;
-    if (activeCount === 0) return optimizationPercentage;
-    const dynamicPct = Math.min(99, Math.max(35, Math.round((activeCount / Math.max(1, BLACK_ONYX_TWEAKS.length)) * 120) + 30));
-    return Math.max(optimizationPercentage, dynamicPct);
-  }, [appliedTweaks, optimizationPercentage]);
+    if (activeCount === 0) return 0;
+    if (!totalAuditedCount || totalAuditedCount === 0) return optimizationPercentage;
+    return Math.min(100, Math.round((activeCount / totalAuditedCount) * 100));
+  }, [appliedTweaks, totalAuditedCount, optimizationPercentage]);
 
   return (
     <div className="flex h-screen bg-[#000000] text-white overflow-hidden select-none">
