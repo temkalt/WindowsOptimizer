@@ -1509,41 +1509,208 @@ app.get('/api/tweaks', async (req, res) => {
   }
 });
 
-// 4. APPLY SPECIFIC TWEAK
-app.post('/api/tweaks/apply', async (req, res) => {
-  const { id } = req.body;
-  const tweak = TWEAKS_DATABASE.find((t) => t.id === id);
-  if (!tweak) {
-    return res.status(404).json({ error: `Tweak ${id} not found` });
+
+// Helper to recursively find file in directory
+
+// Robust File Searcher across VanDayStuff-Ultimate and packs
+function resolveScriptFile(fileRelPath) {
+  if (!fileRelPath) return null;
+  const roots = [
+    'd:\\winvan\\VanDayStuff-Ultimate',
+    'd:\\winvan\\packs\\VanDayStuff11',
+    'd:\\winvan\\packs',
+    path.join(process.cwd(), '..', 'VanDayStuff-Ultimate'),
+    path.join(process.cwd(), 'VanDayStuff-Ultimate'),
+    'd:\\winvan'
+  ];
+
+  // 1. Direct path check
+  for (const r of roots) {
+    const direct = path.join(r, fileRelPath);
+    if (fs.existsSync(direct)) return direct;
   }
+
+  // 2. Category prefix + file index match
+  const parts = fileRelPath.split(/[\\\/]/);
+  const catFolder = parts[0] || '';
+  const fileName = parts[parts.length - 1] || '';
+  const catNumMatch = catFolder.match(/^(\d+)/);
+  const fileNumMatch = fileName.match(/^(\d+)/);
+  const catNum = catNumMatch ? catNumMatch[1] : '';
+  const fileNum = fileNumMatch ? fileNumMatch[1] : '';
+
+  for (const r of roots) {
+    if (!fs.existsSync(r)) continue;
+    try {
+      const subdirs = fs.readdirSync(r, { withFileTypes: true });
+      for (const d of subdirs) {
+        if (!d.isDirectory()) continue;
+        if (catNum && d.name.startsWith(catNum)) {
+          const catDir = path.join(r, d.name);
+          const files = fs.readdirSync(catDir);
+          for (const f of files) {
+            if ((fileNum && f.startsWith(fileNum + '.')) || f.toLowerCase() === fileName.toLowerCase()) {
+              return path.join(catDir, f);
+            }
+          }
+        }
+      }
+    } catch {}
+  }
+
+  // 3. Recursive fallback by filename
+  for (const r of roots) {
+    if (!fs.existsSync(r)) continue;
+    const found = findFileInTree(r, fileName);
+    if (found) return found;
+  }
+
+  return null;
+}
+
+function findFileInTree(dir, targetName) {
   try {
-    await tweak.apply();
-    const isApplied = await tweak.check();
-    logChange('TWEAK', 'APPLY', tweak.name, `Impact: ${tweak.impact}`, 'SUCCESS');
-    res.json({ success: true, id, isApplied });
-  } catch (err) {
-    logChange('TWEAK', 'APPLY_FAIL', tweak.name, err.message, 'ERROR');
-    res.status(500).json({ success: false, error: err.message });
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+    for (const entry of entries) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        const found = findFileInTree(full, targetName);
+        if (found) return found;
+      } else if (entry.name.toLowerCase() === targetName.toLowerCase()) {
+        return full;
+      }
+    }
+  } catch {}
+  return null;
+}
+
+// Unified Tweak File Executor (Supporting .reg, .bat, .cmd, .ps1)
+async function executeTweakFile(fileRelPath) {
+  if (!fileRelPath) return { success: false, error: 'No file specified' };
+
+  const targetFile = resolveScriptFile(fileRelPath);
+  if (!targetFile) {
+    return { success: false, error: `File not found on disk: ${fileRelPath}` };
   }
+
+  const powerRun = getPowerRunPath();
+  const ext = path.extname(targetFile).toLowerCase();
+
+  try {
+    if (ext === '.reg') {
+      const cmd = powerRun ? `"${powerRun}" /SW:0 regedit.exe /s "${targetFile}"` : `regedit.exe /s "${targetFile}"`;
+      await execAsync(cmd, { windowsHide: true });
+      logChange('REGISTRY', 'EXEC_REG', path.basename(targetFile), 'Registry keys imported successfully', 'SUCCESS');
+      return { success: true, output: `Реестр успешно импортирован: ${path.basename(targetFile)}` };
+    } else if (ext === '.bat' || ext === '.cmd') {
+      const cmd = powerRun ? `"${powerRun}" /SW:0 "${targetFile}"` : `cmd.exe /c "${targetFile}"`;
+      const { stdout } = await execAsync(cmd, { windowsHide: true });
+      logChange('SCRIPT', 'EXEC_BAT', path.basename(targetFile), stdout ? stdout.substring(0, 100) : 'Done', 'SUCCESS');
+      return { success: true, output: stdout || `Скрипт выполнен: ${path.basename(targetFile)}` };
+    } else if (ext === '.ps1') {
+      const cmd = `powershell.exe -NoProfile -ExecutionPolicy Bypass -File "${targetFile}"`;
+      const { stdout } = await execAsync(cmd, { windowsHide: true, maxBuffer: 1024 * 1024 * 10 });
+      logChange('POWERSHELL', 'EXEC_PS1', path.basename(targetFile), stdout ? stdout.substring(0, 100) : 'Done', 'SUCCESS');
+      return { success: true, output: stdout || `PowerShell скрипт успешно выполнен: ${path.basename(targetFile)}` };
+    }
+    return { success: false, error: `Неподдерживаемый формат файла: ${ext}` };
+  } catch (err) {
+    logChange('EXEC_ERR', 'FILE_FAIL', path.basename(targetFile), err.message, 'ERROR');
+    return { success: false, error: err.message };
+  }
+}
+// 4. APPLY SPECIFIC TWEAK (Unified: DB Tweak or Physical Script File)
+app.post('/api/tweaks/apply', async (req, res) => {
+  const tweakKey = req.body.id || req.body.tweakId;
+  const fileRelPath = req.body.fileRelPath;
+  const action = req.body.action || 'apply';
+
+  // If action is revert, handle reversion
+  if (action === 'revert') {
+    const tweak = TWEAKS_DATABASE.find((t) => t.id === tweakKey);
+    if (tweak && tweak.revert) {
+      try {
+        await tweak.revert();
+        const isApplied = await tweak.check();
+        logChange('TWEAK', 'REVERT', tweak.name, 'Reverted to baseline', 'SUCCESS');
+        return res.json({ success: true, id: tweakKey, isApplied });
+      } catch (err) {
+        return res.status(500).json({ success: false, error: err.message });
+      }
+    }
+  }
+
+  // 1. Check if it's in TWEAKS_DATABASE
+  const tweak = TWEAKS_DATABASE.find((t) => t.id === tweakKey);
+  if (tweak) {
+    try {
+      await tweak.apply();
+      const isApplied = await tweak.check();
+      logChange('TWEAK', 'APPLY', tweak.name, `Impact: ${tweak.impact}`, 'SUCCESS');
+      return res.json({ success: true, id: tweakKey, isApplied });
+    } catch (err) {
+      logChange('TWEAK', 'APPLY_FAIL', tweak.name, err.message, 'ERROR');
+      return res.status(500).json({ success: false, error: err.message });
+    }
+  }
+
+  // 2. If not in DB, execute via fileRelPath
+  if (fileRelPath) {
+    const result = await executeTweakFile(fileRelPath);
+    return res.json({ success: result.success, id: tweakKey, isApplied: result.success, output: result.output, error: result.error });
+  }
+
+  res.status(404).json({ error: `Tweak ${tweakKey} not found` });
 });
 
-// 5. REVERT SPECIFIC TWEAK
-app.post('/api/tweaks/revert', async (req, res) => {
-  const { id } = req.body;
-  const tweak = TWEAKS_DATABASE.find((t) => t.id === id);
-  if (!tweak) {
-    return res.status(404).json({ error: `Tweak ${id} not found` });
+// 5. DIRECT EXECUTE TWEAK (For BlackOnyx Modal Execution)
+app.post('/api/tweaks/execute', async (req, res) => {
+  const tweakKey = req.body.id || req.body.tweakId;
+  const fileRelPath = req.body.fileRelPath;
+
+  // If tweak is in database
+  const tweak = TWEAKS_DATABASE.find((t) => t.id === tweakKey);
+  if (tweak) {
+    try {
+      await tweak.apply();
+      logChange('TWEAK', 'EXECUTE', tweak.name, `Impact: ${tweak.impact}`, 'SUCCESS');
+      return res.json({ success: true, id: tweakKey, output: `Успешно применен параметр: ${tweak.name}` });
+    } catch (err) {
+      return res.status(500).json({ success: false, error: err.message });
+    }
   }
-  try {
-    await tweak.revert();
-    const isApplied = await tweak.check();
-    logChange('TWEAK', 'REVERT', tweak.name, 'Reverted to baseline', 'SUCCESS');
-    res.json({ success: true, id, isApplied });
-  } catch (err) {
-    logChange('TWEAK', 'REVERT_FAIL', tweak.name, err.message, 'ERROR');
-    res.status(500).json({ success: false, error: err.message });
+
+  // If fileRelPath provided
+  if (fileRelPath) {
+    const result = await executeTweakFile(fileRelPath);
+    if (result.success) {
+      return res.json({ success: true, id: tweakKey, output: result.output });
+    } else {
+      return res.status(500).json({ success: false, error: result.error });
+    }
   }
+
+  res.status(404).json({ error: `Tweak ${tweakKey} not found` });
 });
+
+// 6. REVERT SPECIFIC TWEAK
+app.post('/api/tweaks/revert', async (req, res) => {
+  const tweakKey = req.body.id || req.body.tweakId;
+  const tweak = TWEAKS_DATABASE.find((t) => t.id === tweakKey);
+  if (tweak && tweak.revert) {
+    try {
+      await tweak.revert();
+      const isApplied = await tweak.check();
+      logChange('TWEAK', 'REVERT', tweak.name, 'Reverted to baseline', 'SUCCESS');
+      return res.json({ success: true, id: tweakKey, isApplied });
+    } catch (err) {
+      logChange('TWEAK', 'REVERT_FAIL', tweak.name, err.message, 'ERROR');
+      return res.status(500).json({ success: false, error: err.message });
+    }
+  }
+  res.json({ success: true, id: tweakKey, isApplied: false });
+});
+
 
 // 6. ULTIMATE ONE-CLICK ESPORTS CYBERSPORT PROFILE (CONSOLIDATED SILENT BATCH)
 app.post('/api/presets/ultimate-cybersport', async (req, res) => {
