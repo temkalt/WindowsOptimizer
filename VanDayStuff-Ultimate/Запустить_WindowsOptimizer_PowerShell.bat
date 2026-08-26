@@ -9,5 +9,9 @@ if %errorlevel% neq 0 (
     exit /b
 )
 
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0WindowsOptimizer.ps1"
+if exist "%~dp0WindowsOptimizer.ps1" (
+    powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0WindowsOptimizer.ps1"
+) else (
+    powershell.exe -NoProfile -ExecutionPolicy Bypass -File "d:\winvan\WindowsOptimizer.ps1"
+)
 pause

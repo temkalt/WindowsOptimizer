@@ -1,5 +1,113 @@
 [
   {
+    "id": "log_1787722906423_folr",
+    "timestamp": "2026-08-26T05:41:46.423Z",
+    "category": "SYSINFO",
+    "action": "EXEC_PS",
+    "target": "Get-MpComputerStatus | Select-Object -Property RealTimeProtectionEnabled, AntivirusEnabled | ConvertTo-Json",
+    "details": "{\r\n    \"RealTimeProtectionEnabled\":  false,\r\n    \"AntivirusEnabled\":  false\r\n}\r\n",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787722904985_nzo7",
+    "timestamp": "2026-08-26T05:41:44.985Z",
+    "category": "SYSINFO",
+    "action": "EXEC_PS",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "[\r\n    {\r\n        \"Name\":  \"NVIDIA GeForce RTX 5070\",\r\n        \"DriverVersion\": ",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787722904872_ekk0",
+    "timestamp": "2026-08-26T05:41:44.872Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787722904668_n1vp",
+    "timestamp": "2026-08-26T05:41:44.668Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS_ERR",
+    "target": "bcdedit /enum {current}",
+    "details": "Command failed: powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"bcde",
+    "status": "ERROR"
+  },
+  {
+    "id": "log_1787722904667_aqj3",
+    "timestamp": "2026-08-26T05:41:44.667Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS_ERR",
+    "target": "bcdedit /enum {current}",
+    "details": "Command failed: powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"bcde",
+    "status": "ERROR"
+  },
+  {
+    "id": "log_1787722904656_qqk1",
+    "timestamp": "2026-08-26T05:41:44.656Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS_ERR",
+    "target": "bcdedit /enum {current}",
+    "details": "Command failed: powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"bcde",
+    "status": "ERROR"
+  },
+  {
+    "id": "log_1787722811026_bdog",
+    "timestamp": "2026-08-26T05:40:11.026Z",
+    "category": "SYSINFO",
+    "action": "EXEC_PS",
+    "target": "Get-MpComputerStatus | Select-Object -Property RealTimeProtectionEnabled, AntivirusEnabled | ConvertTo-Json",
+    "details": "{\r\n    \"RealTimeProtectionEnabled\":  false,\r\n    \"AntivirusEnabled\":  false\r\n}\r\n",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787722809634_rtow",
+    "timestamp": "2026-08-26T05:40:09.634Z",
+    "category": "SYSINFO",
+    "action": "EXEC_PS",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "[\r\n    {\r\n        \"Name\":  \"NVIDIA GeForce RTX 5070\",\r\n        \"DriverVersion\": ",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787722809495_bkwj",
+    "timestamp": "2026-08-26T05:40:09.495Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787722809328_b81k",
+    "timestamp": "2026-08-26T05:40:09.328Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS_ERR",
+    "target": "bcdedit /enum {current}",
+    "details": "Command failed: powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"bcde",
+    "status": "ERROR"
+  },
+  {
+    "id": "log_1787722809325_n199",
+    "timestamp": "2026-08-26T05:40:09.325Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS_ERR",
+    "target": "bcdedit /enum {current}",
+    "details": "Command failed: powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"bcde",
+    "status": "ERROR"
+  },
+  {
+    "id": "log_1787722809313_i20m",
+    "timestamp": "2026-08-26T05:40:09.313Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS_ERR",
+    "target": "bcdedit /enum {current}",
+    "details": "Command failed: powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"bcde",
+    "status": "ERROR"
+  },
+  {
     "id": "log_1787722724441_udrd",
     "timestamp": "2026-08-26T05:38:44.441Z",
     "category": "SYSINFO",
@@ -4388,114 +4496,6 @@
     "category": "REGISTRY",
     "action": "REG_SET_TI",
     "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\wlidsvc\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112625393_63ne",
-    "timestamp": "2026-08-19T04:10:25.393Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"WlanSvc\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112625234_o42s",
-    "timestamp": "2026-08-19T04:10:25.234Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WlanSvc\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112625086_8yq8",
-    "timestamp": "2026-08-19T04:10:25.086Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"wisvc\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112624938_9da4",
-    "timestamp": "2026-08-19T04:10:24.938Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\wisvc\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112624780_k6qe",
-    "timestamp": "2026-08-19T04:10:24.780Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"WinHttpAutoProxySvc\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112624620_jpni",
-    "timestamp": "2026-08-19T04:10:24.620Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WinHttpAutoProxySvc\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112624471_ahz2",
-    "timestamp": "2026-08-19T04:10:24.471Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"WinDefend\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112624319_dyph",
-    "timestamp": "2026-08-19T04:10:24.319Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WinDefend\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112624164_wb33",
-    "timestamp": "2026-08-19T04:10:24.164Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"WiaRpc\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112624019_7r9u",
-    "timestamp": "2026-08-19T04:10:24.019Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WiaRpc\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112623869_3pqu",
-    "timestamp": "2026-08-19T04:10:23.869Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"WFDSConMgrSvc\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112623714_74ma",
-    "timestamp": "2026-08-19T04:10:23.714Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WFDSConMgrSvc\\Start",
     "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
     "status": "SUCCESS"
   }

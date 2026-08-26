@@ -202,7 +202,7 @@ export const BlackOnyxApp: React.FC = () => {
         appliedCountMap={appliedCountMap}
         totalCountMap={totalCountMap}
         isBookOpen={isBookViewOpen}
-        onToggleBook={() => setIsBookViewOpen(true)}
+        onToggleBook={() => setIsBookViewOpen((prev) => !prev)}
       />
 
       {/* Main Area */}
@@ -213,7 +213,8 @@ export const BlackOnyxApp: React.FC = () => {
           onApplyEsports={handleApplyEsports}
           onApplySafe={handleApplySafe}
           onRestoreAll={handleRestoreAll}
-          onOpenBook={() => setIsBookViewOpen(true)}
+          onOpenBook={() => setIsBookViewOpen((prev) => !prev)}
+          isBookOpen={isBookViewOpen}
           onRescan={performSystemAudit}
           isScanning={isScanning}
           isApplying={isApplying}
@@ -227,10 +228,18 @@ export const BlackOnyxApp: React.FC = () => {
         {isBookViewOpen ? (
           <main className="flex-1 bg-black flex flex-col overflow-hidden">
             <div className="px-5 py-2.5 bg-[#141414] border-b border-[#222222] flex items-center justify-between">
-              <span className="text-xs font-semibold text-white">📚 Интерактивная Энциклопедия (20 Томов)</span>
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={() => setIsBookViewOpen(false)}
+                  className="px-2.5 py-1 rounded bg-[#222222] hover:bg-[#333333] text-xs text-[#a1a1aa] hover:text-white font-medium flex items-center gap-1 transition-colors cursor-pointer"
+                >
+                  <span>← К твикам</span>
+                </button>
+                <span className="text-xs font-semibold text-white">📚 Интерактивная Энциклопедия (20 Томов)</span>
+              </div>
               <button
                 onClick={() => window.open('/book', '_blank')}
-                className="px-2.5 py-1 rounded bg-[#222222] hover:bg-[#333333] text-xs text-[#00f0ff] font-semibold transition-colors"
+                className="px-2.5 py-1 rounded bg-[#222222] hover:bg-[#333333] text-xs text-[#00f0ff] font-semibold transition-colors cursor-pointer"
               >
                 Открыть в новой вкладке ↗
               </button>

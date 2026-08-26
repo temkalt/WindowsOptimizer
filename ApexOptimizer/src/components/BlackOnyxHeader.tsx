@@ -8,6 +8,7 @@ interface HeaderProps {
   onApplySafe: () => void;
   onRestoreAll: () => void;
   onOpenBook: () => void;
+  isBookOpen?: boolean;
   onRescan: () => void;
   isScanning: boolean;
   isApplying: boolean;
@@ -24,6 +25,7 @@ export const BlackOnyxHeader: React.FC<HeaderProps> = ({
   onApplySafe,
   onRestoreAll,
   onOpenBook,
+  isBookOpen = false,
   onRescan,
   isScanning,
   isApplying,
@@ -79,9 +81,13 @@ export const BlackOnyxHeader: React.FC<HeaderProps> = ({
       <div className="flex items-center gap-2">
         <button
           onClick={onOpenBook}
-          className="px-3 py-1.5 rounded-lg bg-[#141414] border border-[#2a2a2a] hover:border-[#00f0ff] hover:text-[#00f0ff] text-white text-xs font-semibold flex items-center gap-1.5 transition-colors"
+          className={`px-3 py-1.5 rounded-lg border text-xs font-semibold flex items-center gap-1.5 transition-colors whitespace-nowrap shrink-0 ${
+            isBookOpen
+              ? 'bg-[#00f0ff] text-black border-[#00f0ff] font-bold'
+              : 'bg-[#141414] border-[#2a2a2a] hover:border-[#00f0ff] hover:text-[#00f0ff] text-white'
+          }`}
         >
-          <BookOpen className="w-3.5 h-3.5" />
+          <BookOpen className={`w-3.5 h-3.5 ${isBookOpen ? 'text-black' : ''}`} />
           <span>База Знаний</span>
         </button>
 
