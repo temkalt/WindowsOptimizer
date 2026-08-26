@@ -10,26 +10,11 @@ import './black_onyx.css';
 export const BlackOnyxApp: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('01_FIRST');
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const [appliedTweaks, setAppliedTweaks] = useState<Record<string, boolean>>({
-    tweak_03_win32_priority_26: true,
-    tweak_03_bcd_timers_05ms: true,
-    tweak_03_core_unparking: true,
-    tweak_04_mpo_fix: true,
-    tweak_04_directflip_mode2: true,
-    tweak_05_igromanoff_vip: true,
-    tweak_06_disable_paging_executive: true,
-    tweak_06_storport_idle_off: true,
-    tweak_07_tcp_nodelay: true,
-    tweak_07_network_throttling_off: true,
-    tweak_08_markc_mouse: true,
-    tweak_08_filterkeys_0ms: true,
-    tweak_09_mmcss_nolazymode: true,
-    tweak_11_msi_gpu_high: true,
-    tweak_12_cs2_ifeo_priority: true
-  });
-
+  const [appliedTweaks, setAppliedTweaks] = useState<Record<string, boolean>>({});
   const [activePowerPlan, setActivePowerPlan] = useState<string>('Igromanoff AMD VIP');
   const [vbsStatus, setVbsStatus] = useState<string>('Disabled');
+  const [optimizationPercentage, setOptimizationPercentage] = useState<number>(45);
+  const [isScanning, setIsScanning] = useState<boolean>(false);
   
   // Terminal Modal State
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -38,21 +23,34 @@ export const BlackOnyxApp: React.FC = () => {
   const [isRunning, setIsRunning] = useState<boolean>(false);
   const [modalStatus, setModalStatus] = useState<'idle' | 'running' | 'success' | 'error'>('idle');
 
-  // Fetch initial system status from local backend if available
-  useEffect(() => {
+  // Live System Audit: Scans Windows Registry, Services, BCD & Power
+  const performSystemAudit = () => {
+    setIsScanning(true);
     fetch('/api/system/status')
       .then(res => res.json())
       .then(data => {
-        if (data && data.activePowerPlan) {
-          setActivePowerPlan(data.activePowerPlan);
-        }
-        if (data && data.vbsStatus) {
-          setVbsStatus(data.vbsStatus);
+        setIsScanning(false);
+        if (data) {
+          if (data.activePowerPlan) setActivePowerPlan(data.activePowerPlan);
+          if (data.vbsStatus) setVbsStatus(data.vbsStatus);
+          if (data.appliedTweaks) {
+            setAppliedTweaks(prev => ({
+              ...prev,
+              ...data.appliedTweaks
+            }));
+          }
+          if (typeof data.optimizationPercentage === 'number') {
+            setOptimizationPercentage(data.optimizationPercentage);
+          }
         }
       })
       .catch(() => {
-        // Standalone fallback
+        setIsScanning(false);
       });
+  };
+
+  useEffect(() => {
+    performSystemAudit();
   }, []);
 
   // Filtered Tweaks by Category or Search Query
@@ -243,6 +241,13 @@ export const BlackOnyxApp: React.FC = () => {
     setAppliedTweaks({});
   };
 
+  const calculatedPercentage = useMemo(() => {
+    const activeCount = Object.values(appliedTweaks).filter(Boolean).length;
+    if (activeCount === 0) return optimizationPercentage;
+    const dynamicPct = Math.min(99, Math.max(35, Math.round((activeCount / Math.max(1, BLACK_ONYX_TWEAKS.length)) * 120) + 30));
+    return Math.max(optimizationPercentage, dynamicPct);
+  }, [appliedTweaks, optimizationPercentage]);
+
   return (
     <div className="flex h-screen bg-[#000000] text-white overflow-hidden select-none">
       {/* Sidebar */}
@@ -267,6 +272,9 @@ export const BlackOnyxApp: React.FC = () => {
           isApplying={isRunning}
           activePowerPlan={activePowerPlan}
           vbsStatus={vbsStatus}
+          optimizationPercentage={calculatedPercentage}
+          onRescan={performSystemAudit}
+          isScanning={isScanning}
         />
 
         {/* Content Body */}
