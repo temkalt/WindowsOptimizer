@@ -26,24 +26,24 @@ export const BlackOnyxSidebar: React.FC<SidebarProps> = ({
   totalCountMap
 }) => {
   return (
-    <aside className="w-72 bg-[#08080c] border-r border-[rgba(255,255,255,0.07)] flex flex-col h-screen select-none">
+    <aside className="w-72 bg-[#000000] border-r border-[#141414] flex flex-col h-screen select-none">
       {/* Brand Header */}
-      <div className="p-5 border-b border-[rgba(255,255,255,0.07)] flex items-center gap-3">
-        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#00f0ff] to-[#0284c7] flex items-center justify-center shadow-[0_0_15px_rgba(0,240,255,0.4)]">
-          <Zap className="w-5 h-5 text-black" />
+      <div className="p-4 border-b border-[#141414] flex items-center gap-3 bg-[#020202]">
+        <div className="w-9 h-9 rounded-lg bg-[#0e0e0e] border border-[#222222] flex items-center justify-center shadow-[0_0_10px_rgba(0,0,0,0.8)]">
+          <Zap className="w-4 h-4 text-[#00f0ff]" />
         </div>
         <div>
-          <div className="font-outfit font-extrabold text-base tracking-wider bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
-            BLACK ONYX
+          <div className="font-outfit font-extrabold text-sm tracking-wider text-white">
+            WindowsOptimizer
           </div>
-          <div className="text-[10px] font-mono text-[#00f0ff] tracking-widest uppercase">
-            ULTIMATE SUITE 2026
+          <div className="text-[9px] font-mono text-[#71717a] tracking-widest uppercase">
+            BLACK ONYX EDITION
           </div>
         </div>
       </div>
 
       {/* Navigation List */}
-      <nav className="flex-1 overflow-y-auto p-3 space-y-1">
+      <nav className="flex-1 overflow-y-auto p-2 space-y-1 bg-[#000000]">
         {BLACK_ONYX_CATEGORIES.map((cat: CategoryInfo) => {
           const IconComponent = ICON_MAP[cat.icon] || Settings;
           const isActive = activeCategory === cat.id;
@@ -54,47 +54,46 @@ export const BlackOnyxSidebar: React.FC<SidebarProps> = ({
             <button
               key={cat.id}
               onClick={() => onSelectCategory(cat.id)}
-              className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl transition-all text-left ${
+              className={`w-full flex items-center justify-between px-3 py-2 rounded-lg transition-all text-left ${
                 isActive
-                  ? 'bg-gradient-to-r from-[rgba(0,240,255,0.12)] to-[rgba(20,20,28,0.8)] border border-[#00f0ff] text-white shadow-[0_0_15px_rgba(0,240,255,0.15)]'
-                  : 'hover:bg-[#121218] border border-transparent text-[#94a3b8] hover:text-white'
+                  ? 'bg-[#0a0a0a] border border-[rgba(255,255,255,0.18)] text-white shadow-lg'
+                  : 'hover:bg-[#060606] border border-transparent text-[#71717a] hover:text-[#d4d4d8]'
               }`}
             >
-              <div className="flex items-center gap-3">
-                <span className="font-mono text-[11px] font-bold text-[#64748b]">
+              <div className="flex items-center gap-2.5">
+                <span className="font-mono text-[10px] font-bold text-[#3f3f46]">
                   {cat.num}
                 </span>
                 <IconComponent
-                  className="w-4 h-4 transition-colors"
-                  style={{ color: isActive ? cat.accent : '#64748b' }}
+                  className="w-3.5 h-3.5 transition-colors"
+                  style={{ color: isActive ? '#00f0ff' : '#52525b' }}
                 />
-                <span className="text-xs font-semibold tracking-wide">
+                <span className="text-[11px] font-semibold tracking-wide">
                   {cat.name}
                 </span>
               </div>
 
-              {total > 0 && (
-                <span
-                  className={`text-[10px] font-mono px-2 py-0.5 rounded-full ${
-                    isActive
-                      ? 'bg-[#00f0ff] text-black font-bold'
-                      : 'bg-[#181824] text-[#94a3b8]'
-                  }`}
-                >
-                  {applied}/{total}
-                </span>
-              )}
+              <span
+                className={`text-[10px] font-mono font-bold px-1.5 py-0.5 rounded ${
+                  isActive
+                    ? 'bg-[#141414] text-[#00f0ff] border border-[#222222]'
+                    : 'bg-[#080808] text-[#52525b]'
+                }`}
+              >
+                {applied}/{total}
+              </span>
             </button>
           );
         })}
       </nav>
 
-      {/* Footer Info */}
-      <div className="p-4 border-t border-[rgba(255,255,255,0.07)] bg-[#060609]">
-        <div className="flex items-center justify-between text-[11px] font-mono text-[#64748b]">
-          <span>CPU: AMD Ryzen 9800X3D</span>
-          <span className="text-[#10b981] font-bold">● Active</span>
-        </div>
+      {/* Hardware / Status Footer */}
+      <div className="p-3 border-t border-[#141414] bg-[#020202] text-[10px] font-mono text-[#52525b] flex items-center justify-between">
+        <span>CPU: Ryzen 7 9800X3D</span>
+        <span className="flex items-center gap-1.5 text-[#10b981]">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#10b981] animate-pulse" />
+          Active
+        </span>
       </div>
     </aside>
   );

@@ -1,53 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --onyx-bg: #050508;
-  --onyx-surface: #0a0a0f;
-  --onyx-card: #101016;
-  --onyx-card-hover: #15151e;
-  --onyx-elevated: #1a1a24;
-  --onyx-border: rgba(255, 255, 255, 0.07);
-  --onyx-border-active: rgba(0, 240, 255, 0.4);
+  --onyx-bg: #000000;
+  --onyx-surface: #040404;
+  --onyx-card: #070707;
+  --onyx-card-hover: #0c0c0c;
+  --onyx-elevated: #111111;
+  --onyx-border: rgba(255, 255, 255, 0.08);
+  --onyx-border-hover: rgba(255, 255, 255, 0.16);
+  --onyx-border-active: #00f0ff;
   
   --onyx-cyan: #00f0ff;
   --onyx-ice: #38bdf8;
   --onyx-emerald: #10b981;
   --onyx-amber: #f59e0b;
   --onyx-rose: #f43f5e;
-  --onyx-purple: #a855f7;
 
-  --onyx-text-main: #f8fafc;
-  --onyx-text-sub: #94a3b8;
-  --onyx-text-muted: #64748b;
+  --onyx-text-main: #ffffff;
+  --onyx-text-sub: #a1a1aa;
+  --onyx-text-muted: #52525b;
 
-  --onyx-glow-cyan: 0 0 20px rgba(0, 240, 255, 0.25);
-  --onyx-glow-emerald: 0 0 20px rgba(16, 185, 129, 0.25);
+  --onyx-glow-cyan: 0 0 25px rgba(0, 240, 255, 0.2);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--onyx-bg);
-  color: var(--onyx-text-main);
+  background-color: #000000 !important;
+  color: #ffffff;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
   user-select: none;
 }
 
-/* Custom Onyx Scrollbar */
+/* Custom Jet Black Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--onyx-bg);
+  background: #000000;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1c1c28;
+  background: #181818;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #2a2a3c;
+  background: #2a2a2a;
 }
 
 .font-outfit {
@@ -57,66 +60,85 @@ body {
   font-family: 'JetBrains Mono', monospace;
 }
 
-/* Black Onyx Glass Panels */
+/* Jet Black Glass Panels */
 .onyx-glass {
-  background: rgba(16, 16, 22, 0.75);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: #060606;
   border: 1px solid var(--onyx-border);
 }
 
 .onyx-glass:hover {
-  border-color: rgba(255, 255, 255, 0.14);
+  border-color: var(--onyx-border-hover);
 }
 
 .onyx-glass-active {
-  background: rgba(20, 20, 28, 0.85);
-  backdrop-filter: blur(20px);
+  background: #0a0a0a;
   border: 1px solid var(--onyx-cyan);
   box-shadow: var(--onyx-glow-cyan);
 }
 
 /* Buttons */
 .onyx-btn-primary {
-  background: linear-gradient(135deg, #00f0ff 0%, #0284c7 100%);
-  color: #050508;
+  background: #ffffff;
+  color: #000000;
   font-weight: 700;
-  border: none;
-  border-radius: 8px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
   padding: 8px 18px;
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 15px rgba(0, 240, 255, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 .onyx-btn-primary:hover {
+  background: #00f0ff;
+  border-color: #00f0ff;
+  color: #000000;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
   transform: translateY(-1px);
-  box-shadow: 0 6px 25px rgba(0, 240, 255, 0.45);
 }
 .onyx-btn-primary:active {
   transform: translateY(0);
 }
 
+.onyx-btn-cyan {
+  background: linear-gradient(135deg, #00f0ff 0%, #0284c7 100%);
+  color: #000000;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.25);
+}
+.onyx-btn-cyan:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.45);
+}
+
 .onyx-btn-secondary {
-  background: #15151e;
-  color: #f8fafc;
+  background: #0a0a0a;
+  color: #ffffff;
   border: 1px solid var(--onyx-border);
   font-weight: 600;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 8px 16px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 .onyx-btn-secondary:hover {
-  background: #1e1e2c;
-  border-color: rgba(255, 255, 255, 0.2);
+  background: #141414;
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
 }
 
-/* Toggle Switch */
+/* Sleek Minimalist Toggle Switch */
 .onyx-switch {
   position: relative;
   display: inline-block;
-  width: 44px;
-  height: 24px;
+  width: 42px;
+  height: 22px;
 }
 .onyx-switch input {
   opacity: 0;
@@ -127,65 +149,61 @@ body {
   position: absolute;
   cursor: pointer;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: #1a1a24;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: 0.3s;
-  border-radius: 24px;
+  background-color: #121212;
+  border: 1px solid #222222;
+  transition: 0.25s;
+  border-radius: 22px;
 }
 .onyx-slider:before {
   position: absolute;
   content: "";
-  height: 16px;
-  width: 16px;
+  height: 14px;
+  width: 14px;
   left: 3px;
   bottom: 3px;
-  background-color: #94a3b8;
-  transition: 0.3s;
+  background-color: #71717a;
+  transition: 0.25s;
   border-radius: 50%;
 }
 input:checked + .onyx-slider {
-  background-color: rgba(0, 240, 255, 0.2);
-  border-color: var(--onyx-cyan);
+  background-color: rgba(0, 240, 255, 0.15);
+  border-color: #00f0ff;
 }
 input:checked + .onyx-slider:before {
   transform: translateX(20px);
-  background-color: var(--onyx-cyan);
-  box-shadow: 0 0 10px var(--onyx-cyan);
+  background-color: #00f0ff;
+  box-shadow: 0 0 10px #00f0ff;
 }
 
-/* Glow Badge */
+/* Minimalist Badges */
 .onyx-badge {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  padding: 3px 10px;
-  border-radius: 20px;
-  font-size: 11px;
-  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 .onyx-badge-cyan {
-  background: rgba(0, 240, 255, 0.1);
+  background: rgba(0, 240, 255, 0.08);
   color: #00f0ff;
-  border: 1px solid rgba(0, 240, 255, 0.3);
+  border: 1px solid rgba(0, 240, 255, 0.25);
 }
 .onyx-badge-emerald {
-  background: rgba(16, 185, 129, 0.1);
+  background: rgba(16, 185, 129, 0.08);
   color: #10b981;
-  border: 1px solid rgba(16, 185, 129, 0.3);
+  border: 1px solid rgba(16, 185, 129, 0.25);
 }
 .onyx-badge-amber {
-  background: rgba(245, 158, 11, 0.1);
+  background: rgba(245, 158, 11, 0.08);
   color: #f59e0b;
-  border: 1px solid rgba(245, 158, 11, 0.3);
+  border: 1px solid rgba(245, 158, 11, 0.25);
 }
-
-/* Animations */
-@keyframes pulseGlow {
-  0%, 100% { opacity: 0.8; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.02); }
-}
-.animate-pulse-glow {
-  animation: pulseGlow 3s infinite ease-in-out;
+.onyx-badge-dark {
+  background: #0f0f0f;
+  color: #a1a1aa;
+  border: 1px solid #222222;
 }

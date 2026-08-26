@@ -51,7 +51,7 @@ export const BlackOnyxApp: React.FC = () => {
         }
       })
       .catch(() => {
-        // Fallback for standalone demo mode
+        // Standalone fallback
       });
   }, []);
 
@@ -137,7 +137,6 @@ export const BlackOnyxApp: React.FC = () => {
         setAppliedTweaks(prev => ({ ...prev, [tweak.id]: true }));
       })
       .catch(() => {
-        // Simulated execution for offline mode
         setTimeout(() => {
           setIsRunning(false);
           setModalStatus('success');
@@ -148,7 +147,7 @@ export const BlackOnyxApp: React.FC = () => {
             `[УСПЕХ] ${tweak.title} успешно активирован!`
           ]);
           setAppliedTweaks(prev => ({ ...prev, [tweak.id]: true }));
-        }, 700);
+        }, 600);
       });
   };
 
@@ -180,7 +179,7 @@ export const BlackOnyxApp: React.FC = () => {
             `[УСПЕХ] Все настройки раздела ${currentCategoryInfo.name} успешно применены!`
           ]);
         }
-      }, (i + 1) * 300);
+      }, (i + 1) * 250);
     });
   };
 
@@ -208,7 +207,6 @@ export const BlackOnyxApp: React.FC = () => {
     setIsRunning(false);
     setModalStatus('success');
 
-    // Mark all as applied
     const allApplied: Record<string, boolean> = {};
     BLACK_ONYX_TWEAKS.forEach(t => { allApplied[t.id] = true; });
     setAppliedTweaks(allApplied);
@@ -246,7 +244,7 @@ export const BlackOnyxApp: React.FC = () => {
   };
 
   return (
-    <div className="flex h-screen bg-[#050508] text-white overflow-hidden select-none">
+    <div className="flex h-screen bg-[#000000] text-white overflow-hidden select-none">
       {/* Sidebar */}
       <BlackOnyxSidebar
         activeCategory={activeCategory}
@@ -259,7 +257,7 @@ export const BlackOnyxApp: React.FC = () => {
       />
 
       {/* Main Content Area */}
-      <div className="flex-1 flex flex-col h-screen overflow-hidden">
+      <div className="flex-1 flex flex-col h-screen overflow-hidden bg-[#000000]">
         <BlackOnyxHeader
           searchQuery={searchQuery}
           onSearchChange={setSearchQuery}
@@ -272,29 +270,29 @@ export const BlackOnyxApp: React.FC = () => {
         />
 
         {/* Content Body */}
-        <main className="flex-1 overflow-y-auto p-8 space-y-6">
+        <main className="flex-1 overflow-y-auto p-6 space-y-4 bg-[#000000]">
           {/* Category Banner */}
           {searchQuery.trim().length === 0 && (
-            <div className="p-6 rounded-2xl bg-gradient-to-r from-[#0c0c12] to-[#12121c] border border-[rgba(255,255,255,0.07)] flex items-center justify-between">
+            <div className="p-5 rounded-xl bg-[#040404] border border-[#141414] flex items-center justify-between shadow-md">
               <div>
-                <div className="flex items-center gap-3 mb-1.5">
-                  <span className="font-mono text-sm font-bold text-[#00f0ff]">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="font-mono text-xs font-bold text-[#00f0ff]">
                     {currentCategoryInfo.num}
                   </span>
-                  <h1 className="font-outfit text-xl font-bold text-white tracking-wide">
+                  <h1 className="font-outfit text-base font-bold text-white tracking-wide">
                     {currentCategoryInfo.name}
                   </h1>
                 </div>
-                <p className="text-xs text-[#94a3b8] max-w-2xl leading-relaxed">
+                <p className="text-[11px] text-[#71717a] max-w-xl leading-relaxed">
                   {currentCategoryInfo.description}
                 </p>
               </div>
 
               <button
                 onClick={handleApplyCategory}
-                className="onyx-btn-primary flex items-center gap-2 text-xs py-2 px-4 whitespace-nowrap"
+                className="px-3.5 py-1.5 rounded-lg bg-[#ffffff] text-black hover:bg-[#00f0ff] font-bold text-xs flex items-center gap-1.5 transition-all shadow-[0_0_15px_rgba(255,255,255,0.1)] whitespace-nowrap"
               >
-                <Play className="w-3.5 h-3.5 text-black" />
+                <Play className="w-3 h-3 text-black fill-black" />
                 <span>Применить всё в разделе</span>
               </button>
             </div>
@@ -302,14 +300,14 @@ export const BlackOnyxApp: React.FC = () => {
 
           {/* Search Result Banner */}
           {searchQuery.trim().length > 0 && (
-            <div className="flex items-center justify-between text-xs text-[#94a3b8] pb-2">
-              <span>Результаты поиска по запросу: <strong className="text-[#00f0ff]">"{searchQuery}"</strong></span>
+            <div className="flex items-center justify-between text-xs text-[#71717a] pb-1">
+              <span>Результаты поиска: <strong className="text-[#00f0ff]">"{searchQuery}"</strong></span>
               <span className="font-mono">{displayedTweaks.length} найдено</span>
             </div>
           )}
 
           {/* Tweaks Grid */}
-          <div className="space-y-3">
+          <div className="space-y-2.5">
             {displayedTweaks.map((tweak) => (
               <BlackOnyxTweakCard
                 key={tweak.id}
@@ -321,7 +319,7 @@ export const BlackOnyxApp: React.FC = () => {
             ))}
 
             {displayedTweaks.length === 0 && (
-              <div className="py-16 text-center text-[#64748b] text-sm">
+              <div className="py-12 text-center text-[#52525b] text-xs">
                 Ничего не найдено по вашему запросу.
               </div>
             )}
