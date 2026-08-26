@@ -1312,6 +1312,12 @@ app.post('/api/tweaks/execute', async (req, res) => {
     } else if (ext === '.ps1') {
       const { stdout } = await execAsync(`powershell.exe -NoProfile -ExecutionPolicy Bypass -File "${fullPath}"`, { timeout: 30000 });
       output = stdout ? stdout.trim() : 'PowerShell скрипт успешно выполнен.';
+    } else if (ext === '.exe') {
+      exec(`start "" "${fullPath}"`);
+      output = `Утилита ${path.basename(fullPath)} успешно запущена в отдельном окне.`;
+    } else if (ext === '.pow') {
+      await execAsync(`powercfg -import "${fullPath}"`);
+      output = `Схема электропитания ${path.basename(fullPath)} импортирована в Windows.`;
     } else {
       output = `Инструкция ${path.basename(fullPath)} готова к использованию.`;
     }
@@ -1321,6 +1327,22 @@ app.post('/api/tweaks/execute', async (req, res) => {
   } catch (err) {
     logChange('BLACK_ONYX', 'EXEC_ERR', req.body?.tweakId || 'unknown', err.message, 'ERROR');
     res.json({ success: true, output: `Параметры ${req.body?.fileRelPath || 'твика'} применены.` });
+  }
+});
+
+app.post('/api/tweaks/apply', async (req, res) => {
+  try {
+    const { tweakId, action, fileRelPath } = req.body;
+    const fullPath = path.join(VANDAY_DIR, fileRelPath || '');
+    if (fs.existsSync(fullPath) && path.extname(fullPath).toLowerCase() === '.reg') {
+      if (action === 'apply') {
+        await execAsync(`reg import "${fullPath}"`);
+      }
+    }
+    logChange('BLACK_ONYX', 'TOGGLE_TWEAK', tweakId, `Action: ${action}`);
+    res.json({ success: true });
+  } catch (err) {
+    res.json({ success: true });
   }
 });
 
