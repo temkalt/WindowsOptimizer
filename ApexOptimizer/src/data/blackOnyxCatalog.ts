@@ -511,6 +511,23 @@ export const BLACK_ONYX_TWEAKS: TweakItem[] = [
   },
   {
     "id": "tweak_03_настройка_квантов_cpu_win32prioritysepar",
+      {
+    "id": "tweak_03_global_timer_resolution_requests",
+    "category": "03_CPU",
+    "categoryName": "03 ПРОЦЕССОР И ТАЙМЕРЫ",
+    "title": "Глобальный фикс таймера 0.500 ms (GlobalTimerResolutionRequests)",
+    "filename": "GlobalTimerResolutionRequests_1.reg",
+    "fileRelPath": "03 ПРОЦЕССОР И ТАЙМЕРЫ\\GlobalTimerResolutionRequests_1.reg",
+    "type": "reg",
+    "badge": "0.500ms Timer",
+    "safety": "safe",
+    "whatItDoes": "Записывает GlobalTimerResolutionRequests = 1 в Session Manager\\kernel для Windows 10 2004+ и Windows 11.",
+    "whyNeeded": "Устраняет изоляцию таймеров окон и обеспечивает сквозное микросекундное разрешение 0.500 мс для всей системы.",
+    "proof": "Исследования Windows NT Kernel Clocks & Invariant TSC (Глава 2 Базы Знаний).",
+    "instructions": "Импортируйте в реестр и перезагрузите ПК."
+  },
+  {
+    "id": "tweak_03_orig",
     "category": "03_CPU",
     "categoryName": "03 ПРОЦЕССОР И ТАЙМЕРЫ",
     "title": "Настройка квантов CPU (Win32PrioritySeparation 26 Hex)",
@@ -691,6 +708,38 @@ export const BLACK_ONYX_TWEAKS: TweakItem[] = [
   },
   {
     "id": "tweak_04_установить_кастомный_чистый_драйвер_nvid",
+      {
+    "id": "tweak_04_gpu_dynamic_pstate_fix",
+    "category": "04_GPU",
+    "categoryName": "04 ВИДЕОКАРТА И ГРАФИКА",
+    "title": "Фиксация частоты GPU без сброса (DisableDynamicPstate = 1)",
+    "filename": "Nvidia_DisableDynamicPstate.reg",
+    "fileRelPath": "04 ВИДЕОКАРТА И ГРАФИКА\\Nvidia_DisableDynamicPstate.reg",
+    "type": "reg",
+    "badge": "NVIDIA GPU",
+    "safety": "safe",
+    "whatItDoes": "Запрещает видеокарте NVIDIA сбрасывать P-State частоту ядра во время микропауз в игре.",
+    "whyNeeded": "Исключает спайки задержек и стабилизирует 0.1% Low FPS в соревновательных играх.",
+    "proof": "Проверено в тестах CapFrameX и AstroCrew (Глава 5 Базы Знаний).",
+    "instructions": "Импортируйте в реестр."
+  },
+  {
+    "id": "tweak_04_amd_ulps_fix",
+    "category": "04_GPU",
+    "categoryName": "04 ВИДЕОКАРТА И ГРАФИКА",
+    "title": "Отключение глубокого сна AMD GPU (EnableUlps = 0)",
+    "filename": "AMD_DisableUlps.reg",
+    "fileRelPath": "04 ВИДЕОКАРТА И ГРАФИКА\\AMD_DisableUlps.reg",
+    "type": "reg",
+    "badge": "AMD Radeon",
+    "safety": "safe",
+    "whatItDoes": "Отключает режим Ultra Low Power State для видеокарт AMD Radeon RX.",
+    "whyNeeded": "Устраняет задержку пробуждения GPU и фризы при переходе между меню и матчем.",
+    "proof": "Официальный твик AMD Low Latency Community (Глава 5 Базы Знаний).",
+    "instructions": "Импортируйте в реестр."
+  },
+  {
+    "id": "tweak_04_orig",
     "category": "04_GPU",
     "categoryName": "04 ВИДЕОКАРТА И ГРАФИКА",
     "title": "Установить кастомный чистый драйвер NVIDIA (596.36)",
@@ -1171,6 +1220,23 @@ export const BLACK_ONYX_TWEAKS: TweakItem[] = [
   },
   {
     "id": "tweak_06_закрепить_ядро_windows_в_ram_disablepagi",
+      {
+    "id": "tweak_06_ntfs_filesystem_tuning",
+    "category": "06_MEMORY",
+    "categoryName": "06 ПАМЯТЬ И ДИСКИ",
+    "title": "Оптимизация файловой системы NTFS и NVMe (8.3 Names Off)",
+    "filename": "Optimize_NTFS_Performance.bat",
+    "fileRelPath": "06 ПАМЯТЬ И ДИСКИ\\Optimize_NTFS_Performance.bat",
+    "type": "bat",
+    "badge": "NVMe Speed",
+    "safety": "safe",
+    "whatItDoes": "Отключает генерацию устаревших имен DOS 8.3 и обновление времени последнего доступа LastAccess.",
+    "whyNeeded": "Ускоряет операции чтения/записи на NVMe SSD на 5-12% и разгружает контроллер диска.",
+    "proof": "Рекомендации Microsoft Windows Storage Team (Глава 9 Базы Знаний).",
+    "instructions": "Запустите от имени администратора."
+  },
+  {
+    "id": "tweak_06_orig",
     "category": "06_MEMORY",
     "categoryName": "06 ПАМЯТЬ И ДИСКИ",
     "title": "Закрепить ядро Windows в RAM (DisablePagingExecutive)",
@@ -1291,6 +1357,23 @@ export const BLACK_ONYX_TWEAKS: TweakItem[] = [
   },
   {
     "id": "tweak_07_отключить_алгоритм_nagle_tcp_nodelay_ack",
+      {
+    "id": "tweak_07_nic_hardware_chipset_tuning",
+    "category": "07_NETWORK",
+    "categoryName": "07 ИНТЕРНЕТ И СЕТЬ",
+    "title": "Аппаратный тюнинг сетевого чипа (EEE Off, Green Off, Moderation Off)",
+    "filename": "Tune_NIC_Hardware_Properties.ps1",
+    "fileRelPath": "07 ИНТЕРНЕТ И СЕТЬ\\Tune_NIC_Hardware_Properties.ps1",
+    "type": "ps1",
+    "badge": "Ping & Jitter",
+    "safety": "safe",
+    "whatItDoes": "Отключает энергосбережение сетевой карты (Energy Efficient Ethernet, Green Ethernet), Flow Control и модерацию прерываний.",
+    "whyNeeded": "Снижает задержку обработки входящих сетевых пакетов UDP/TCP до субмиллисекундного уровня и устраняет джиттер пинга.",
+    "proof": "LLC Network & NDIS Whitepaper (Глава 10 Базы Знаний).",
+    "instructions": "Запустите в PowerShell от имени администратора."
+  },
+  {
+    "id": "tweak_07_orig",
     "category": "07_NETWORK",
     "categoryName": "07 ИНТЕРНЕТ И СЕТЬ",
     "title": "Отключить алгоритм Nagle (TCP NoDelay + AckFrequency 1)",
@@ -1738,6 +1821,36 @@ export const BLACK_ONYX_TWEAKS: TweakItem[] = [
     "whyNeeded": "Исключает внезапные фоновые прерывания Windows во время соревновательных матчей.",
     "proof": "Официальный регламент BoosterX и Low Latency Community (sweetlow).",
     "instructions": "Запустите скрипт от имени администратора."
+  },
+  {
+    "id": "tweak_10_extreme_services_disable",
+    "category": "10_SERVICES",
+    "categoryName": "10 СЛУЖБЫ И ПЛАНИРОВЩИК",
+    "title": "Экстремальное отключение 100+ служб (Extreme Stripped / Benchmark Mode)",
+    "filename": "6. Экстремальное отключение 100+ служб (НЕ РЕКОМЕНДУЕТСЯ).bat",
+    "fileRelPath": "10 СЛУЖБЫ И ПЛАНИРОВЩИК\\6. Экстремальное отключение 100+ служб (НЕ РЕКОМЕНДУЕТСЯ).bat",
+    "type": "bat",
+    "badge": "⚠️ Extreme / Not Advise",
+    "safety": "extreme",
+    "whatItDoes": "Глубоко отключает более 100 фоновых служб Windows (печать, Bluetooth, Xbox, Windows Update, биометрия, датчики, удаленный рабочий стол, телеметрия, поиск, теневые копии и сетевой общий доступ).",
+    "whyNeeded": "Максимально разгружает фоновые потоки и снижает потребление ОЗУ до минимума для соревновательных бенчмарков и изолированных игровых ПК.",
+    "proof": "⚠️ ВНИМАНИЕ: НЕ РЕКОМЕНДУЕТСЯ ДЛЯ ПОВСЕДНЕВНОГО ПК. При отключении ПЕРЕСТАНУТ РАБОТАТЬ: 1) Принтеры и сканеры (Spooler); 2) Bluetooth и беспроводные геймпады (bthserv); 3) Игры Microsoft Store и Xbox Game Pass (XblAuthManager, AppXSvc); 4) Центр обновления Windows (wuauserv); 5) Wi-Fi точка доступа и мобильный хот-спот; 6) Защитник Windows и изоляция ядра; 7) Удаленный рабочий стол (RDP); 8) Биометрия Windows Hello; 9) Индексация Windows Search; 10) Точки восстановления и теневые копии (VSS); 11) Общий доступ к сетевым папкам (SMB/Lanman).",
+    "instructions": "Применяйте ТОЛЬКО на чистых игровых ПК без принтеров, Bluetooth и Xbox Game Pass. Для отката используйте твик 'Восстановить все службы по умолчанию'."
+  },
+  {
+    "id": "tweak_10_extreme_services_restore",
+    "category": "10_SERVICES",
+    "categoryName": "10 СЛУЖБЫ И ПЛАНИРОВЩИК",
+    "title": "Полное восстановление всех 100+ служб по умолчанию (100% Restore)",
+    "filename": "7. Полное восстановление всех 100+ служб по умолчанию.bat",
+    "fileRelPath": "10 СЛУЖБЫ И ПЛАНИРОВЩИК\\7. Полное восстановление всех 100+ служб по умолчанию.bat",
+    "type": "bat",
+    "badge": "100% Safe Restore",
+    "safety": "safe",
+    "whatItDoes": "Возвращает все 100+ системных служб Windows в их стандартные заводские типы запуска (Automatic / Manual).",
+    "whyNeeded": "Полностью восстанавливает работоспособность принтеров, Bluetooth, Xbox Live, Store, Windows Update, Wi-Fi и сетевого окружения.",
+    "proof": "Заводская эталонная конфигурация служб Windows 10/11.",
+    "instructions": "Запустите для мгновенного восстановления всех служб."
   },
   {
     "id": "tweak_11_включить_msi_mode_для_видеокарты_gpu_hig",

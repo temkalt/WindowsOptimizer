@@ -14,7 +14,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'Igromanoff AMD VIP (AM5 9800X3D Tuned)',
       powerPlanId: 'igromanoff_amd_vip',
       cpuAffinityMaskHex: '0x00000000000000FF', // CCD0 all 8 cores unparked
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 4,
       cs2LaunchArgs: '-threads 8 -high +fps_max 0 -novid +exec autoexec.cfg',
@@ -41,7 +41,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'Igromanoff AMD VIP (AM5 X3D)',
       powerPlanId: 'igromanoff_amd_vip',
       cpuAffinityMaskHex: '0x00000000000000FF',
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 4,
       cs2LaunchArgs: '-threads 8 -high +fps_max 0 -novid',
@@ -61,7 +61,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'Igromanoff AMD VIP (AM5 X3D)',
       powerPlanId: 'igromanoff_amd_vip',
       cpuAffinityMaskHex: '0x00000000000000FF',
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 8,
       cs2LaunchArgs: '-threads 8 -high +fps_max 0 -novid',
@@ -81,7 +81,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'Igromanoff AMD VIP (AM5 X3D)',
       powerPlanId: 'igromanoff_amd_vip',
       cpuAffinityMaskHex: '0x00000000000000FF',
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 4,
       cs2LaunchArgs: '-threads 8 -high +fps_max 0 -novid',
@@ -101,7 +101,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'Igromanoff AMD VIP (AM5 X3D)',
       powerPlanId: 'igromanoff_amd_vip',
       cpuAffinityMaskHex: '0x00000000000000FF',
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 4,
       cs2LaunchArgs: '-threads 8 -high +fps_max 0 -novid',
@@ -121,7 +121,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'Igromanoff AMD VIP (AM5 X3D)',
       powerPlanId: 'igromanoff_amd_vip',
       cpuAffinityMaskHex: '0x00000000000000FF',
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 4,
       cs2LaunchArgs: '-threads 8 -high +fps_max 0 -novid',
@@ -181,7 +181,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'Igromanoff AMD',
       powerPlanId: 'igromanoff_amd',
       cpuAffinityMaskHex: '0x000000000000003F',
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 4,
       cs2LaunchArgs: '-threads 6 -high +fps_max 0 -novid',
@@ -201,7 +201,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'Igromanoff AMD',
       powerPlanId: 'igromanoff_amd',
       cpuAffinityMaskHex: '0x00000000000000FF',
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 4,
       cs2LaunchArgs: '-threads 8 -high +fps_max 0 -novid',
@@ -221,7 +221,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'Igromanoff AMD VIP (CCD0 Parked)',
       powerPlanId: 'igromanoff_amd_vip',
       cpuAffinityMaskHex: '0x00000000000000FF', // Pin to CCD0 3D cache cores 0-7
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 4,
       cs2LaunchArgs: '-threads 8 -high +fps_max 0 -novid',
@@ -241,7 +241,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'Igromanoff AMD VIP',
       powerPlanId: 'igromanoff_amd_vip',
       cpuAffinityMaskHex: '0x00000000000000FF',
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 4,
       cs2LaunchArgs: '-threads 8 -high +fps_max 0 -novid',
@@ -263,7 +263,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'AMD Ryzen Ultimate HighPower (AM4)',
       powerPlanId: 'amd_ryzen_ultimate_highpower',
       cpuAffinityMaskHex: '0x00000000000000FF',
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 4,
       cs2LaunchArgs: '-threads 8 -high +fps_max 0 -novid',
@@ -283,7 +283,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'AMD Ryzen Ultimate HighPower',
       powerPlanId: 'amd_ryzen_ultimate_highpower',
       cpuAffinityMaskHex: '0x00000000000000FF',
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 4,
       cs2LaunchArgs: '-threads 8 -high +fps_max 0 -novid',
@@ -303,7 +303,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'AMD Ryzen Ultimate HighPower',
       powerPlanId: 'amd_ryzen_ultimate_highpower',
       cpuAffinityMaskHex: '0x00000000000000FF',
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 4,
       cs2LaunchArgs: '-threads 8 -high +fps_max 0 -novid',
@@ -363,7 +363,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'AMD Ryzen Ultimate HighPower',
       powerPlanId: 'amd_ryzen_ultimate_highpower',
       cpuAffinityMaskHex: '0x00000000000000FF',
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 4,
       cs2LaunchArgs: '-threads 8 -high +fps_max 0 -novid',
@@ -405,7 +405,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'Igromanoff INTEL V3 (P-Core Priority & Low Latency)',
       powerPlanId: 'igromanoff_intel_v3',
       cpuAffinityMaskHex: '0x000000000000FFFF', // P-Cores only (Cores 0-15 HT)
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 8,
       cs2LaunchArgs: '-threads 8 -high +fps_max 0 -novid',
@@ -432,7 +432,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'Igromanoff INTEL V3',
       powerPlanId: 'igromanoff_intel_v3',
       cpuAffinityMaskHex: '0x000000000000FFFF',
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 4,
       cs2LaunchArgs: '-threads 8 -high +fps_max 0 -novid',
@@ -452,7 +452,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'Igromanoff INTEL V2',
       powerPlanId: 'igromanoff_intel_v2',
       cpuAffinityMaskHex: '0x0000000000000FFF', // 6 P-Cores
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 4,
       cs2LaunchArgs: '-threads 6 -high +fps_max 0 -novid',
@@ -534,7 +534,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'Igromanoff INTEL V3 (LGA1851 Ultra)',
       powerPlanId: 'igromanoff_intel_v3',
       cpuAffinityMaskHex: '0x00000000000000FF', // 8 Lion Cove P-Cores
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 8,
       cs2LaunchArgs: '-threads 8 -high +fps_max 0 -novid',
@@ -554,7 +554,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'Igromanoff INTEL V3',
       powerPlanId: 'igromanoff_intel_v3',
       cpuAffinityMaskHex: '0x00000000000000FF',
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 4,
       cs2LaunchArgs: '-threads 8 -high +fps_max 0 -novid',
@@ -576,7 +576,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'Igromanoff INTEL V3',
       powerPlanId: 'igromanoff_intel_v3',
       cpuAffinityMaskHex: '0x00000000000FFFFF',
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 4,
       cs2LaunchArgs: '-threads 10 -high +fps_max 0 -novid',
@@ -596,7 +596,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'Igromanoff INTEL V2',
       powerPlanId: 'igromanoff_intel_v2',
       cpuAffinityMaskHex: '0x000000000000FFFF',
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 4,
       cs2LaunchArgs: '-threads 8 -high +fps_max 0 -novid',
@@ -636,7 +636,7 @@ export const HARDWARE_PRESETS = [
       powerPlanName: 'Igromanoff INTEL V2',
       powerPlanId: 'igromanoff_intel_v2',
       cpuAffinityMaskHex: '0x000000000000FFFF',
-      win32PrioritySeparation: '0x18',
+      win32PrioritySeparation: '0x16',
       gpuMsiPriority: 'High',
       nicRssQueues: 4,
       cs2LaunchArgs: '-threads 8 -high +fps_max 0 -novid',
@@ -691,4 +691,43 @@ export function findBestHardwareMatch(cpuModel, gpuName, ramGB) {
   }
 
   return { ...bestMatch, matchScore: Math.min(100, Math.max(75, highestScore)), isCurrentMatched: true };
+}
+
+export function getArchitectureTuning(cpuModel) {
+  const cpu = (cpuModel || '').toLowerCase();
+  const isIntelHybrid = cpu.includes('12') || cpu.includes('13') || cpu.includes('14') || cpu.includes('ultra') || cpu.includes('core i7') || cpu.includes('core i9');
+  const isDualCCDX3D = cpu.includes('7900x3d') || cpu.includes('7950x3d') || cpu.includes('9900x3d') || cpu.includes('9950x3d');
+  const isSingleCCDX3D = cpu.includes('7800x3d') || cpu.includes('9800x3d') || cpu.includes('5800x3d') || cpu.includes('5700x3d');
+
+  if (isIntelHybrid) {
+    return {
+      archType: 'INTEL_HYBRID_PE',
+      description: 'Intel 12th-14th Gen P-Core + E-Core Heterogeneous Architecture',
+      powercfgCommands: [
+        'powercfg -setacvalueindex SCHEME_CURRENT SUB_PROCESSOR 93b8b6dc-0698-4d1c-9ee4-0644e900c85d 0', // Hetero Policy: Prefer P-cores
+        'powercfg -setacvalueindex SCHEME_CURRENT SUB_PROCESSOR bae08b81-2d5e-4688-ad6a-13243356654b 0',
+        'powercfg -setactive SCHEME_CURRENT'
+      ],
+      recommendation: 'Games pinned strictly to Performance Cores (P-Cores) to prevent latency spikes from E-Cores.'
+    };
+  } else if (isDualCCDX3D) {
+    return {
+      archType: 'AMD_DUAL_CCD_X3D',
+      description: 'AMD Ryzen Dual-CCD (V-Cache CCD0 + High-Frequency CCD1)',
+      affinityMask: '0x00000000000000FF',
+      recommendation: 'Game process isolated on CCD0 (3D V-Cache 96MB) to eliminate Infinity Fabric inter-CCD latency.'
+    };
+  } else if (isSingleCCDX3D) {
+    return {
+      archType: 'AMD_SINGLE_CCD_X3D',
+      description: 'AMD Ryzen Monolithic 3D V-Cache (8C/16T Unified L3)',
+      recommendation: '100% Core Unparking, C0 State Lock, EPP=0 for zero wake latency.'
+    };
+  }
+
+  return {
+    archType: 'STANDARD_DESKTOP',
+    description: 'Standard Multi-Core CPU',
+    recommendation: '100% Core Unparking, Win32PrioritySeparation 0x16.'
+  };
 }
