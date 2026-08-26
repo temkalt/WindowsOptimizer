@@ -510,8 +510,6 @@ export const BLACK_ONYX_TWEAKS: TweakItem[] = [
     "instructions": "Запустите утилиту для детальной ручной настройки."
   },
   {
-    "id": "tweak_03_настройка_квантов_cpu_win32prioritysepar",
-      {
     "id": "tweak_03_global_timer_resolution_requests",
     "category": "03_CPU",
     "categoryName": "03 ПРОЦЕССОР И ТАЙМЕРЫ",
@@ -707,8 +705,6 @@ export const BLACK_ONYX_TWEAKS: TweakItem[] = [
     "instructions": "Запустите комплекс для проведения тестов или калибровки."
   },
   {
-    "id": "tweak_04_установить_кастомный_чистый_драйвер_nvid",
-      {
     "id": "tweak_04_gpu_dynamic_pstate_fix",
     "category": "04_GPU",
     "categoryName": "04 ВИДЕОКАРТА И ГРАФИКА",
@@ -1219,8 +1215,6 @@ export const BLACK_ONYX_TWEAKS: TweakItem[] = [
     "instructions": "Запустите утилиту для детальной ручной настройки."
   },
   {
-    "id": "tweak_06_закрепить_ядро_windows_в_ram_disablepagi",
-      {
     "id": "tweak_06_ntfs_filesystem_tuning",
     "category": "06_MEMORY",
     "categoryName": "06 ПАМЯТЬ И ДИСКИ",
@@ -1356,8 +1350,6 @@ export const BLACK_ONYX_TWEAKS: TweakItem[] = [
     "instructions": "Ознакомьтесь с параметрами конфигурации."
   },
   {
-    "id": "tweak_07_отключить_алгоритм_nagle_tcp_nodelay_ack",
-      {
     "id": "tweak_07_nic_hardware_chipset_tuning",
     "category": "07_NETWORK",
     "categoryName": "07 ИНТЕРНЕТ И СЕТЬ",

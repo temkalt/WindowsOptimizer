@@ -1,5 +1,248 @@
 [
   {
+    "id": "log_1787721864719_1g44",
+    "timestamp": "2026-08-26T05:24:24.719Z",
+    "category": "SCRIPT",
+    "action": "EXEC_BAT",
+    "target": "13. Anomaly Resolution Fix (TDR + Full Screen 4на3).bat",
+    "details": "Done",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721864656_6pn1",
+    "timestamp": "2026-08-26T05:24:24.656Z",
+    "category": "TWEAK",
+    "action": "APPLY",
+    "target": "Отключение телеметрии и сбора данных (CEIP/DiagTrack)",
+    "details": "Impact: -8 фоновых потоков ядра, 0% CPU оверхед в простое",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721864638_sbbf",
+    "timestamp": "2026-08-26T05:24:24.638Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name DiagTrack -Force -ErrorAction SilentlyContinue; Set-Service -Name DiagTrack -StartupType Disabled -Er",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721864579_2jdg",
+    "timestamp": "2026-08-26T05:24:24.579Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\HandwritingErrorReports\\PreventHandwritingErrorReports",
+    "details": "Data: 1 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721864519_a0fe",
+    "timestamp": "2026-08-26T05:24:24.519Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\AppCompat\\AITEnable",
+    "details": "Data: 0 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721864458_md5x",
+    "timestamp": "2026-08-26T05:24:24.458Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Policies\\Microsoft\\SQMClient\\Windows\\CEIPEnable",
+    "details": "Data: 0 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721864397_79is",
+    "timestamp": "2026-08-26T05:24:24.397Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\DataCollection\\AllowTelemetry",
+    "details": "Data: 0 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721864331_6iyt",
+    "timestamp": "2026-08-26T05:24:24.331Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\DataCollection\\AllowTelemetry",
+    "details": "Data: 0 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721789991_3l87",
+    "timestamp": "2026-08-26T05:23:09.991Z",
+    "category": "TWEAK",
+    "action": "APPLY",
+    "target": "Отключение телеметрии и сбора данных (CEIP/DiagTrack)",
+    "details": "Impact: -8 фоновых потоков ядра, 0% CPU оверхед в простое",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721789971_f3sc",
+    "timestamp": "2026-08-26T05:23:09.971Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name DiagTrack -Force -ErrorAction SilentlyContinue; Set-Service -Name DiagTrack -StartupType Disabled -Er",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721789903_xu8q",
+    "timestamp": "2026-08-26T05:23:09.903Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\HandwritingErrorReports\\PreventHandwritingErrorReports",
+    "details": "Data: 1 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721789839_24dy",
+    "timestamp": "2026-08-26T05:23:09.839Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\AppCompat\\AITEnable",
+    "details": "Data: 0 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721789773_8yb8",
+    "timestamp": "2026-08-26T05:23:09.773Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Policies\\Microsoft\\SQMClient\\Windows\\CEIPEnable",
+    "details": "Data: 0 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721789706_5lh7",
+    "timestamp": "2026-08-26T05:23:09.706Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\DataCollection\\AllowTelemetry",
+    "details": "Data: 0 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721789643_baf7",
+    "timestamp": "2026-08-26T05:23:09.643Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\DataCollection\\AllowTelemetry",
+    "details": "Data: 0 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721765647_kyyw",
+    "timestamp": "2026-08-26T05:22:45.647Z",
+    "category": "SYSINFO",
+    "action": "EXEC_PS",
+    "target": "Get-MpComputerStatus | Select-Object -Property RealTimeProtectionEnabled, AntivirusEnabled | ConvertTo-Json",
+    "details": "{\r\n    \"RealTimeProtectionEnabled\":  false,\r\n    \"AntivirusEnabled\":  false\r\n}\r\n",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721764252_fm6m",
+    "timestamp": "2026-08-26T05:22:44.252Z",
+    "category": "SYSINFO",
+    "action": "EXEC_PS",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "[\r\n    {\r\n        \"Name\":  \"NVIDIA GeForce RTX 5070\",\r\n        \"DriverVersion\": ",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721764114_7eps",
+    "timestamp": "2026-08-26T05:22:44.114Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721763932_qvxs",
+    "timestamp": "2026-08-26T05:22:43.932Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS_ERR",
+    "target": "bcdedit /enum {current}",
+    "details": "Command failed: powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"bcde",
+    "status": "ERROR"
+  },
+  {
+    "id": "log_1787721763927_5e27",
+    "timestamp": "2026-08-26T05:22:43.927Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS_ERR",
+    "target": "bcdedit /enum {current}",
+    "details": "Command failed: powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"bcde",
+    "status": "ERROR"
+  },
+  {
+    "id": "log_1787721763926_2le8",
+    "timestamp": "2026-08-26T05:22:43.926Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS_ERR",
+    "target": "bcdedit /enum {current}",
+    "details": "Command failed: powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"bcde",
+    "status": "ERROR"
+  },
+  {
+    "id": "log_1787721700039_d8tu",
+    "timestamp": "2026-08-26T05:21:40.039Z",
+    "category": "SYSINFO",
+    "action": "EXEC_PS",
+    "target": "Get-MpComputerStatus | Select-Object -Property RealTimeProtectionEnabled, AntivirusEnabled | ConvertTo-Json",
+    "details": "{\r\n    \"RealTimeProtectionEnabled\":  false,\r\n    \"AntivirusEnabled\":  false\r\n}\r\n",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721698650_zhfv",
+    "timestamp": "2026-08-26T05:21:38.650Z",
+    "category": "SYSINFO",
+    "action": "EXEC_PS",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "[\r\n    {\r\n        \"Name\":  \"NVIDIA GeForce RTX 5070\",\r\n        \"DriverVersion\": ",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721698483_wgcp",
+    "timestamp": "2026-08-26T05:21:38.483Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787721698337_agow",
+    "timestamp": "2026-08-26T05:21:38.337Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS_ERR",
+    "target": "bcdedit /enum {current}",
+    "details": "Command failed: powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"bcde",
+    "status": "ERROR"
+  },
+  {
+    "id": "log_1787721698327_zism",
+    "timestamp": "2026-08-26T05:21:38.327Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS_ERR",
+    "target": "bcdedit /enum {current}",
+    "details": "Command failed: powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"bcde",
+    "status": "ERROR"
+  },
+  {
+    "id": "log_1787721698326_cj0s",
+    "timestamp": "2026-08-26T05:21:38.326Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS_ERR",
+    "target": "bcdedit /enum {current}",
+    "details": "Command failed: powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"bcde",
+    "status": "ERROR"
+  },
+  {
     "id": "log_1787717734803_q4em",
     "timestamp": "2026-08-26T04:15:34.803Z",
     "category": "SYSINFO",
@@ -4254,249 +4497,6 @@
     "action": "EXEC_SYSTEM",
     "target": "Stop-Service -Name \"TapiSrv\" -Force -ErrorAction SilentlyContinue",
     "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112615829_t669",
-    "timestamp": "2026-08-19T04:10:15.829Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\TapiSrv\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112615682_rl35",
-    "timestamp": "2026-08-19T04:10:15.682Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"TabletInputService\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112615529_c4ic",
-    "timestamp": "2026-08-19T04:10:15.529Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\TabletInputService\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112615374_vqea",
-    "timestamp": "2026-08-19T04:10:15.374Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"SysMain\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112615223_ovut",
-    "timestamp": "2026-08-19T04:10:15.223Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SysMain\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112615066_onob",
-    "timestamp": "2026-08-19T04:10:15.066Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"SmartCard\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112614917_797n",
-    "timestamp": "2026-08-19T04:10:14.917Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SmartCard\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112614766_rqqv",
-    "timestamp": "2026-08-19T04:10:14.766Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"SharedAccess\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112614619_u0ff",
-    "timestamp": "2026-08-19T04:10:14.619Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112614468_ywvn",
-    "timestamp": "2026-08-19T04:10:14.468Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"SensrSvc\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112614319_equi",
-    "timestamp": "2026-08-19T04:10:14.319Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SensrSvc\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112614149_mb02",
-    "timestamp": "2026-08-19T04:10:14.149Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"SensorDataService\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112614000_giv0",
-    "timestamp": "2026-08-19T04:10:14.000Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SensorDataService\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112613832_l1up",
-    "timestamp": "2026-08-19T04:10:13.832Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"RetailDemo\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112613680_xrp1",
-    "timestamp": "2026-08-19T04:10:13.680Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\RetailDemo\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112613519_7kp1",
-    "timestamp": "2026-08-19T04:10:13.519Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"QWAVE\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112613346_dicc",
-    "timestamp": "2026-08-19T04:10:13.346Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\QWAVE\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112613196_rnd7",
-    "timestamp": "2026-08-19T04:10:13.196Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"PushToInstall\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112613051_n9tc",
-    "timestamp": "2026-08-19T04:10:13.051Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\PushToInstall\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112612898_cpwo",
-    "timestamp": "2026-08-19T04:10:12.898Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"PrintNotify\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112612747_znr9",
-    "timestamp": "2026-08-19T04:10:12.747Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\PrintNotify\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112612595_67bu",
-    "timestamp": "2026-08-19T04:10:12.595Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"PhoneSvc\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112612443_q6ht",
-    "timestamp": "2026-08-19T04:10:12.443Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\PhoneSvc\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112612292_gdhn",
-    "timestamp": "2026-08-19T04:10:12.292Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"PcaSvc\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112612138_pmi4",
-    "timestamp": "2026-08-19T04:10:12.138Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\PcaSvc\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112611982_i9t4",
-    "timestamp": "2026-08-19T04:10:11.982Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"NetTcpPortSharing\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112611839_2h16",
-    "timestamp": "2026-08-19T04:10:11.839Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\NetTcpPortSharing\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
     "status": "SUCCESS"
   }
 ]
