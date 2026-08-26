@@ -33,7 +33,7 @@ export const BLACK_ONYX_CATEGORIES: CategoryInfo[] = [
     "name": "Первым делом",
     "icon": "ShieldAlert",
     "accent": "#00f0ff",
-    "description": "Создание точек восстановления, резервные копии реестра и сетевых адаптеров, аудит системы."
+    "description": "Создание точек восстановления, резервные копии реестра и сетевых адаптеров, аудит системы и Autoruns."
   },
   {
     "id": "02_DEBLOAT",
@@ -60,7 +60,7 @@ export const BLACK_ONYX_CATEGORIES: CategoryInfo[] = [
     "name": "Видеокарта & Графика",
     "icon": "MonitorPlay",
     "accent": "#10b981",
-    "description": "Кастомный чистый драйвер 596.36, LLC-V2 Profile, DirectFlip Mode 2, HAGS, Anomaly Fix и фикс MPO."
+    "description": "Кастомный чистый драйвер 596.36, LLC-V2 Profile, DirectFlip Mode 2, DDU, NVCleanstall, Anomaly Fix и фикс MPO."
   },
   {
     "id": "05_POWER",
@@ -69,7 +69,7 @@ export const BLACK_ONYX_CATEGORIES: CategoryInfo[] = [
     "name": "Планы электропитания",
     "icon": "Zap",
     "accent": "#eab308",
-    "description": "Эксклюзивный план Igromanoff AMD VIP (GUID 77777777...), Standart AMD, Intel V1-V3 и LLC-CERTIFIED."
+    "description": "Эксклюзивный план Igromanoff AMD VIP (GUID 77777777...), Standart AMD, Intel V1-V3, LLC-CERTIFIED и PowerSettingsExplorer."
   },
   {
     "id": "06_MEMORY",
@@ -87,7 +87,7 @@ export const BLACK_ONYX_CATEGORIES: CategoryInfo[] = [
     "name": "Интернет & Сеть",
     "icon": "Wifi",
     "accent": "#06b6d4",
-    "description": "TCP NoDelay, NetworkThrottlingIndex ffffffff, тюнинг Realtek 2.5GbE и фикс спайков Wi-Fi."
+    "description": "TCP NoDelay, NetworkThrottlingIndex ffffffff, тюнинг Realtek 2.5GbE, DnsJumper и фикс спайков Wi-Fi."
   },
   {
     "id": "08_INPUT",
@@ -238,6 +238,21 @@ export const BLACK_ONYX_TWEAKS: TweakItem[] = [
     "whyNeeded": "Устраняет микрофризы, снижает системный инпутлаг и стабилизирует график Frame Time.",
     "proof": "Проверено в киберспортивных тестах на стабильность Frame Time и DPC Latency.",
     "instructions": "Запустите скрипт от имени администратора."
+  },
+  {
+    "id": "util_01_autoruns64",
+    "category": "01_FIRST",
+    "categoryName": "01 ПЕРВЫМ ДЕЛОМ",
+    "title": "Утилита: Autoruns64",
+    "filename": "Autoruns64.exe",
+    "fileRelPath": "01 ПЕРВЫМ ДЕЛОМ\\Утилиты\\Autoruns64.exe",
+    "type": "bat",
+    "badge": "Standalone Tool",
+    "safety": "safe",
+    "whatItDoes": "Запуск автономной специализированной утилиты Autoruns64.",
+    "whyNeeded": "Предоставляет профессиональный мониторинг, настройку и аудит компонентов системы.",
+    "proof": "Проверенная киберспортивная утилита без сторонней рекламы и телеметрии.",
+    "instructions": "Запустите утилиту для детальной ручной настройки."
   },
   {
     "id": "tweak_02_отключить_телеметрию_и_сбор_данных",
@@ -945,6 +960,21 @@ export const BLACK_ONYX_TWEAKS: TweakItem[] = [
     "instructions": "Запустите комплекс для проведения тестов или калибровки."
   },
   {
+    "id": "util_04_display_driver_uninstaller_ddu_",
+    "category": "04_GPU",
+    "categoryName": "04 ВИДЕОКАРТА И ГРАФИКА",
+    "title": "Комплекс утилит: Display Driver Uninstaller (DDU)",
+    "filename": "Display Driver Uninstaller.exe",
+    "fileRelPath": "04 ВИДЕОКАРТА И ГРАФИКА\\Утилиты\\Display Driver Uninstaller (DDU)\\Display Driver Uninstaller.exe",
+    "type": "bat",
+    "badge": "Tool Suite",
+    "safety": "safe",
+    "whatItDoes": "Запуск специализированного комплекса Display Driver Uninstaller (DDU) с набором конфигураций и тестов.",
+    "whyNeeded": "Позволяет проводить глубокое стресс-тестирование, мониторинг таймингов и калибровку.",
+    "proof": "Используется профессиональными оверклокерами и твикерами.",
+    "instructions": "Запустите комплекс для проведения тестов или калибровки."
+  },
+  {
     "id": "util_04_gpu_z",
     "category": "04_GPU",
     "categoryName": "04 ВИДЕОКАРТА И ГРАФИКА",
@@ -985,6 +1015,21 @@ export const BLACK_ONYX_TWEAKS: TweakItem[] = [
     "badge": "Standalone Tool",
     "safety": "safe",
     "whatItDoes": "Запуск автономной специализированной утилиты MSIAfterburnerSetup465.",
+    "whyNeeded": "Предоставляет профессиональный мониторинг, настройку и аудит компонентов системы.",
+    "proof": "Проверенная киберспортивная утилита без сторонней рекламы и телеметрии.",
+    "instructions": "Запустите утилиту для детальной ручной настройки."
+  },
+  {
+    "id": "util_04_nvcleanstall",
+    "category": "04_GPU",
+    "categoryName": "04 ВИДЕОКАРТА И ГРАФИКА",
+    "title": "Утилита: NVCleanstall",
+    "filename": "NVCleanstall.exe",
+    "fileRelPath": "04 ВИДЕОКАРТА И ГРАФИКА\\Утилиты\\NVCleanstall.exe",
+    "type": "bat",
+    "badge": "Standalone Tool",
+    "safety": "safe",
+    "whatItDoes": "Запуск автономной специализированной утилиты NVCleanstall.",
     "whyNeeded": "Предоставляет профессиональный мониторинг, настройку и аудит компонентов системы.",
     "proof": "Проверенная киберспортивная утилита без сторонней рекламы и телеметрии.",
     "instructions": "Запустите утилиту для детальной ручной настройки."
@@ -1108,6 +1153,21 @@ export const BLACK_ONYX_TWEAKS: TweakItem[] = [
     "whyNeeded": "Устраняет микрофризы, снижает системный инпутлаг и стабилизирует график Frame Time.",
     "proof": "Проверено в киберспортивных тестах на стабильность Frame Time и DPC Latency.",
     "instructions": "Запустите скрипт от имени администратора."
+  },
+  {
+    "id": "util_05_powersettingsexplorer",
+    "category": "05_POWER",
+    "categoryName": "05 ПЛАНЫ ЭЛЕКТРОПИТАНИЯ",
+    "title": "Утилита: PowerSettingsExplorer",
+    "filename": "PowerSettingsExplorer.exe",
+    "fileRelPath": "05 ПЛАНЫ ЭЛЕКТРОПИТАНИЯ\\Утилиты\\PowerSettingsExplorer.exe",
+    "type": "bat",
+    "badge": "Standalone Tool",
+    "safety": "safe",
+    "whatItDoes": "Запуск автономной специализированной утилиты PowerSettingsExplorer.",
+    "whyNeeded": "Предоставляет профессиональный мониторинг, настройку и аудит компонентов системы.",
+    "proof": "Проверенная киберспортивная утилита без сторонней рекламы и телеметрии.",
+    "instructions": "Запустите утилиту для детальной ручной настройки."
   },
   {
     "id": "tweak_06_закрепить_ядро_windows_в_ram_disablepagi",

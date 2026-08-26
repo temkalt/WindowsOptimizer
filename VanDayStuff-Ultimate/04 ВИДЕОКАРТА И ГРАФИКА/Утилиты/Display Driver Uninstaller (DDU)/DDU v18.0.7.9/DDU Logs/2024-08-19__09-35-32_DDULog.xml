@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DisplayDriverUninstaller Version="18.0.7.9">
+	<LogEntries>
+		<Event>
+			<Time>8/19/2024 9:35:32 AM</Time>
+			<Message>The following paths are detected.</Message>
+			<Values Separator=" = ">
+				<KvP>
+					<Key>[Found] AppExeFile</Key>
+					<Value>C:\Users\dunk\Desktop\AstroCrew Stuff\GPU stuff\DDU v18.0.7.9\Display Driver Uninstaller.exe</Value>
+				</KvP>
+				<KvP>
+					<Key>[Found] AppBase</Key>
+					<Value>C:\Users\dunk\Desktop\AstroCrew Stuff\GPU stuff\DDU v18.0.7.9\</Value>
+				</KvP>
+				<KvP>
+					<Key>[Found] Settings</Key>
+					<Value>C:\Users\dunk\Desktop\AstroCrew Stuff\GPU stuff\DDU v18.0.7.9\Settings\</Value>
+				</KvP>
+				<KvP>
+					<Key>[Found] Logs</Key>
+					<Value>C:\Users\dunk\Desktop\AstroCrew Stuff\GPU stuff\DDU v18.0.7.9\DDU Logs\</Value>
+				</KvP>
+				<KvP>
+					<Key>[Found] Language</Key>
+					<Value>C:\Users\dunk\Desktop\AstroCrew Stuff\GPU stuff\DDU v18.0.7.9\Settings\Languages\</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Key>[Found] ProgramFiles</Key>
+					<Value>C:\Program Files\</Value>
+				</KvP>
+				<KvP>
+					<Key>[Found] ProgramFilesx86</Key>
+					<Value>C:\Program Files (x86)\</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Key>[Found] Roaming</Key>
+					<Value>C:\ProgramData\</Value>
+				</KvP>
+				<KvP>
+					<Key>[Not found] AppBaseRoaming</Key>
+					<Value>C:\ProgramData\DisplayDriverUninstaller\</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Key>[Found] SystemDrive</Key>
+					<Value>C:\</Value>
+				</KvP>
+				<KvP>
+					<Key>[Found] WinDir</Key>
+					<Value>C:\Windows\</Value>
+				</KvP>
+				<KvP>
+					<Key>[Found] UserPath</Key>
+					<Value>C:\Users\</Value>
+				</KvP>
+				<KvP>
+					<Key>[Found] System32</Key>
+					<Value>C:\Windows\system32\</Value>
+				</KvP>
+				<KvP>
+					<Key>[Found] SysWOW64</Key>
+					<Value>C:\Windows\SysWOW64\</Value>
+				</KvP>
+			</Values>
+		</Event>
+		<Event>
+			<Time>8/19/2024 9:35:35 AM</Time>
+			<Message>System Information</Message>
+			<Values Separator=" : ">
+				<KvP>
+					<Key>DDU Version</Key>
+					<Value>18.0.7.9</Value>
+				</KvP>
+				<KvP>
+					<Key>OS</Key>
+					<Value>Windows 10</Value>
+				</KvP>
+				<KvP>
+					<Key>Win 10 1809+ ?</Key>
+					<Value>False</Value>
+				</KvP>
+				<KvP>
+					<Key>Architecture</Key>
+					<Value>x64</Value>
+				</KvP>
+				<KvP>
+					<Key>UserRights</Key>
+					<Value>Admin</Value>
+				</KvP>
+				<KvP>
+					<Key>Arguments</Key>
+					<Value>&lt;empty&gt;</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Key>GPU #0000</Key>
+					<Value>NVIDIA GeForce GTX 1660 Ti</Value>
+				</KvP>
+				<KvP>
+					<Key>GPU DeviceID</Key>
+					<Value>pci\ven_10de&amp;dev_2182</Value>
+				</KvP>
+				<KvP>
+					<Key>Vbios</Key>
+					<Value>Version90 16.4d.00.bf</Value>
+				</KvP>
+				<KvP>
+					<Key>Detected Driver(s) Version(s)</Key>
+					<Value>31.0.15.5123</Value>
+				</KvP>
+				<KvP>
+					<Key>INF name</Key>
+					<Value>oem2.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>INF section</Key>
+					<Value>Section056</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Key>GPU #0001</Key>
+					<Value>NVIDIA GeForce RTX 3070</Value>
+				</KvP>
+				<KvP>
+					<Key>GPU DeviceID</Key>
+					<Value>pci\ven_10de&amp;dev_2484</Value>
+				</KvP>
+				<KvP>
+					<Key>Vbios</Key>
+					<Value>Version94 04.25.80.3e</Value>
+				</KvP>
+				<KvP>
+					<Key>Detected Driver(s) Version(s)</Key>
+					<Value>31.0.15.5123</Value>
+				</KvP>
+				<KvP>
+					<Key>INF name</Key>
+					<Value>oem2.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>INF section</Key>
+					<Value>Section071</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Key>GPU #0004</Key>
+					<Value>Microsoft Basic Display Adapter</Value>
+				</KvP>
+				<KvP>
+					<Key>GPU DeviceID</Key>
+					<Value>PCI\CC_0300</Value>
+				</KvP>
+				<KvP>
+					<Key>Detected Driver(s) Version(s)</Key>
+					<Value>10.0.17134.1</Value>
+				</KvP>
+				<KvP>
+					<Key>INF name</Key>
+					<Value>display.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>INF section</Key>
+					<Value>MSBDA</Value>
+				</KvP>
+				<KvP />
+			</Values>
+		</Event>
+		<Warning>
+			<Time>8/19/2024 9:35:35 AM</Time>
+			<Message>We are not in Safe Mode</Message>
+		</Warning>
+		<Event>
+			<Time>8/19/2024 9:35:35 AM</Time>
+			<Message>The following third-party driver packages are installed on this computer</Message>
+			<Values Separator=" = ">
+				<KvP>
+					<Value>C:\Windows\inf\oem0.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Microsoft</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>Printer</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem1.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Microsoft</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>Printer</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem10.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Realtek</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>Net</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem11.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>MediaTek, Inc.</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>Net</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem2.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>NVIDIA</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>Display</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem3.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Intel</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>Net</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem4.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Samsung Electronics Co., Ltd</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>SCSIAdapter</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem5.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Advanced Micro Devices, Inc.</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>USB</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem6.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Advanced Micro Devices, Inc.</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>USB</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem7.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>TempoTec Corp</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>MEDIA</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem8.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>TempoTec Corp</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>TempoTecUSBAudio_SetupClass</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem9.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Killer</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>Net</Value>
+				</KvP>
+				<KvP />
+			</Values>
+		</Event>
+		<Event>
+			<Time>8/19/2024 9:35:39 AM</Time>
+			<Message>Trying to impersonate the SYSTEM account... SUCCESS !</Message>
+			<Values Separator=" : ">
+				<KvP>
+					<Key>Number of process to check</Key>
+					<Value>138</Value>
+				</KvP>
+				<KvP>
+					<Key>regedit</Key>
+					<Value>Skipping : S-1-5-21-722320849-2341653474-795858632-1001</Value>
+				</KvP>
+				<KvP>
+					<Key>AnyDesk-6.1.0</Key>
+					<Value>Skipping : S-1-5-21-722320849-2341653474-795858632-1001</Value>
+				</KvP>
+				<KvP>
+					<Key>chrome</Key>
+					<Value>Skipping : S-1-5-21-722320849-2341653474-795858632-1001</Value>
+				</KvP>
+				<KvP>
+					<Key>csrss</Key>
+					<Value>Access is denied</Value>
+				</KvP>
+				<KvP>
+					<Key>cmd</Key>
+					<Value>Skipping : S-1-5-21-722320849-2341653474-795858632-1001</Value>
+				</KvP>
+				<KvP>
+					<Key>SearchUI</Key>
+					<Value>Skipping : S-1-5-21-722320849-2341653474-795858632-1001</Value>
+				</KvP>
+				<KvP>
+					<Key>cmd</Key>
+					<Value>Skipping : S-1-5-21-722320849-2341653474-795858632-1001</Value>
+				</KvP>
+				<KvP>
+					<Key>chrome</Key>
+					<Value>Skipping : S-1-5-21-722320849-2341653474-795858632-1001</Value>
+				</KvP>
+				<KvP>
+					<Key>Discord</Key>
+					<Value>Skipping : S-1-5-21-722320849-2341653474-795858632-1001</Value>
+				</KvP>
+				<KvP>
+					<Key>AnyDesk-6.1.0</Key>
+					<Value>Skipping : S-1-5-21-722320849-2341653474-795858632-1001</Value>
+				</KvP>
+				<KvP>
+					<Key>chrome</Key>
+					<Value>Skipping : S-1-5-21-722320849-2341653474-795858632-1001</Value>
+				</KvP>
+				<KvP>
+					<Key>lsass</Key>
+					<Value>S-1-5-18</Value>
+				</KvP>
+				<KvP>
+					<Key>lsass</Key>
+					<Value>SYSTEM account impersonalisation SUCCESS</Value>
+				</KvP>
+			</Values>
+		</Event>
+		<Event>
+			<Time>8/19/2024 9:35:39 AM</Time>
+			<Message>Reverting the Impersonalisation is successful !</Message>
+		</Event>
+		<Event>
+			<Time>8/19/2024 9:35:45 AM</Time>
+			<Message>&gt;&gt; Successfully saved log to file!</Message>
+		</Event>
+	</LogEntries>
+</DisplayDriverUninstaller>
