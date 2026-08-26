@@ -1,61 +1,60 @@
-# 🖤 WindowsOptimizer (Black Onyx Ultimate Suite 2026)
+# ⚡ WindowsOptimizer
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Windows-11%20%7C%2010%20(24H2%20Ready)-00f0ff?style=for-the-badge&logo=windows&logoColor=black" />
-  <img src="https://img.shields.io/badge/CPU-AMD%20Ryzen%20(9800X3D)%20%2B%20Intel-10b981?style=for-the-badge&logo=amd&logoColor=white" />
-  <img src="https://img.shields.io/badge/GPU-NVIDIA%20GeForce%20(596.36)%20%2B%20AMD-f59e0b?style=for-the-badge&logo=nvidia&logoColor=black" />
-  <img src="https://img.shields.io/badge/Latency-0.500ms%20Timers-f43f5e?style=for-the-badge&logo=speedtest&logoColor=white" />
-</p>
+Универсальная утилита для глубокой настройки и оптимизации Windows 11 и 10 под соревновательные игры (CS2, Apex Legends, Valorant, Warzone). Проект объединяет в единый удобный интерфейс все проверенные твики, кастомные схемы питания, сетевые настройки и системные утилиты для достижения максимального стабильного FPS и минимальной задержки ввода (DPC Latency).
 
 ---
 
-## ⚡ Быстрый Запуск Через 1 Команду в PowerShell:
+## 🚀 Быстрый запуск
 
-Запустите **PowerShell от имени Администратора** и вставьте одну команду:
+### Способ 1: Через PowerShell (Рекомендуется)
+Откройте **PowerShell от имени Администратора** и выполните одну команду:
 
 ```powershell
 irm https://raw.githubusercontent.com/temkalt/WindowsOptimizer/main/launch.ps1 | iex
 ```
 
-> **Автоматически:** скрипт загружает локальный легковесный движок и открывает интерактивную утилиту **Black Onyx** в выделенном окне приложения.
+> **Что произойдет:** скрипт автоматически откроет отдельное окно утилиты, просканирует вашу систему и покажет текущий процент оптимизации.
+
+### Способ 2: Локальный запуск
+Если репозиторий уже скачан, просто запустите файл:
+`Запустить_WindowsOptimizer.bat`
 
 ---
 
-## 🌟 Возможности и Архитектура:
+## 🎯 Основные возможности
 
-* **🖤 Дизайн-Система Black Onyx:** Глубокий обсидиановый интерфейс, стекло (`backdrop-filter: blur(20px)`), киберспортивные неоновые акценты (Cyan, Emerald, Amber).
-* **📊 15 Интерактивных Категорий (470 проверенных файлов):**
-  1. **Первым Делом:** Точки восстановления, бэкап реестра, аудит железа.
-  2. **Windows & Деблойт:** VBS / Core Isolation Off (+5-15% 1% Low FPS), InSpectre, Copilot & AI Recall 24H2 purge, UWP debloat, Defender Control.
-  3. **Процессор & Таймеры:** Win32PrioritySeparation 26 Hex, аппаратный таймер 0.500 ms (Enhanced TSC), 100% Core Unparking, калибровка Ryzen 7 9800X3D (Zen 5 3D V-Cache), ZenTimings.
-  4. **Видеокарта & Графика:** Кастомный чистый драйвер NVIDIA 596.36, LLC-V2 Profile, HAGS, DirectFlip 2, Anomaly Resolution Fix (Scaling=3 + TDR Watch), MPO Fix, CRU, MSI Afterburner.
-  5. **Планы Электропитания:** `Igromanoff AMD VIP.pow` (GUID 77777777...), AMD Standart, Intel V1-V3, LLC-CERTIFIED.
-  6. **Память & Диски:** `DisablePagingExecutive` (ядро в RAM), `StorPort Idle Off` (запрет сна NVMe), `MMAgent Compression Off`.
-  7. **Интернет & Сеть:** TCP NoDelay, NetworkThrottlingIndex ffffffff, RTL8125 2.5GbE tuning, фикс спайков Wi-Fi (`ScanWhenAssociated=0`), DnsJumper.
-  8. **Мышь & Клавиатура:** MarkC 1:1, MouseDataQueueSize 16, FilterKeys 0ms (15ms repeat), разгон геймпадов `HIDUSBF 1000Hz`.
-  9. **Звук & MMCSS:** MMCSS Games High SFIO Priority, `NoLazyMode = 1`, изоляция `audiodg.exe` с Realtime приоритетом.
-  10. **Службы & Задачи:** 15 категорий фоновых задач планировщика BoosterX, безопасный и киберспортивный профили служб.
-  11. **Устройства & MSI Mode:** MSI Mode GPU High Priority, NIC Ethernet, NVMe, USB xHCI.
-  12. **Игровые Конфиги:** CS2 (`-mainthreadpriority 2` + autoexec + IFEO High), Apex Legends, Valorant, Warzone.
-  13. **Диагностика & Тесты:** LatencyMon, TM5 Anta777, Prime95, LinX AMD, Y-Cruncher, HWiNFO64, PresentMon Plotter.
-  14. **Очистка Системы:** Очистка Temp, Prefetch, DirectX Shader Cache, журналов событий, DeviceCleanup (удаление фантомных USB).
-  15. **Восстановление:** 1-клик полный откат всех настроек Windows к заводским по умолчанию.
+* **Автоматический аудит при старте:** утилита сама проверяет реестр и системные службы, сразу показывая, какие твики у вас уже включены, а какие ещё можно применить.
+* **Круговой индикатор оптимизации:** наглядный кружок в шапке показывает реальный процент готовности ПК к играм с возможностью мгновенного пересканирования в 1 клик.
+* **1-Клик профили:**
+  * ⚡ **Киберспорт Максимум** — активация всех ключевых настроек ядра, таймеров, сети и электропитания.
+  * 🛡️ **Безопасный режим** — базовый твикинг без отключения второстепенных системных служб.
+  * 🔄 **Полный откат** — мгновенный возврат всех параметров Windows к заводским значениям.
+* **Технические пояснения к каждому твику:** у каждой настройки есть выпадающее описание — что конкретно она меняет в системе, зачем это нужно и почему это работает.
 
 ---
 
-## 🛡️ Безопасность и Античиты:
-* Все твики протестированы на совместимость с **FACEIT AC**, **Riot Vanguard**, **EasyAntiCheat (EAC)** и **BattlEye**.
-* 0 синтаксических ошибок, 0 повреждений системных файлов, полная возможность отката в 1 клик.
+## 📦 Что внутри (15 разделов оптимизации)
+
+1. **Первым делом** — создание точек восстановления системы, резервные копии веток реестра (HKLM/HKCU), бэкап сети и аудит железа.
+2. **Windows & Деблойт** — отключение VBS (Core Isolation) для буста 1% Low FPS, удаление фоновой телеметрии, Copilot, AI Recall и встроенного мусора.
+3. **Процессор & Таймеры** — кванты Win32PrioritySeparation (26 Hex), аппаратные таймеры 0.500 ms (Enhanced TSC), 100% Core Unparking, калибровка Ryzen 7 9800X3D (Zen 5 3D V-Cache), QuickCPU и ZenTimings.
+4. **Видеокарта & Графика** — кастомный чистый драйвер NVIDIA 596.36, LLC-V2 профиль, DirectFlip Mode 2 (вывод кадров в обход DWM), отключение MPO, фикс масштабирования без задержки, NVIDIA Profile Inspector и CRU.
+5. **Планы электропитания** — эксклюзивный план `Igromanoff AMD VIP` (GUID 77777777...), Standart AMD, Intel V1-V3, LLC-CERTIFIED и фиксаторы частот.
+6. **Память & Диски** — фиксация ядра Windows в оперативной памяти (`DisablePagingExecutive = 1`), отключение энергосбережения StorPort Idle для NVMe SSD, отключение сжатия памяти.
+7. **Интернет & Сеть** — отключение алгоритма Nagle (TCP NoDelay), NetworkThrottlingIndex ffffffff, настройка сетевых карт Realtek 2.5GbE/Intel и фикс спайков Wi-Fi (`ScanWhenAssociated = 0`).
+8. **Мышь & Клавиатура** — линейный отклик сенсора MarkC 1:1, MouseDataQueueSize 16, FilterKeys 0ms (15ms повтор клавиш) и утилита разгона контроллеров HIDUSBF 1000Hz.
+9. **Звук & MMCSS** — высокий приоритет мультимедиа MMCSS Games, `NoLazyMode = 1` и изоляция процесса `audiodg.exe` с Realtime приоритетом на отдельных ядрах.
+10. **Службы & Задачи** — отключение 15 категорий фонового планировщика задач Windows (BoosterX Tasks), игровые профили служб и отключение Windows Search.
+11. **Устройства & MSI Mode** — перевод видеокарты, сетевого адаптера и NVMe накопителя в режим Message Signaled Interrupts (High Priority).
+12. **Игровые Конфиги** — параметры запуска CS2 (`-mainthreadpriority 2`, autoexec, High IFEO), конфиги для Apex Legends, Valorant и Warzone.
+13. **Диагностика & Тесты** — встроенные комплексы LatencyMon, TestMem5 (Anta777 Extreme), Prime95, LinX AMD, Y-Cruncher, HWiNFO64 и PresentMon Plotter.
+14. **Очистка Системы** — удаление временных файлов Temp, Prefetch, очистка кэша шейдеров DirectX (NVIDIA/AMD/Intel), очистка логов событий и удаление фантомных USB-устройств.
+15. **Восстановление** — полный откат реестра, служб, сетевого стека (Winsock/TCP) и стандартной схемы питания в 1 клик.
 
 ---
 
-## 🚀 Как Загрузить Обновления в Свой Репозиторий:
+## 🛡️ Безопасность и Античиты
 
-```bash
-git init
-git add .
-git commit -m "feat: Initial release of Black Onyx WindowsOptimizer Suite"
-git branch -M main
-git remote add origin https://github.com/temkalt/WindowsOptimizer.git
-git push -u origin main --force
-```
+* Все твики протестированы на совместимость с **FACEIT AC**, **Riot Vanguard**, **Easy Anti-Cheat (EAC)** и **BattlEye**.
+* В утилите нет деструктивных скриптов, повреждающих системные файлы Windows Update или Microsoft Store.
+* Любое изменение можно отключить индивидуальным переключателем или откатить целиком через раздел восстановления.
