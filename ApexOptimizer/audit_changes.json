@@ -1,5 +1,113 @@
 [
   {
+    "id": "log_1787710834141_ae7g",
+    "timestamp": "2026-08-26T02:20:34.141Z",
+    "category": "SYSINFO",
+    "action": "EXEC_PS",
+    "target": "Get-MpComputerStatus | Select-Object -Property RealTimeProtectionEnabled, AntivirusEnabled | ConvertTo-Json",
+    "details": "{\r\n    \"RealTimeProtectionEnabled\":  false,\r\n    \"AntivirusEnabled\":  false\r\n}\r\n",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787710833540_nwt7",
+    "timestamp": "2026-08-26T02:20:33.540Z",
+    "category": "SYSINFO",
+    "action": "EXEC_PS",
+    "target": "Get-MpComputerStatus | Select-Object -Property RealTimeProtectionEnabled, AntivirusEnabled | ConvertTo-Json",
+    "details": "{\r\n    \"RealTimeProtectionEnabled\":  false,\r\n    \"AntivirusEnabled\":  false\r\n}\r\n",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787710832858_sjvl",
+    "timestamp": "2026-08-26T02:20:32.858Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787710832797_dizu",
+    "timestamp": "2026-08-26T02:20:32.797Z",
+    "category": "SYSINFO",
+    "action": "EXEC_PS",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "[\r\n    {\r\n        \"Name\":  \"NVIDIA GeForce RTX 5070\",\r\n        \"DriverVersion\": ",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787710832648_718e",
+    "timestamp": "2026-08-26T02:20:32.648Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS_ERR",
+    "target": "bcdedit /enum {current}",
+    "details": "Command failed: powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"bcde",
+    "status": "ERROR"
+  },
+  {
+    "id": "log_1787710832619_sp2c",
+    "timestamp": "2026-08-26T02:20:32.619Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS_ERR",
+    "target": "bcdedit /enum {current}",
+    "details": "Command failed: powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"bcde",
+    "status": "ERROR"
+  },
+  {
+    "id": "log_1787710832618_ornc",
+    "timestamp": "2026-08-26T02:20:32.618Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS_ERR",
+    "target": "bcdedit /enum {current}",
+    "details": "Command failed: powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"bcde",
+    "status": "ERROR"
+  },
+  {
+    "id": "log_1787710831936_08dd",
+    "timestamp": "2026-08-26T02:20:31.936Z",
+    "category": "SYSINFO",
+    "action": "EXEC_PS",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "[\r\n    {\r\n        \"Name\":  \"NVIDIA GeForce RTX 5070\",\r\n        \"DriverVersion\": ",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787710831718_lbmt",
+    "timestamp": "2026-08-26T02:20:31.718Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787710831446_x23e",
+    "timestamp": "2026-08-26T02:20:31.446Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS_ERR",
+    "target": "bcdedit /enum {current}",
+    "details": "Command failed: powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"bcde",
+    "status": "ERROR"
+  },
+  {
+    "id": "log_1787710831445_9oox",
+    "timestamp": "2026-08-26T02:20:31.445Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS_ERR",
+    "target": "bcdedit /enum {current}",
+    "details": "Command failed: powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"bcde",
+    "status": "ERROR"
+  },
+  {
+    "id": "log_1787710831444_bqml",
+    "timestamp": "2026-08-26T02:20:31.444Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_PS_ERR",
+    "target": "bcdedit /enum {current}",
+    "details": "Command failed: powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"bcde",
+    "status": "ERROR"
+  },
+  {
     "id": "log_1787710255925_x78i",
     "timestamp": "2026-08-26T02:10:55.925Z",
     "category": "BLACK_ONYX",
@@ -4388,114 +4496,6 @@
     "category": "SERVICE",
     "action": "EXEC_SYSTEM",
     "target": "Stop-Service -Name \"HvHost\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112607932_o6wh",
-    "timestamp": "2026-08-19T04:10:07.932Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\HvHost\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112607786_1wzm",
-    "timestamp": "2026-08-19T04:10:07.786Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"GraphicsPerfSvc\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112607633_iv5k",
-    "timestamp": "2026-08-19T04:10:07.633Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\GraphicsPerfSvc\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112607485_hgv2",
-    "timestamp": "2026-08-19T04:10:07.485Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"GameDVR\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112607338_gojm",
-    "timestamp": "2026-08-19T04:10:07.338Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\GameDVR\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112607181_6v64",
-    "timestamp": "2026-08-19T04:10:07.181Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"FrameServer\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112607029_jhod",
-    "timestamp": "2026-08-19T04:10:07.029Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\FrameServer\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112606882_mcvj",
-    "timestamp": "2026-08-19T04:10:06.882Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"FontCache3.0.0.0\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112606726_cldg",
-    "timestamp": "2026-08-19T04:10:06.726Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\FontCache3.0.0.0\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112606574_cwck",
-    "timestamp": "2026-08-19T04:10:06.574Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"FontCache\" -Force -ErrorAction SilentlyContinue",
-    "details": "Done [TrustedInstaller/SYSTEM]",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112606420_sc16",
-    "timestamp": "2026-08-19T04:10:06.420Z",
-    "category": "REGISTRY",
-    "action": "REG_SET_TI",
-    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\FontCache\\Start",
-    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
-    "status": "SUCCESS"
-  },
-  {
-    "id": "log_1787112606268_0y9s",
-    "timestamp": "2026-08-19T04:10:06.268Z",
-    "category": "SERVICE",
-    "action": "EXEC_SYSTEM",
-    "target": "Stop-Service -Name \"fhsvc\" -Force -ErrorAction SilentlyContinue",
     "details": "Done [TrustedInstaller/SYSTEM]",
     "status": "SUCCESS"
   }

@@ -52,16 +52,22 @@ if (Test-Path $AppDir) {
     Start-Process -FilePath "node.exe" -ArgumentList "server/standalone_launcher.js" -WindowStyle Hidden -ErrorAction SilentlyContinue
     Start-Sleep -Seconds 1
     
-    # Открытие в чистом едином окне App Mode
-    Start-Process "msedge.exe" -ArgumentList "--app=http://localhost:5050", "--window-size=1280,820" -ErrorAction SilentlyContinue
-    if (-not $?) {
-        Start-Process "chrome.exe" -ArgumentList "--app=http://localhost:5050", "--window-size=1280,820" -ErrorAction SilentlyContinue
+    # Открытие строго единого окна приложения (App Mode)
+    $appLaunched = $false
+    try {
+        Start-Process "msedge.exe" -ArgumentList "--app=http://localhost:5050", "--window-size=1280,820" -ErrorAction Stop
+        $appLaunched = $true
+    } catch {
+        try {
+            Start-Process "chrome.exe" -ArgumentList "--app=http://localhost:5050", "--window-size=1280,820" -ErrorAction Stop
+            $appLaunched = $true
+        } catch {}
     }
-    if (-not $?) {
+    if (-not $appLaunched) {
         Start-Process "http://localhost:5050"
     }
 
-    Write-Host "[УСПЕХ] WindowsOptimizer успешно запущен: http://localhost:5050" -ForegroundColor Cyan
+    Write-Host "[УСПЕХ] WindowsOptimizer запущен в едином окне!" -ForegroundColor Cyan
 } else {
     Write-Host "[!] Папка с приложением не найдена. Локальный путь: d:\winvan\ApexOptimizer" -ForegroundColor Red
 }

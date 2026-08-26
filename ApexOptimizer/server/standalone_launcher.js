@@ -1359,11 +1359,10 @@ if (fs.existsSync(distPath)) {
   });
 }
 
-// Listen and auto-launch browser
+// Listen silently on port
 app.listen(PORT, () => {
   console.log(`================================================================`);
-  console.log(`⚡ ApexTweak Native Core Engine running on port ${PORT}`);
+  console.log(`⚡ WindowsOptimizer Native Core Engine running on port ${PORT}`);
   console.log(`⚡ UI: http://localhost:${PORT}`);
   console.log(`================================================================`);
-  exec(`start http://localhost:${PORT}`);
 });
