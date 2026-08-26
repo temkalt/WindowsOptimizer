@@ -1,21 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800&display=swap');
-
-:root {
-  --onyx-bg: #000000;
-  --onyx-surface: #030303;
-  --onyx-card: #060606;
-  --onyx-card-hover: #0a0a0a;
-  --onyx-border: rgba(255, 255, 255, 0.08);
-  --onyx-border-hover: rgba(255, 255, 255, 0.16);
-  --onyx-border-active: #00f0ff;
-  
-  --onyx-cyan: #00f0ff;
-  --onyx-ice: #38bdf8;
-  --onyx-emerald: #10b981;
-  --onyx-amber: #f59e0b;
-  --onyx-rose: #f43f5e;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -23,79 +5,34 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #000000 !important;
+  background-color: #0d0d0d !important;
   color: #ffffff;
-  font-family: 'Inter', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   overflow: hidden;
   user-select: none;
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: #0d0d0d;
 }
 ::-webkit-scrollbar-thumb {
-  background: #181818;
+  background: #262626;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #2a2a2a;
+  background: #3a3a3a;
 }
 
-.font-outfit {
-  font-family: 'Outfit', sans-serif;
-}
-.font-mono {
-  font-family: 'JetBrains Mono', monospace;
-}
-
-/* Minimalist Badges */
-.onyx-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  padding: 2px 7px;
-  border-radius: 5px;
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-.onyx-badge-cyan {
-  background: rgba(0, 240, 255, 0.08);
-  color: #00f0ff;
-  border: 1px solid rgba(0, 240, 255, 0.25);
-}
-.onyx-badge-emerald {
-  background: rgba(16, 185, 129, 0.08);
-  color: #10b981;
-  border: 1px solid rgba(16, 185, 129, 0.25);
-}
-.onyx-badge-amber {
-  background: rgba(245, 158, 11, 0.08);
-  color: #f59e0b;
-  border: 1px solid rgba(245, 158, 11, 0.25);
-}
-.onyx-badge-rose {
-  background: rgba(244, 63, 94, 0.12);
-  color: #f43f5e;
-  border: 1px solid rgba(244, 63, 94, 0.35);
-}
-.onyx-badge-dark {
-  background: #0d0d0d;
-  color: #a1a1aa;
-  border: 1px solid #1f1f1f;
-}
-
-/* Sleek Toggle Switch */
+/* Minimalist Smooth Switch */
 .onyx-switch {
   position: relative;
   display: inline-block;
-  width: 38px;
-  height: 20px;
+  width: 40px;
+  height: 22px;
 }
 .onyx-switch input {
   opacity: 0;
@@ -106,28 +43,27 @@ body {
   position: absolute;
   cursor: pointer;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: #121212;
-  border: 1px solid #222222;
-  transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 20px;
+  background-color: #222222;
+  border: 1px solid #333333;
+  transition: 0.2s;
+  border-radius: 22px;
 }
 .onyx-slider:before {
   position: absolute;
   content: "";
-  height: 12px;
-  width: 12px;
+  height: 14px;
+  width: 14px;
   left: 3px;
   bottom: 3px;
-  background-color: #71717a;
-  transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #888888;
+  transition: 0.2s;
   border-radius: 50%;
 }
 input:checked + .onyx-slider {
-  background-color: rgba(0, 240, 255, 0.15);
+  background-color: #00f0ff;
   border-color: #00f0ff;
 }
 input:checked + .onyx-slider:before {
   transform: translateX(18px);
-  background-color: #00f0ff;
-  box-shadow: 0 0 10px #00f0ff;
+  background-color: #000000;
 }
