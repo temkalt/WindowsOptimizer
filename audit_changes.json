@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "log_1787246617728_bt09",
+    "timestamp": "2026-08-20T17:23:37.728Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterRss -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Enabled",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787246617725_27ih",
+    "timestamp": "2026-08-20T17:23:37.725Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Interrupt Moderation*\" -ErrorAction SilentlyContinue | Select-Object -Expa",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787246617725_cqup",
+    "timestamp": "2026-08-20T17:23:37.725Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787246617721_b6q7",
+    "timestamp": "2026-08-20T17:23:37.721Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Flow Control*\" -ErrorAction SilentlyContinue | Select-Object -ExpandProper",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787246617718_v4i5",
+    "timestamp": "2026-08-20T17:23:37.718Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787246617715_miop",
+    "timestamp": "2026-08-20T17:23:37.715Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787246617664_3obj",
+    "timestamp": "2026-08-20T17:23:37.664Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787246617662_6unm",
+    "timestamp": "2026-08-20T17:23:37.662Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "powercfg -getactivescheme",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787246617653_ap1o",
+    "timestamp": "2026-08-20T17:23:37.653Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787246617642_u1p7",
+    "timestamp": "2026-08-20T17:23:37.642Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787246617637_gmgh",
+    "timestamp": "2026-08-20T17:23:37.637Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787246617629_bqui",
+    "timestamp": "2026-08-20T17:23:37.629Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-MMAgent",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787246617628_8s2j",
+    "timestamp": "2026-08-20T17:23:37.628Z",
+    "category": "SYSINFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787245007255_0swt",
+    "timestamp": "2026-08-20T16:56:47.255Z",
+    "category": "BIOS_TPM",
+    "action": "EXEC_SYSTEM",
+    "target": "try { (Get-CimInstance -Namespace \"root\\CIMV2\\Security\\MicrosoftTpm\" -ClassName Win32_Tpm -ErrorAction SilentlyContinue)",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787245006974_cg1i",
+    "timestamp": "2026-08-20T16:56:46.974Z",
+    "category": "BIOS_SECBOOT",
+    "action": "EXEC_SYSTEM",
+    "target": "try { Confirm-SecureBootUEFI } catch { $false }",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787245006764_ikyz",
+    "timestamp": "2026-08-20T16:56:46.764Z",
+    "category": "BIOS_CPU",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_Processor | Select-Object VirtualizationFirmwareEnabled, Name | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787245006574_i2ad",
+    "timestamp": "2026-08-20T16:56:46.574Z",
+    "category": "BIOS_RAM",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_PhysicalMemory | Select-Object Capacity, Speed, ConfiguredClockSpeed, PartNumber, Manufacturer | C",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787245006400_kow0",
+    "timestamp": "2026-08-20T16:56:46.400Z",
+    "category": "BIOS_INFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_BIOS | Select-Object SMBIOSBIOSVersion, ReleaseDate, Manufacturer, SMBIOSMajorVersion, SMBIOSMinor",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787245006240_u1qr",
+    "timestamp": "2026-08-20T16:56:46.240Z",
+    "category": "BIOS_MB",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_BaseBoard | Select-Object Manufacturer, Product, Version, SerialNumber | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787245004532_3uul",
+    "timestamp": "2026-08-20T16:56:44.532Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Flow Control*\" -ErrorAction SilentlyContinue | Select-Object -ExpandProper",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787245004526_k0gy",
+    "timestamp": "2026-08-20T16:56:44.526Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterRss -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Enabled",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787245004524_fhdo",
+    "timestamp": "2026-08-20T16:56:44.524Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787245004517_1sfv",
+    "timestamp": "2026-08-20T16:56:44.517Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Interrupt Moderation*\" -ErrorAction SilentlyContinue | Select-Object -Expa",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787245004512_qfnq",
+    "timestamp": "2026-08-20T16:56:44.512Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787245004488_ija6",
+    "timestamp": "2026-08-20T16:56:44.488Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787245004463_74ak",
+    "timestamp": "2026-08-20T16:56:44.463Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787245004455_wph2",
+    "timestamp": "2026-08-20T16:56:44.455Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "powercfg -getactivescheme",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787245004435_9p5a",
+    "timestamp": "2026-08-20T16:56:44.435Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787245004433_8r4f",
+    "timestamp": "2026-08-20T16:56:44.433Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787245004431_0adf",
+    "timestamp": "2026-08-20T16:56:44.431Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787245004407_k5dz",
+    "timestamp": "2026-08-20T16:56:44.407Z",
+    "category": "SYSINFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787245004401_947i",
+    "timestamp": "2026-08-20T16:56:44.401Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-MMAgent",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244920732_49lp",
+    "timestamp": "2026-08-20T16:55:20.732Z",
+    "category": "GPU_DETECT",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Where-Object { $_.Name -like \"*NVIDIA*\" } | Select-Object Name, DriverVersion, D",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244918931_0lik",
+    "timestamp": "2026-08-20T16:55:18.931Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterRss -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Enabled",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244918930_ka15",
+    "timestamp": "2026-08-20T16:55:18.930Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Interrupt Moderation*\" -ErrorAction SilentlyContinue | Select-Object -Expa",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244918928_k9co",
+    "timestamp": "2026-08-20T16:55:18.928Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Flow Control*\" -ErrorAction SilentlyContinue | Select-Object -ExpandProper",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244918919_purq",
+    "timestamp": "2026-08-20T16:55:18.919Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244918912_vqly",
+    "timestamp": "2026-08-20T16:55:18.912Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244918902_8kco",
+    "timestamp": "2026-08-20T16:55:18.902Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244918856_otia",
+    "timestamp": "2026-08-20T16:55:18.856Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244918853_lvp7",
+    "timestamp": "2026-08-20T16:55:18.853Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "powercfg -getactivescheme",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244918827_ewyk",
+    "timestamp": "2026-08-20T16:55:18.827Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244918824_5rem",
+    "timestamp": "2026-08-20T16:55:18.824Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244918821_nqcm",
+    "timestamp": "2026-08-20T16:55:18.821Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244918798_vz5d",
+    "timestamp": "2026-08-20T16:55:18.798Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-MMAgent",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244918796_y7ts",
+    "timestamp": "2026-08-20T16:55:18.796Z",
+    "category": "SYSINFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244617553_7euo",
+    "timestamp": "2026-08-20T16:50:17.553Z",
+    "category": "STEAM_WATCHER",
+    "action": "KILL_WEB_HELPERS",
+    "target": "steamwebhelper.exe",
+    "details": "Purged background chromium helper threads",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244617552_kqyf",
+    "timestamp": "2026-08-20T16:50:17.552Z",
+    "category": "STEAM_KILLER",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      Get-Process \"steamwebhelper\" -ErrorAction SilentlyContinue | Where-Object { $_.MainWindowHandle -eq 0 } | Stop-Pr",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244617387_j3xv",
+    "timestamp": "2026-08-20T16:50:17.387Z",
+    "category": "TOOLS_INSTALLER",
+    "action": "LAUNCH_LOCAL_APP",
+    "target": "CRU.exe",
+    "details": "Launched local software utility",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244617384_8igo",
+    "timestamp": "2026-08-20T16:50:17.384Z",
+    "category": "SECURITY",
+    "action": "DISABLE_CFG_GAME",
+    "target": "cs2.exe",
+    "details": "CFG & ASLR mitigations removed for max 1% Low FPS",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244617384_m69r",
+    "timestamp": "2026-08-20T16:50:17.384Z",
+    "category": "EXPLOIT_PROTECTION",
+    "action": "EXEC_SYSTEM",
+    "target": "Set-ProcessMitigation -Name \"cs2.exe\" -Disable CFG,DEP,SEHOP,StrictHandle,BottomUpASLR -ErrorAction SilentlyContinue",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244617231_aj0d",
+    "timestamp": "2026-08-20T16:50:17.231Z",
+    "category": "DEFENDER",
+    "action": "ADD_GAME_EXCLUSIONS",
+    "target": "1 Directories Whitelisted",
+    "details": "Zero real-time disk scanning overhead during gameplay",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244617231_b2p9",
+    "timestamp": "2026-08-20T16:50:17.231Z",
+    "category": "DEFENDER_EXCLUSION",
+    "action": "EXEC_SYSTEM",
+    "target": "Add-MpPreference -ExclusionPath \"C:\\Program Files (x86)\\Steam\" -ErrorAction SilentlyContinue",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244617088_8kax",
+    "timestamp": "2026-08-20T16:50:17.088Z",
+    "category": "DEFENDER",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      $pref = Get-MpPreference -ErrorAction SilentlyContinue\n      [PSCustomObject]@{\n        realTimeProtection = (-no",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244616940_si68",
+    "timestamp": "2026-08-20T16:50:16.940Z",
+    "category": "CYBERSPORT",
+    "action": "FINISH_CALIBRATION",
+    "target": "✅ Профиль Киберспорта 100% Применён",
+    "details": "Все настройки выполнены бесшумно в фоновом режиме",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244616939_t0nt",
+    "timestamp": "2026-08-20T16:50:16.939Z",
+    "category": "CS2_ENGINE",
+    "action": "WRITE_AUTOEXEC",
+    "target": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\cfg\\autoexec.cfg",
+    "details": "Sub-tick rate 786432 injected silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244616939_06jp",
+    "timestamp": "2026-08-20T16:50:16.939Z",
+    "category": "NVIDIA_DRIVER",
+    "action": "IMPORT_NIP_PROFILE",
+    "target": "LLC-OPTIMIZED-V2.nip",
+    "details": "Ultra low-latency NVIDIA driver settings imported silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244616154_qge6",
+    "timestamp": "2026-08-20T16:50:16.154Z",
+    "category": "CYBERSPORT",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      bcdedit /set disabledynamictick yes 2>$null\n      bcdedit /set useplatformtick yes 2>$null\n      bcdedit /deletev",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244615970_hlrg",
+    "timestamp": "2026-08-20T16:50:15.970Z",
+    "category": "REGISTRY",
+    "action": "APPLY_FULL_REG_BATCH",
+    "target": "Consolidated Tweaks Database",
+    "details": "35+ Registry & IFEO keys applied silently in background",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244615784_xtoe",
+    "timestamp": "2026-08-20T16:50:15.784Z",
+    "category": "CYBERSPORT",
+    "action": "START_ULTIMATE_CALIBRATION",
+    "target": "🚀 Запуск Профиля Киберспорта Максимум (100% Silent Background)",
+    "details": "FACEIT Mode: false",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244615783_j1ee",
+    "timestamp": "2026-08-20T16:50:15.783Z",
+    "category": "SYSTEM_MAINTENANCE",
+    "action": "DISM_COMPONENT_CLEANUP",
+    "target": "WinSxS & Component Store",
+    "details": "Reclaimed storage and optimized system assemblies",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244615780_faw3",
+    "timestamp": "2026-08-20T16:50:15.780Z",
+    "category": "MEMORY",
+    "action": "STANDBY_PURGED",
+    "target": "Standby List & Working Sets Flushed",
+    "details": "Reclaimed ~1947 MB RAM",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244615779_64xz",
+    "timestamp": "2026-08-20T16:50:15.779Z",
+    "category": "STANDBY_PURGE",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      [System.GC]::Collect()\n      [System.GC]::WaitForPendingFinalizers()\n      Clear-RecycleBin -Force -ErrorAction S",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244615616_xexg",
+    "timestamp": "2026-08-20T16:50:15.616Z",
+    "category": "CLEANER",
+    "action": "FLUSH_ALL_JUNK",
+    "target": "DNS, DirectX DXCache, Temp, Prefetch, SoftwareDistribution",
+    "details": "Deep cleanup completed silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244615615_3jy9",
+    "timestamp": "2026-08-20T16:50:15.615Z",
+    "category": "CLEANER",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      ipconfig /flushdns 2>$null\n      \n      $tempPaths = @($env:TEMP, \"C:\\Windows\\Temp\")\n      foreach ($tp in $tempP",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244615434_42m8",
+    "timestamp": "2026-08-20T16:50:15.434Z",
+    "category": "SYSTEM_SNAPSHOT",
+    "action": "RESTORE_POINT",
+    "target": "snap_initial_clean",
+    "details": "System configuration rollback applied",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244615433_mcy0",
+    "timestamp": "2026-08-20T16:50:15.433Z",
+    "category": "SYSTEM_SNAPSHOT",
+    "action": "CREATE_POINT",
+    "target": "Automated Test Restore Point",
+    "details": "Created Windows Restore Point and registry backup",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244615433_6dlw",
+    "timestamp": "2026-08-20T16:50:15.433Z",
+    "category": "CREATE_RESTORE_POINT",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      try {\n        Enable-ComputerRestore -Drive \"C:\" -ErrorAction SilentlyContinue\n        Checkpoint-Computer -Descr",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244615262_qx92",
+    "timestamp": "2026-08-20T16:50:15.262Z",
+    "category": "DRIVER_STORE",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      $output = pnputil /enum-drivers\n      $drivers = @()\n      $current = @{}\n      \n      foreach ($line in ($output",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244615083_9mw4",
+    "timestamp": "2026-08-20T16:50:15.083Z",
+    "category": "POWER_PLAN",
+    "action": "ACTIVATE_POWER_SCHEME",
+    "target": "igromanoff_amd_vip",
+    "details": "Activated high performance power plan",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244615079_gknz",
+    "timestamp": "2026-08-20T16:50:15.079Z",
+    "category": "HARDWARE_PRESET",
+    "action": "APPLY_TAILORED_PROFILE",
+    "target": "AMD Ryzen 7 9800X3D + NVIDIA RTX 5070 (Esports S-Tier Flagship)",
+    "details": "Applied custom tuning for AMD Ryzen 7 9800X3D (8C/16T, 2nd Gen 3D V-Cache) + NVIDIA GeForce RTX 5070 12GB GDDR7",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244615079_k676",
+    "timestamp": "2026-08-20T16:50:15.079Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\cs2.exe\\PerfOptions\\IoPriority",
+    "details": "Data: 3 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244614890_b9tb",
+    "timestamp": "2026-08-20T16:50:14.890Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\cs2.exe\\PerfOptions\\CpuPriorityClass",
+    "details": "Data: 3 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244614666_xg1r",
+    "timestamp": "2026-08-20T16:50:14.666Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\PriorityControl\\Win32PrioritySeparation",
+    "details": "Data: 0x18 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244614388_i9s8",
+    "timestamp": "2026-08-20T16:50:14.388Z",
+    "category": "GPU_DETECT",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244614054_gb5j",
+    "timestamp": "2026-08-20T16:50:14.054Z",
+    "category": "BIOS_TPM",
+    "action": "EXEC_SYSTEM",
+    "target": "try { (Get-CimInstance -Namespace \"root\\CIMV2\\Security\\MicrosoftTpm\" -ClassName Win32_Tpm -ErrorAction SilentlyContinue)",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244613794_j8e0",
+    "timestamp": "2026-08-20T16:50:13.794Z",
+    "category": "BIOS_SECBOOT",
+    "action": "EXEC_SYSTEM",
+    "target": "try { Confirm-SecureBootUEFI } catch { $false }",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244613570_0u6o",
+    "timestamp": "2026-08-20T16:50:13.570Z",
+    "category": "BIOS_CPU",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_Processor | Select-Object VirtualizationFirmwareEnabled, Name | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244613343_p10u",
+    "timestamp": "2026-08-20T16:50:13.343Z",
+    "category": "BIOS_RAM",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_PhysicalMemory | Select-Object Capacity, Speed, ConfiguredClockSpeed, PartNumber, Manufacturer | C",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244613089_es7x",
+    "timestamp": "2026-08-20T16:50:13.089Z",
+    "category": "BIOS_INFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_BIOS | Select-Object SMBIOSBIOSVersion, ReleaseDate, Manufacturer, SMBIOSMajorVersion, SMBIOSMinor",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244611873_24lx",
+    "timestamp": "2026-08-20T16:50:11.873Z",
+    "category": "BIOS_MB",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_BaseBoard | Select-Object Manufacturer, Product, Version, SerialNumber | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244611307_5ga4",
+    "timestamp": "2026-08-20T16:50:11.307Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244611240_sped",
+    "timestamp": "2026-08-20T16:50:11.240Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterRss -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Enabled",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244611239_afiv",
+    "timestamp": "2026-08-20T16:50:11.239Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244611237_uc6z",
+    "timestamp": "2026-08-20T16:50:11.237Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Flow Control*\" -ErrorAction SilentlyContinue | Select-Object -ExpandProper",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244611234_aotk",
+    "timestamp": "2026-08-20T16:50:11.234Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Interrupt Moderation*\" -ErrorAction SilentlyContinue | Select-Object -Expa",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244611215_lw09",
+    "timestamp": "2026-08-20T16:50:11.215Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244611212_9gx5",
+    "timestamp": "2026-08-20T16:50:11.212Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "powercfg -getactivescheme",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244611202_baj4",
+    "timestamp": "2026-08-20T16:50:11.202Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244611184_91y8",
+    "timestamp": "2026-08-20T16:50:11.184Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244611181_rv7b",
+    "timestamp": "2026-08-20T16:50:11.181Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244611181_eg9k",
+    "timestamp": "2026-08-20T16:50:11.181Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244611160_mmxw",
+    "timestamp": "2026-08-20T16:50:11.160Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-MMAgent",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244610800_ub0z",
+    "timestamp": "2026-08-20T16:50:10.800Z",
+    "category": "SYSINFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244609180_15rq",
+    "timestamp": "2026-08-20T16:50:09.180Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Interrupt Moderation*\" -ErrorAction SilentlyContinue | Select-Object -Expa",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244609177_r1g9",
+    "timestamp": "2026-08-20T16:50:09.177Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Flow Control*\" -ErrorAction SilentlyContinue | Select-Object -ExpandProper",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244609175_g0so",
+    "timestamp": "2026-08-20T16:50:09.175Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterRss -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Enabled",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244609166_klhg",
+    "timestamp": "2026-08-20T16:50:09.166Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244609159_ox31",
+    "timestamp": "2026-08-20T16:50:09.159Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244609146_g205",
+    "timestamp": "2026-08-20T16:50:09.146Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244609120_6qen",
+    "timestamp": "2026-08-20T16:50:09.120Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244609120_lhls",
+    "timestamp": "2026-08-20T16:50:09.120Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244609116_6h0i",
+    "timestamp": "2026-08-20T16:50:09.116Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "powercfg -getactivescheme",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244609111_2j9e",
+    "timestamp": "2026-08-20T16:50:09.111Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244609111_ione",
+    "timestamp": "2026-08-20T16:50:09.111Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244609064_6prh",
+    "timestamp": "2026-08-20T16:50:09.064Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-MMAgent",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244609057_871r",
+    "timestamp": "2026-08-20T16:50:09.057Z",
+    "category": "SYSINFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244566657_xr6j",
+    "timestamp": "2026-08-20T16:49:26.657Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterRss -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Enabled",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244566657_q00p",
+    "timestamp": "2026-08-20T16:49:26.657Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244566655_69fg",
+    "timestamp": "2026-08-20T16:49:26.655Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244566650_9tcf",
+    "timestamp": "2026-08-20T16:49:26.650Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Flow Control*\" -ErrorAction SilentlyContinue | Select-Object -ExpandProper",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244566644_6bip",
+    "timestamp": "2026-08-20T16:49:26.644Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244566643_vfu7",
+    "timestamp": "2026-08-20T16:49:26.643Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Interrupt Moderation*\" -ErrorAction SilentlyContinue | Select-Object -Expa",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244566634_yeqp",
+    "timestamp": "2026-08-20T16:49:26.634Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244566621_9yjn",
+    "timestamp": "2026-08-20T16:49:26.621Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244566612_a835",
+    "timestamp": "2026-08-20T16:49:26.612Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244566609_l78b",
+    "timestamp": "2026-08-20T16:49:26.609Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-MMAgent",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244566601_9242",
+    "timestamp": "2026-08-20T16:49:26.601Z",
+    "category": "SYSINFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244566592_v8sh",
+    "timestamp": "2026-08-20T16:49:26.592Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244566591_labr",
+    "timestamp": "2026-08-20T16:49:26.591Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "powercfg -getactivescheme",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  }
+]

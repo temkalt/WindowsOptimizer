@@ -1,0 +1,26 @@
+================================================================================
+          APEX LEGENDS - ОПТИМАЛЬНЫЙ VIDEOCONFIG.TXT ДЛЯ МАКС. FPS
+================================================================================
+Путь к файлу:
+%USERPROFILE%\Saved Games\Respawn\Apex\local\videoconfig.txt
+
+Оптимальные значения параметров для нулевого инпутлага:
+"setting.cl_ragdoll_maxcount"		"0"
+"setting.mat_depthfeather_enable"		"0"
+"setting.mat_forceaniso"		"1"
+"setting.mat_picmip"		"4"
+"setting.mat_shadowstate"		"0"
+"setting.shadow_enable"		"0"
+"setting.stream_memory"		"0"
+"setting.dvs_enable"		"0"
+"setting.dvs_gpuframetime_min"		"1"
+"setting.dvs_gpuframetime_max"		"1"
+"setting.defaultres"		"1920"
+"setting.defaultresheight"		"1080"
+"setting.fullscreen"		"1"
+"setting.nowindowborder"		"0"
+"setting.volumetric_lighting"		"0"
+"setting.mat_vsync_mode"		"0"
+
+После редактирования поставьте на файл videoconfig.txt атрибут 'Только чтение' (Read-Only).
+================================================================================

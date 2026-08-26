@@ -1,0 +1,10 @@
+VALORANT COMPETITIVE ENGINE CALIBRATION FOR RYZEN 9800X3D + RTX 5070:
+1. In-Game Settings:
+   - Raw Input Buffer: ON (Crucial for 8000Hz/4000Hz mouse polling)
+   - Multithreaded Rendering: ON (+40-70% 1% Low FPS)
+   - NVIDIA Reflex Low Latency: ON + BOOST
+   - V-Sync: OFF
+   - Limit FPS Always: OFF
+2. Riot Vanguard Compatibility:
+   - Do NOT disable VBS/HVCI if you plan to play Premier or high-tier competitive.
+   - Run 14_SECURITY_AND_ANTI_CHEAT_PROFILES\2_Anti_Cheat_Hardened_Profile_FACEIT_Vanguard.ps1

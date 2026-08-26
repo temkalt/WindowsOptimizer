@@ -1,0 +1,18 @@
+[
+  {
+    "id": "snap_1787244615433",
+    "name": "Automated Test Restore Point",
+    "timestamp": "2026-08-20T16:50:15.433Z",
+    "tweaksCount": 50,
+    "type": "SYSTEM_RESTORE_POINT",
+    "description": "Точка восстановления Windows и полный снимок реестра BCD/Services."
+  },
+  {
+    "id": "snap_initial_clean",
+    "name": "Чистый образ Windows (Пре-Оптимизация)",
+    "timestamp": "2026-08-20T16:50:15.264Z",
+    "tweaksCount": 0,
+    "type": "SYSTEM_RESTORE_POINT",
+    "description": "Аппаратная точка восстановления Windows и базовый снимок реестра."
+  }
+]

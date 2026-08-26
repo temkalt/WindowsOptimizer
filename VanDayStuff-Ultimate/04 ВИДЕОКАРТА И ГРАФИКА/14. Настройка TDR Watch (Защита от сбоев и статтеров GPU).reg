@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
+"TdrLevel"=dword:00000003
+"TdrDelay"=dword:0000000a
+"TdrDdiDelay"=dword:0000000a
+"TdrDebugMode"=dword:00000000

@@ -1,0 +1,229 @@
+
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[812] Mon Mar 04 23:15:39 2024 >>  Test started.  Allocated  2970 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[3604] Mon Mar 04 23:15:47 2024 >>  Test started.  Allocated  2970 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[9132] Mon Mar 04 23:15:55 2024 >>  Test started.  Allocated  2970 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[8328] Mon Mar 04 23:15:55 2024 >>  Test started.  Allocated  2969 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[2916] Mon Mar 04 23:16:03 2024 >>  Test started.  Allocated  2968 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[3384] Mon Mar 04 23:16:11 2024 >>  Test started.  Allocated  2970 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[1304] Mon Mar 04 23:16:12 2024 >>  Test started.  Allocated  2968 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[8244] Mon Mar 04 23:16:20 2024 >>  Test started.  Allocated  2969 MB of memory for testing.
+[9132] Mon Mar 04 23:17:05 2024 >>  Test finished. 0 errors found.
+
+[812] Mon Mar 04 23:17:05 2024 >>  Test finished. 0 errors found.
+
+[3604] Mon Mar 04 23:17:05 2024 >>  Test finished. 0 errors found.
+
+[2916] Mon Mar 04 23:17:05 2024 >>  Test finished. 0 errors found.
+
+[8328] Mon Mar 04 23:17:06 2024 >>  Test finished. 0 errors found.
+
+[3384] Mon Mar 04 23:17:06 2024 >>  Test finished. 0 errors found.
+
+[1304] Mon Mar 04 23:17:06 2024 >>  Test finished. 0 errors found.
+
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[7188] Tue May 14 04:19:11 2024 >>  Test started.  Allocated  1839 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[9668] Tue May 14 04:19:13 2024 >>  Test started.  Allocated  1839 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[9952] Tue May 14 04:19:15 2024 >>  Test started.  Allocated  1839 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[9872] Tue May 14 04:19:17 2024 >>  Test started.  Allocated  1839 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[6056] Tue May 14 04:19:20 2024 >>  Test started.  Allocated  1839 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[10352] Tue May 14 04:19:22 2024 >>  Test started.  Allocated  1839 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[7940] Tue May 14 04:19:24 2024 >>  Test started.  Allocated  1839 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[12396] Tue May 14 04:19:26 2024 >>  Test started.  Allocated  1839 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[4816] Tue May 14 04:19:28 2024 >>  Test started.  Allocated  1839 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[2684] Tue May 14 04:19:30 2024 >>  Test started.  Allocated  1839 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[11520] Tue May 14 04:19:32 2024 >>  Test started.  Allocated  1839 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[9044] Tue May 14 04:19:34 2024 >>  Test started.  Allocated  1839 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[12772] Tue May 14 04:19:36 2024 >>  Test started.  Allocated  1839 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[9468] Tue May 14 04:19:38 2024 >>  Test started.  Allocated  1839 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[8340] Tue May 14 04:19:40 2024 >>  Test started.  Allocated  1839 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[1728] Tue May 14 04:19:42 2024 >>  Test started.  Allocated  1839 MB of memory for testing.
+[6056] Tue May 14 04:19:56 2024 >>  Test finished. 0 errors found.
+
+[2684] Tue May 14 04:19:56 2024 >>  Test finished. 0 errors found.
+
+[7188] Tue May 14 04:19:56 2024 >>  Test finished. 0 errors found.
+
+[12396] Tue May 14 04:19:56 2024 >>  Test finished. 0 errors found.
+
+[9952] Tue May 14 04:19:56 2024 >>  Test finished. 0 errors found.
+
+[4816] Tue May 14 04:19:56 2024 >>  Test finished. 0 errors found.
+
+[9668] Tue May 14 04:19:56 2024 >>  Test finished. 0 errors found.
+
+[9872] Tue May 14 04:19:56 2024 >>  Test finished. 0 errors found.
+
+[9044] Tue May 14 04:19:56 2024 >>  Test finished. 0 errors found.
+
+[11520] Tue May 14 04:19:56 2024 >>  Test finished. 0 errors found.
+
+[10352] Tue May 14 04:19:56 2024 >>  Test finished. 0 errors found.
+
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[5112] Thu Jul 04 01:03:09 2024 >>  Test started.  Allocated  3500 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[3740] Thu Jul 04 01:03:13 2024 >>  Test started.  Allocated  3500 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[3648] Thu Jul 04 01:03:17 2024 >>  Test started.  Allocated  3500 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[3624] Thu Jul 04 01:03:21 2024 >>  Test started.  Allocated  3500 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[556] Thu Jul 04 01:03:26 2024 >>  Test started.  Allocated  3500 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[108] Thu Jul 04 01:03:30 2024 >>  Test started.  Allocated  3500 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[1420] Thu Jul 04 01:03:36 2024 >>  Test started.  Allocated  3500 MB of memory for testing.
+
+======== Starting new MemTest session ========
+MemTest PRO 7.0 (c) 2019, HCI Design (http://hcidesign.com/memtest)
+NOTE: greater than 100% coverage is possible. Each 100% indicates a thorough testing of all allocated RAM, however, intermittent errors may take multiple 100% cycles to be detected.
+
+[1628] Thu Jul 04 01:03:36 2024 >>  Test started.  Allocated  3500 MB of memory for testing.

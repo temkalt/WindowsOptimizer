@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Raw source packs and heavy electron/browser builds
+packs/
+ApexTweak-Desktop/
+koltwin-Desktop/
+koltwin/
+*.exe.config
+
+# Ignore general binaries & media
+*.mp4
+*.exe
+*.dll
+
+# Whitelist utilities in VanDayStuff-Ultimate
+!VanDayStuff-Ultimate/**/*.exe
+!VanDayStuff-Ultimate/**/*.dll
+!ApexOptimizer/bin/*.exe
+
+# Hard ignore the 800MB driver binary (exceeds GitHub 100MB limit)
+VanDayStuff-Ultimate/**/596.36 - Custom.exe
+*596.36*.exe
+
+# Keep prebuilt web app bundle for 1-click cloud execution
+!ApexOptimizer/dist
+
+# Misc
+.DS_Store
+*.pem
+*.log
+*.tmp

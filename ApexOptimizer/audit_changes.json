@@ -1,0 +1,4502 @@
+[
+  {
+    "id": "log_1787246638925_rmu5",
+    "timestamp": "2026-08-20T17:23:58.925Z",
+    "category": "CYBERSPORT",
+    "action": "FINISH_CALIBRATION",
+    "target": "✅ Профиль Киберспорта 100% Применён",
+    "details": "Все настройки выполнены бесшумно в фоновом режиме",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787246638925_d1yd",
+    "timestamp": "2026-08-20T17:23:58.925Z",
+    "category": "CS2_ENGINE",
+    "action": "WRITE_AUTOEXEC",
+    "target": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\cfg\\autoexec.cfg",
+    "details": "Sub-tick rate 786432 injected silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787246638924_jcj4",
+    "timestamp": "2026-08-20T17:23:58.924Z",
+    "category": "NVIDIA_DRIVER",
+    "action": "IMPORT_NIP_PROFILE",
+    "target": "LLC-OPTIMIZED-V2.nip",
+    "details": "Ultra low-latency NVIDIA driver settings imported silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787246638230_t24p",
+    "timestamp": "2026-08-20T17:23:58.230Z",
+    "category": "CYBERSPORT",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      bcdedit /set disabledynamictick yes 2>$null\n      bcdedit /set useplatformtick yes 2>$null\n      bcdedit /deletev",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787246638090_h3z3",
+    "timestamp": "2026-08-20T17:23:58.090Z",
+    "category": "REGISTRY",
+    "action": "APPLY_FULL_REG_BATCH",
+    "target": "Consolidated Tweaks Database",
+    "details": "35+ Registry & IFEO keys applied silently in background",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787246637942_msb1",
+    "timestamp": "2026-08-20T17:23:57.942Z",
+    "category": "CYBERSPORT",
+    "action": "START_ULTIMATE_CALIBRATION",
+    "target": "🚀 Запуск Профиля Киберспорта Максимум (100% Silent Background)",
+    "details": "FACEIT Mode: false",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244074307_vfvz",
+    "timestamp": "2026-08-20T16:41:14.307Z",
+    "category": "STEAM_WATCHER",
+    "action": "KILL_WEB_HELPERS",
+    "target": "steamwebhelper.exe",
+    "details": "Purged background chromium helper threads",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244074306_rsn8",
+    "timestamp": "2026-08-20T16:41:14.306Z",
+    "category": "STEAM_KILLER",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      Get-Process \"steamwebhelper\" -ErrorAction SilentlyContinue | Where-Object { $_.MainWindowHandle -eq 0 } | Stop-Pr",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244074141_xp4r",
+    "timestamp": "2026-08-20T16:41:14.141Z",
+    "category": "TOOLS_INSTALLER",
+    "action": "LAUNCH_LOCAL_APP",
+    "target": "CRU.exe",
+    "details": "Launched local software utility",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244074137_5h6b",
+    "timestamp": "2026-08-20T16:41:14.137Z",
+    "category": "SECURITY",
+    "action": "DISABLE_CFG_GAME",
+    "target": "cs2.exe",
+    "details": "CFG & ASLR mitigations removed for max 1% Low FPS",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244074137_1by5",
+    "timestamp": "2026-08-20T16:41:14.137Z",
+    "category": "EXPLOIT_PROTECTION",
+    "action": "EXEC_SYSTEM",
+    "target": "Set-ProcessMitigation -Name \"cs2.exe\" -Disable CFG,DEP,SEHOP,StrictHandle,BottomUpASLR -ErrorAction SilentlyContinue",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244073985_1h5q",
+    "timestamp": "2026-08-20T16:41:13.985Z",
+    "category": "DEFENDER",
+    "action": "ADD_GAME_EXCLUSIONS",
+    "target": "1 Directories Whitelisted",
+    "details": "Zero real-time disk scanning overhead during gameplay",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244073984_1epw",
+    "timestamp": "2026-08-20T16:41:13.984Z",
+    "category": "DEFENDER_EXCLUSION",
+    "action": "EXEC_SYSTEM",
+    "target": "Add-MpPreference -ExclusionPath \"C:\\Program Files (x86)\\Steam\" -ErrorAction SilentlyContinue",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244073844_mnhp",
+    "timestamp": "2026-08-20T16:41:13.844Z",
+    "category": "DEFENDER",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      $pref = Get-MpPreference -ErrorAction SilentlyContinue\n      [PSCustomObject]@{\n        realTimeProtection = (-no",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244073697_2ymg",
+    "timestamp": "2026-08-20T16:41:13.697Z",
+    "category": "CYBERSPORT",
+    "action": "FINISH_CALIBRATION",
+    "target": "✅ Профиль Киберспорта 100% Применён",
+    "details": "Все настройки выполнены бесшумно в фоновом режиме",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244073696_79na",
+    "timestamp": "2026-08-20T16:41:13.696Z",
+    "category": "CS2_ENGINE",
+    "action": "WRITE_AUTOEXEC",
+    "target": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\cfg\\autoexec.cfg",
+    "details": "Sub-tick rate 786432 injected silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244073695_o2f4",
+    "timestamp": "2026-08-20T16:41:13.695Z",
+    "category": "NVIDIA_DRIVER",
+    "action": "IMPORT_NIP_PROFILE",
+    "target": "LLC-OPTIMIZED-V2.nip",
+    "details": "Ultra low-latency NVIDIA driver settings imported silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244072951_qk8l",
+    "timestamp": "2026-08-20T16:41:12.951Z",
+    "category": "CYBERSPORT",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      bcdedit /set disabledynamictick yes 2>$null\n      bcdedit /set useplatformtick yes 2>$null\n      bcdedit /deletev",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244072781_ww3l",
+    "timestamp": "2026-08-20T16:41:12.781Z",
+    "category": "REGISTRY",
+    "action": "APPLY_FULL_REG_BATCH",
+    "target": "Consolidated Tweaks Database",
+    "details": "35+ Registry & IFEO keys applied silently in background",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244072608_jhuk",
+    "timestamp": "2026-08-20T16:41:12.608Z",
+    "category": "CYBERSPORT",
+    "action": "START_ULTIMATE_CALIBRATION",
+    "target": "🚀 Запуск Профиля Киберспорта Максимум (100% Silent Background)",
+    "details": "FACEIT Mode: false",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244072606_ucru",
+    "timestamp": "2026-08-20T16:41:12.606Z",
+    "category": "SYSTEM_MAINTENANCE",
+    "action": "DISM_COMPONENT_CLEANUP",
+    "target": "WinSxS & Component Store",
+    "details": "Reclaimed storage and optimized system assemblies",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244072602_vmky",
+    "timestamp": "2026-08-20T16:41:12.602Z",
+    "category": "MEMORY",
+    "action": "STANDBY_PURGED",
+    "target": "Standby List & Working Sets Flushed",
+    "details": "Reclaimed ~1403 MB RAM",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244072601_ns2w",
+    "timestamp": "2026-08-20T16:41:12.601Z",
+    "category": "STANDBY_PURGE",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      [System.GC]::Collect()\n      [System.GC]::WaitForPendingFinalizers()\n      Clear-RecycleBin -Force -ErrorAction S",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244072431_lkba",
+    "timestamp": "2026-08-20T16:41:12.431Z",
+    "category": "CLEANER",
+    "action": "FLUSH_ALL_JUNK",
+    "target": "DNS, DirectX DXCache, Temp, Prefetch, SoftwareDistribution",
+    "details": "Deep cleanup completed silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244072430_kwqu",
+    "timestamp": "2026-08-20T16:41:12.430Z",
+    "category": "CLEANER",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      ipconfig /flushdns 2>$null\n      \n      $tempPaths = @($env:TEMP, \"C:\\Windows\\Temp\")\n      foreach ($tp in $tempP",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244072248_oaa8",
+    "timestamp": "2026-08-20T16:41:12.248Z",
+    "category": "SYSTEM_SNAPSHOT",
+    "action": "RESTORE_POINT",
+    "target": "snap_initial_clean",
+    "details": "System configuration rollback applied",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244072246_wmvk",
+    "timestamp": "2026-08-20T16:41:12.246Z",
+    "category": "SYSTEM_SNAPSHOT",
+    "action": "CREATE_POINT",
+    "target": "Automated Test Restore Point",
+    "details": "Created Windows Restore Point and registry backup",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244072244_yvc1",
+    "timestamp": "2026-08-20T16:41:12.244Z",
+    "category": "CREATE_RESTORE_POINT",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      try {\n        Enable-ComputerRestore -Drive \"C:\" -ErrorAction SilentlyContinue\n        Checkpoint-Computer -Descr",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244072068_w7c7",
+    "timestamp": "2026-08-20T16:41:12.068Z",
+    "category": "DRIVER_STORE",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      $output = pnputil /enum-drivers\n      $drivers = @()\n      $current = @{}\n      \n      foreach ($line in ($output",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244071887_vxlq",
+    "timestamp": "2026-08-20T16:41:11.887Z",
+    "category": "POWER_PLAN",
+    "action": "ACTIVATE_POWER_SCHEME",
+    "target": "igromanoff_amd_vip",
+    "details": "Activated high performance power plan",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244071883_khls",
+    "timestamp": "2026-08-20T16:41:11.883Z",
+    "category": "HARDWARE_PRESET",
+    "action": "APPLY_TAILORED_PROFILE",
+    "target": "AMD Ryzen 7 9800X3D + NVIDIA RTX 5070 (Esports S-Tier Flagship)",
+    "details": "Applied custom tuning for AMD Ryzen 7 9800X3D (8C/16T, 2nd Gen 3D V-Cache) + NVIDIA GeForce RTX 5070 12GB GDDR7",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244071882_3uda",
+    "timestamp": "2026-08-20T16:41:11.882Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\cs2.exe\\PerfOptions\\IoPriority",
+    "details": "Data: 3 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244071670_3j76",
+    "timestamp": "2026-08-20T16:41:11.670Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\cs2.exe\\PerfOptions\\CpuPriorityClass",
+    "details": "Data: 3 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244071435_p68f",
+    "timestamp": "2026-08-20T16:41:11.435Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\PriorityControl\\Win32PrioritySeparation",
+    "details": "Data: 0x18 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244071154_vv7q",
+    "timestamp": "2026-08-20T16:41:11.154Z",
+    "category": "GPU_DETECT",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244070895_dmok",
+    "timestamp": "2026-08-20T16:41:10.895Z",
+    "category": "BIOS_TPM",
+    "action": "EXEC_SYSTEM",
+    "target": "try { (Get-CimInstance -Namespace \"root\\CIMV2\\Security\\MicrosoftTpm\" -ClassName Win32_Tpm -ErrorAction SilentlyContinue)",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244070688_s194",
+    "timestamp": "2026-08-20T16:41:10.688Z",
+    "category": "BIOS_SECBOOT",
+    "action": "EXEC_SYSTEM",
+    "target": "try { Confirm-SecureBootUEFI } catch { $false }",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244070491_x0ve",
+    "timestamp": "2026-08-20T16:41:10.491Z",
+    "category": "BIOS_CPU",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_Processor | Select-Object VirtualizationFirmwareEnabled, Name | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244070299_120t",
+    "timestamp": "2026-08-20T16:41:10.299Z",
+    "category": "BIOS_RAM",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_PhysicalMemory | Select-Object Capacity, Speed, ConfiguredClockSpeed, PartNumber, Manufacturer | C",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244070071_5b0q",
+    "timestamp": "2026-08-20T16:41:10.071Z",
+    "category": "BIOS_INFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_BIOS | Select-Object SMBIOSBIOSVersion, ReleaseDate, Manufacturer, SMBIOSMajorVersion, SMBIOSMinor",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244069048_hsei",
+    "timestamp": "2026-08-20T16:41:09.048Z",
+    "category": "BIOS_MB",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_BaseBoard | Select-Object Manufacturer, Product, Version, SerialNumber | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244068707_bwgk",
+    "timestamp": "2026-08-20T16:41:08.707Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterRss -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Enabled",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244068701_ezvp",
+    "timestamp": "2026-08-20T16:41:08.701Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Flow Control*\" -ErrorAction SilentlyContinue | Select-Object -ExpandProper",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244068699_l9t7",
+    "timestamp": "2026-08-20T16:41:08.699Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Interrupt Moderation*\" -ErrorAction SilentlyContinue | Select-Object -Expa",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244068695_jng6",
+    "timestamp": "2026-08-20T16:41:08.695Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244068693_xrxn",
+    "timestamp": "2026-08-20T16:41:08.693Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244068666_neft",
+    "timestamp": "2026-08-20T16:41:08.666Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244068643_czhg",
+    "timestamp": "2026-08-20T16:41:08.643Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244068638_4fud",
+    "timestamp": "2026-08-20T16:41:08.638Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "powercfg -getactivescheme",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244068634_f7x7",
+    "timestamp": "2026-08-20T16:41:08.634Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244068630_88tc",
+    "timestamp": "2026-08-20T16:41:08.630Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244068614_qpar",
+    "timestamp": "2026-08-20T16:41:08.614Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244068606_le7i",
+    "timestamp": "2026-08-20T16:41:08.606Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-MMAgent",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787244068357_waxt",
+    "timestamp": "2026-08-20T16:41:08.357Z",
+    "category": "SYSINFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243492625_xsrq",
+    "timestamp": "2026-08-20T16:31:32.625Z",
+    "category": "STEAM_WATCHER",
+    "action": "KILL_WEB_HELPERS",
+    "target": "steamwebhelper.exe",
+    "details": "Purged background chromium helper threads",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243492624_5lxf",
+    "timestamp": "2026-08-20T16:31:32.624Z",
+    "category": "STEAM_KILLER",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      Get-Process \"steamwebhelper\" -ErrorAction SilentlyContinue | Where-Object { $_.MainWindowHandle -eq 0 } | Stop-Pr",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243492463_av5d",
+    "timestamp": "2026-08-20T16:31:32.463Z",
+    "category": "TOOLS_INSTALLER",
+    "action": "LAUNCH_LOCAL_APP",
+    "target": "CRU.exe",
+    "details": "Launched local software utility",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243492459_exsl",
+    "timestamp": "2026-08-20T16:31:32.459Z",
+    "category": "SECURITY",
+    "action": "DISABLE_CFG_GAME",
+    "target": "cs2.exe",
+    "details": "CFG & ASLR mitigations removed for max 1% Low FPS",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243492458_8gvp",
+    "timestamp": "2026-08-20T16:31:32.458Z",
+    "category": "EXPLOIT_PROTECTION",
+    "action": "EXEC_SYSTEM",
+    "target": "Set-ProcessMitigation -Name \"cs2.exe\" -Disable CFG,DEP,SEHOP,StrictHandle,BottomUpASLR -ErrorAction SilentlyContinue",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243492315_11a1",
+    "timestamp": "2026-08-20T16:31:32.315Z",
+    "category": "DEFENDER",
+    "action": "ADD_GAME_EXCLUSIONS",
+    "target": "1 Directories Whitelisted",
+    "details": "Zero real-time disk scanning overhead during gameplay",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243492314_6ko2",
+    "timestamp": "2026-08-20T16:31:32.314Z",
+    "category": "DEFENDER_EXCLUSION",
+    "action": "EXEC_SYSTEM",
+    "target": "Add-MpPreference -ExclusionPath \"C:\\Program Files (x86)\\Steam\" -ErrorAction SilentlyContinue",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243492177_3uuw",
+    "timestamp": "2026-08-20T16:31:32.177Z",
+    "category": "DEFENDER",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      $pref = Get-MpPreference -ErrorAction SilentlyContinue\n      [PSCustomObject]@{\n        realTimeProtection = (-no",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243492032_o2dr",
+    "timestamp": "2026-08-20T16:31:32.032Z",
+    "category": "CYBERSPORT",
+    "action": "FINISH_CALIBRATION",
+    "target": "✅ Профиль Киберспорта 100% Применён",
+    "details": "Все настройки выполнены бесшумно в фоновом режиме",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243492031_kch6",
+    "timestamp": "2026-08-20T16:31:32.031Z",
+    "category": "CS2_ENGINE",
+    "action": "WRITE_AUTOEXEC",
+    "target": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\cfg\\autoexec.cfg",
+    "details": "Sub-tick rate 786432 injected silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243492030_em7i",
+    "timestamp": "2026-08-20T16:31:32.030Z",
+    "category": "NVIDIA_DRIVER",
+    "action": "IMPORT_NIP_PROFILE",
+    "target": "LLC-OPTIMIZED-V2.nip",
+    "details": "Ultra low-latency NVIDIA driver settings imported silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243491297_kd4s",
+    "timestamp": "2026-08-20T16:31:31.297Z",
+    "category": "CYBERSPORT",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      bcdedit /set disabledynamictick yes 2>$null\n      bcdedit /set useplatformtick yes 2>$null\n      bcdedit /deletev",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243491115_iu8o",
+    "timestamp": "2026-08-20T16:31:31.115Z",
+    "category": "REGISTRY",
+    "action": "APPLY_FULL_REG_BATCH",
+    "target": "Consolidated Tweaks Database",
+    "details": "35+ Registry & IFEO keys applied silently in background",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243490950_wb4q",
+    "timestamp": "2026-08-20T16:31:30.950Z",
+    "category": "CYBERSPORT",
+    "action": "START_ULTIMATE_CALIBRATION",
+    "target": "🚀 Запуск Профиля Киберспорта Максимум (100% Silent Background)",
+    "details": "FACEIT Mode: false",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243490948_9q2t",
+    "timestamp": "2026-08-20T16:31:30.948Z",
+    "category": "SYSTEM_MAINTENANCE",
+    "action": "DISM_COMPONENT_CLEANUP",
+    "target": "WinSxS & Component Store",
+    "details": "Reclaimed storage and optimized system assemblies",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243490945_1nfm",
+    "timestamp": "2026-08-20T16:31:30.945Z",
+    "category": "MEMORY",
+    "action": "STANDBY_PURGED",
+    "target": "Standby List & Working Sets Flushed",
+    "details": "Reclaimed ~1290 MB RAM",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243490944_9cmb",
+    "timestamp": "2026-08-20T16:31:30.944Z",
+    "category": "STANDBY_PURGE",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      [System.GC]::Collect()\n      [System.GC]::WaitForPendingFinalizers()\n      Clear-RecycleBin -Force -ErrorAction S",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243490783_pxbi",
+    "timestamp": "2026-08-20T16:31:30.783Z",
+    "category": "CLEANER",
+    "action": "FLUSH_ALL_JUNK",
+    "target": "DNS, DirectX DXCache, Temp, Prefetch, SoftwareDistribution",
+    "details": "Deep cleanup completed silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243490782_y6m5",
+    "timestamp": "2026-08-20T16:31:30.782Z",
+    "category": "CLEANER",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      ipconfig /flushdns 2>$null\n      \n      $tempPaths = @($env:TEMP, \"C:\\Windows\\Temp\")\n      foreach ($tp in $tempP",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243490608_9b60",
+    "timestamp": "2026-08-20T16:31:30.608Z",
+    "category": "SYSTEM_SNAPSHOT",
+    "action": "RESTORE_POINT",
+    "target": "snap_initial_clean",
+    "details": "System configuration rollback applied",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243490606_d0hw",
+    "timestamp": "2026-08-20T16:31:30.606Z",
+    "category": "SYSTEM_SNAPSHOT",
+    "action": "CREATE_POINT",
+    "target": "Automated Test Restore Point",
+    "details": "Created Windows Restore Point and registry backup",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243490605_a0jq",
+    "timestamp": "2026-08-20T16:31:30.605Z",
+    "category": "CREATE_RESTORE_POINT",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      try {\n        Enable-ComputerRestore -Drive \"C:\" -ErrorAction SilentlyContinue\n        Checkpoint-Computer -Descr",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243490447_0ra4",
+    "timestamp": "2026-08-20T16:31:30.447Z",
+    "category": "DRIVER_STORE",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      $output = pnputil /enum-drivers\n      $drivers = @()\n      $current = @{}\n      \n      foreach ($line in ($output",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243490292_vcgh",
+    "timestamp": "2026-08-20T16:31:30.292Z",
+    "category": "POWER_PLAN",
+    "action": "ACTIVATE_POWER_SCHEME",
+    "target": "igromanoff_amd_vip",
+    "details": "Activated high performance power plan",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243490288_zhqu",
+    "timestamp": "2026-08-20T16:31:30.288Z",
+    "category": "HARDWARE_PRESET",
+    "action": "APPLY_TAILORED_PROFILE",
+    "target": "AMD Ryzen 7 9800X3D + NVIDIA RTX 5070 (Esports S-Tier Flagship)",
+    "details": "Applied custom tuning for AMD Ryzen 7 9800X3D (8C/16T, 2nd Gen 3D V-Cache) + NVIDIA GeForce RTX 5070 12GB GDDR7",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243490287_t74z",
+    "timestamp": "2026-08-20T16:31:30.287Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\cs2.exe\\PerfOptions\\IoPriority",
+    "details": "Data: 3 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243490123_usrm",
+    "timestamp": "2026-08-20T16:31:30.123Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\cs2.exe\\PerfOptions\\CpuPriorityClass",
+    "details": "Data: 3 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243489929_gfwx",
+    "timestamp": "2026-08-20T16:31:29.929Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\PriorityControl\\Win32PrioritySeparation",
+    "details": "Data: 0x18 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243489668_aaz6",
+    "timestamp": "2026-08-20T16:31:29.668Z",
+    "category": "GPU_DETECT",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243489432_t5f2",
+    "timestamp": "2026-08-20T16:31:29.432Z",
+    "category": "BIOS_TPM",
+    "action": "EXEC_SYSTEM",
+    "target": "try { (Get-CimInstance -Namespace \"root\\CIMV2\\Security\\MicrosoftTpm\" -ClassName Win32_Tpm -ErrorAction SilentlyContinue)",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243489226_bdk9",
+    "timestamp": "2026-08-20T16:31:29.226Z",
+    "category": "BIOS_SECBOOT",
+    "action": "EXEC_SYSTEM",
+    "target": "try { Confirm-SecureBootUEFI } catch { $false }",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243489035_5vz4",
+    "timestamp": "2026-08-20T16:31:29.035Z",
+    "category": "BIOS_CPU",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_Processor | Select-Object VirtualizationFirmwareEnabled, Name | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243488803_uqbm",
+    "timestamp": "2026-08-20T16:31:28.803Z",
+    "category": "BIOS_RAM",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_PhysicalMemory | Select-Object Capacity, Speed, ConfiguredClockSpeed, PartNumber, Manufacturer | C",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243488496_g44i",
+    "timestamp": "2026-08-20T16:31:28.496Z",
+    "category": "BIOS_INFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_BIOS | Select-Object SMBIOSBIOSVersion, ReleaseDate, Manufacturer, SMBIOSMajorVersion, SMBIOSMinor",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243487305_ds2z",
+    "timestamp": "2026-08-20T16:31:27.305Z",
+    "category": "BIOS_MB",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_BaseBoard | Select-Object Manufacturer, Product, Version, SerialNumber | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243487046_8rdo",
+    "timestamp": "2026-08-20T16:31:27.046Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Interrupt Moderation*\" -ErrorAction SilentlyContinue | Select-Object -Expa",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243487042_enkn",
+    "timestamp": "2026-08-20T16:31:27.042Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterRss -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Enabled",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243487040_36c8",
+    "timestamp": "2026-08-20T16:31:27.040Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Flow Control*\" -ErrorAction SilentlyContinue | Select-Object -ExpandProper",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243487036_fwpd",
+    "timestamp": "2026-08-20T16:31:27.036Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243487016_3i4v",
+    "timestamp": "2026-08-20T16:31:27.016Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243487004_isgd",
+    "timestamp": "2026-08-20T16:31:27.004Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243486993_usr0",
+    "timestamp": "2026-08-20T16:31:26.993Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243486992_trhf",
+    "timestamp": "2026-08-20T16:31:26.992Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "powercfg -getactivescheme",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243486985_z9at",
+    "timestamp": "2026-08-20T16:31:26.985Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243486983_9f8m",
+    "timestamp": "2026-08-20T16:31:26.983Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243486981_qstm",
+    "timestamp": "2026-08-20T16:31:26.981Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243486956_lq37",
+    "timestamp": "2026-08-20T16:31:26.956Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-MMAgent",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243486716_8eqz",
+    "timestamp": "2026-08-20T16:31:26.716Z",
+    "category": "SYSINFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243445264_bcz9",
+    "timestamp": "2026-08-20T16:30:45.264Z",
+    "category": "SECURITY",
+    "action": "DISABLE_CFG_GAME",
+    "target": "cs2.exe",
+    "details": "CFG & ASLR mitigations removed for max 1% Low FPS",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243445263_q8u2",
+    "timestamp": "2026-08-20T16:30:45.263Z",
+    "category": "EXPLOIT_PROTECTION",
+    "action": "EXEC_SYSTEM",
+    "target": "Set-ProcessMitigation -Name \"cs2.exe\" -Disable CFG,DEP,SEHOP,StrictHandle,BottomUpASLR -ErrorAction SilentlyContinue",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243445120_52nh",
+    "timestamp": "2026-08-20T16:30:45.120Z",
+    "category": "DEFENDER",
+    "action": "ADD_GAME_EXCLUSIONS",
+    "target": "1 Directories Whitelisted",
+    "details": "Zero real-time disk scanning overhead during gameplay",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243445119_p85b",
+    "timestamp": "2026-08-20T16:30:45.119Z",
+    "category": "DEFENDER_EXCLUSION",
+    "action": "EXEC_SYSTEM",
+    "target": "Add-MpPreference -ExclusionPath \"C:\\Program Files (x86)\\Steam\" -ErrorAction SilentlyContinue",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243444978_u5wy",
+    "timestamp": "2026-08-20T16:30:44.978Z",
+    "category": "DEFENDER",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      $pref = Get-MpPreference -ErrorAction SilentlyContinue\n      [PSCustomObject]@{\n        realTimeProtection = (-no",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243444833_29kx",
+    "timestamp": "2026-08-20T16:30:44.833Z",
+    "category": "CYBERSPORT",
+    "action": "FINISH_CALIBRATION",
+    "target": "✅ Профиль Киберспорта 100% Применён",
+    "details": "Все настройки выполнены бесшумно в фоновом режиме",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243444832_gwf9",
+    "timestamp": "2026-08-20T16:30:44.832Z",
+    "category": "CS2_ENGINE",
+    "action": "WRITE_AUTOEXEC",
+    "target": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\cfg\\autoexec.cfg",
+    "details": "Sub-tick rate 786432 injected silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243444831_4ky7",
+    "timestamp": "2026-08-20T16:30:44.831Z",
+    "category": "NVIDIA_DRIVER",
+    "action": "IMPORT_NIP_PROFILE",
+    "target": "LLC-OPTIMIZED-V2.nip",
+    "details": "Ultra low-latency NVIDIA driver settings imported silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243444097_sdcp",
+    "timestamp": "2026-08-20T16:30:44.097Z",
+    "category": "CYBERSPORT",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      bcdedit /set disabledynamictick yes 2>$null\n      bcdedit /set useplatformtick yes 2>$null\n      bcdedit /deletev",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243443930_3c8g",
+    "timestamp": "2026-08-20T16:30:43.930Z",
+    "category": "REGISTRY",
+    "action": "APPLY_FULL_REG_BATCH",
+    "target": "Consolidated Tweaks Database",
+    "details": "35+ Registry & IFEO keys applied silently in background",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243443765_fqrv",
+    "timestamp": "2026-08-20T16:30:43.765Z",
+    "category": "CYBERSPORT",
+    "action": "START_ULTIMATE_CALIBRATION",
+    "target": "🚀 Запуск Профиля Киберспорта Максимум (100% Silent Background)",
+    "details": "FACEIT Mode: false",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243443763_2w37",
+    "timestamp": "2026-08-20T16:30:43.763Z",
+    "category": "SYSTEM_MAINTENANCE",
+    "action": "DISM_COMPONENT_CLEANUP",
+    "target": "WinSxS & Component Store",
+    "details": "Reclaimed storage and optimized system assemblies",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243443759_2a9q",
+    "timestamp": "2026-08-20T16:30:43.759Z",
+    "category": "MEMORY",
+    "action": "STANDBY_PURGED",
+    "target": "Standby List & Working Sets Flushed",
+    "details": "Reclaimed ~1624 MB RAM",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243443758_3jgu",
+    "timestamp": "2026-08-20T16:30:43.758Z",
+    "category": "STANDBY_PURGE",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      [System.GC]::Collect()\n      [System.GC]::WaitForPendingFinalizers()\n      Clear-RecycleBin -Force -ErrorAction S",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243443598_m3vj",
+    "timestamp": "2026-08-20T16:30:43.598Z",
+    "category": "CLEANER",
+    "action": "FLUSH_ALL_JUNK",
+    "target": "DNS, DirectX DXCache, Temp, Prefetch, SoftwareDistribution",
+    "details": "Deep cleanup completed silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243443597_4ec0",
+    "timestamp": "2026-08-20T16:30:43.597Z",
+    "category": "CLEANER",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      ipconfig /flushdns 2>$null\n      \n      $tempPaths = @($env:TEMP, \"C:\\Windows\\Temp\")\n      foreach ($tp in $tempP",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243443423_cmuf",
+    "timestamp": "2026-08-20T16:30:43.423Z",
+    "category": "SYSTEM_SNAPSHOT",
+    "action": "RESTORE_POINT",
+    "target": "snap_initial_clean",
+    "details": "System configuration rollback applied",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243443421_ns0j",
+    "timestamp": "2026-08-20T16:30:43.421Z",
+    "category": "SYSTEM_SNAPSHOT",
+    "action": "CREATE_POINT",
+    "target": "Automated Test Restore Point",
+    "details": "Created Windows Restore Point and registry backup",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243443420_0psl",
+    "timestamp": "2026-08-20T16:30:43.420Z",
+    "category": "CREATE_RESTORE_POINT",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      try {\n        Enable-ComputerRestore -Drive \"C:\" -ErrorAction SilentlyContinue\n        Checkpoint-Computer -Descr",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243443255_r0cs",
+    "timestamp": "2026-08-20T16:30:43.255Z",
+    "category": "DRIVER_STORE",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      $output = pnputil /enum-drivers\n      $drivers = @()\n      $current = @{}\n      \n      foreach ($line in ($output",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243443102_brcd",
+    "timestamp": "2026-08-20T16:30:43.102Z",
+    "category": "POWER_PLAN",
+    "action": "ACTIVATE_POWER_SCHEME",
+    "target": "igromanoff_amd_vip",
+    "details": "Activated high performance power plan",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243443098_hqz0",
+    "timestamp": "2026-08-20T16:30:43.098Z",
+    "category": "HARDWARE_PRESET",
+    "action": "APPLY_TAILORED_PROFILE",
+    "target": "AMD Ryzen 7 9800X3D + NVIDIA RTX 5070 (Esports S-Tier Flagship)",
+    "details": "Applied custom tuning for AMD Ryzen 7 9800X3D (8C/16T, 2nd Gen 3D V-Cache) + NVIDIA GeForce RTX 5070 12GB GDDR7",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243443097_s7hu",
+    "timestamp": "2026-08-20T16:30:43.097Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\cs2.exe\\PerfOptions\\IoPriority",
+    "details": "Data: 3 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243442919_8a6p",
+    "timestamp": "2026-08-20T16:30:42.919Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\cs2.exe\\PerfOptions\\CpuPriorityClass",
+    "details": "Data: 3 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243442690_wjdl",
+    "timestamp": "2026-08-20T16:30:42.690Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\PriorityControl\\Win32PrioritySeparation",
+    "details": "Data: 0x18 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243442455_lt89",
+    "timestamp": "2026-08-20T16:30:42.455Z",
+    "category": "GPU_DETECT",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243442223_ly2l",
+    "timestamp": "2026-08-20T16:30:42.223Z",
+    "category": "BIOS_TPM",
+    "action": "EXEC_SYSTEM",
+    "target": "try { (Get-CimInstance -Namespace \"root\\CIMV2\\Security\\MicrosoftTpm\" -ClassName Win32_Tpm -ErrorAction SilentlyContinue)",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243441993_npaa",
+    "timestamp": "2026-08-20T16:30:41.993Z",
+    "category": "BIOS_SECBOOT",
+    "action": "EXEC_SYSTEM",
+    "target": "try { Confirm-SecureBootUEFI } catch { $false }",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243441792_sqj1",
+    "timestamp": "2026-08-20T16:30:41.792Z",
+    "category": "BIOS_CPU",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_Processor | Select-Object VirtualizationFirmwareEnabled, Name | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243441591_lb5p",
+    "timestamp": "2026-08-20T16:30:41.591Z",
+    "category": "BIOS_RAM",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_PhysicalMemory | Select-Object Capacity, Speed, ConfiguredClockSpeed, PartNumber, Manufacturer | C",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243441336_dxcr",
+    "timestamp": "2026-08-20T16:30:41.336Z",
+    "category": "BIOS_INFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_BIOS | Select-Object SMBIOSBIOSVersion, ReleaseDate, Manufacturer, SMBIOSMajorVersion, SMBIOSMinor",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243440212_9iuz",
+    "timestamp": "2026-08-20T16:30:40.212Z",
+    "category": "BIOS_MB",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_BaseBoard | Select-Object Manufacturer, Product, Version, SerialNumber | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243439855_yp27",
+    "timestamp": "2026-08-20T16:30:39.855Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Flow Control*\" -ErrorAction SilentlyContinue | Select-Object -ExpandProper",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243439852_ua0i",
+    "timestamp": "2026-08-20T16:30:39.852Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterRss -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Enabled",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243439842_1jnj",
+    "timestamp": "2026-08-20T16:30:39.842Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Interrupt Moderation*\" -ErrorAction SilentlyContinue | Select-Object -Expa",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243439834_aus3",
+    "timestamp": "2026-08-20T16:30:39.834Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243439822_hzst",
+    "timestamp": "2026-08-20T16:30:39.822Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243439819_j9ne",
+    "timestamp": "2026-08-20T16:30:39.819Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243439798_5hdd",
+    "timestamp": "2026-08-20T16:30:39.798Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243439784_zaal",
+    "timestamp": "2026-08-20T16:30:39.784Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "powercfg -getactivescheme",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243439780_ay6w",
+    "timestamp": "2026-08-20T16:30:39.780Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243439775_3fs8",
+    "timestamp": "2026-08-20T16:30:39.775Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243439772_yd3k",
+    "timestamp": "2026-08-20T16:30:39.772Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243439744_flyz",
+    "timestamp": "2026-08-20T16:30:39.744Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-MMAgent",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243439504_ath4",
+    "timestamp": "2026-08-20T16:30:39.504Z",
+    "category": "SYSINFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243396987_07gd",
+    "timestamp": "2026-08-20T16:29:56.987Z",
+    "category": "SECURITY",
+    "action": "DISABLE_CFG_GAME",
+    "target": "cs2.exe",
+    "details": "CFG & ASLR mitigations removed for max 1% Low FPS",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243396986_6p3r",
+    "timestamp": "2026-08-20T16:29:56.986Z",
+    "category": "EXPLOIT_PROTECTION",
+    "action": "EXEC_SYSTEM",
+    "target": "Set-ProcessMitigation -Name \"cs2.exe\" -Disable CFG,DEP,SEHOP,StrictHandle,BottomUpASLR -ErrorAction SilentlyContinue",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243396843_e15s",
+    "timestamp": "2026-08-20T16:29:56.843Z",
+    "category": "DEFENDER",
+    "action": "ADD_GAME_EXCLUSIONS",
+    "target": "1 Directories Whitelisted",
+    "details": "Zero real-time disk scanning overhead during gameplay",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243396843_9i6t",
+    "timestamp": "2026-08-20T16:29:56.843Z",
+    "category": "DEFENDER_EXCLUSION",
+    "action": "EXEC_SYSTEM",
+    "target": "Add-MpPreference -ExclusionPath \"C:\\Program Files (x86)\\Steam\" -ErrorAction SilentlyContinue",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243396705_39oy",
+    "timestamp": "2026-08-20T16:29:56.705Z",
+    "category": "DEFENDER",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      $pref = Get-MpPreference -ErrorAction SilentlyContinue\n      [PSCustomObject]@{\n        realTimeProtection = (-no",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243396559_zobe",
+    "timestamp": "2026-08-20T16:29:56.559Z",
+    "category": "CYBERSPORT",
+    "action": "FINISH_CALIBRATION",
+    "target": "✅ Профиль Киберспорта 100% Применён",
+    "details": "Все настройки выполнены бесшумно в фоновом режиме",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243396558_rb45",
+    "timestamp": "2026-08-20T16:29:56.558Z",
+    "category": "CS2_ENGINE",
+    "action": "WRITE_AUTOEXEC",
+    "target": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\cfg\\autoexec.cfg",
+    "details": "Sub-tick rate 786432 injected silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243396557_gjaa",
+    "timestamp": "2026-08-20T16:29:56.557Z",
+    "category": "NVIDIA_DRIVER",
+    "action": "IMPORT_NIP_PROFILE",
+    "target": "LLC-OPTIMIZED-V2.nip",
+    "details": "Ultra low-latency NVIDIA driver settings imported silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243395855_knem",
+    "timestamp": "2026-08-20T16:29:55.855Z",
+    "category": "CYBERSPORT",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      bcdedit /set disabledynamictick yes 2>$null\n      bcdedit /set useplatformtick yes 2>$null\n      bcdedit /deletev",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243395696_biek",
+    "timestamp": "2026-08-20T16:29:55.696Z",
+    "category": "REGISTRY",
+    "action": "APPLY_FULL_REG_BATCH",
+    "target": "Consolidated Tweaks Database",
+    "details": "35+ Registry & IFEO keys applied silently in background",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243395529_6rme",
+    "timestamp": "2026-08-20T16:29:55.529Z",
+    "category": "CYBERSPORT",
+    "action": "START_ULTIMATE_CALIBRATION",
+    "target": "🚀 Запуск Профиля Киберспорта Максимум (100% Silent Background)",
+    "details": "FACEIT Mode: false",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243395500_aw01",
+    "timestamp": "2026-08-20T16:29:55.500Z",
+    "category": "DISM",
+    "action": "START_WINSXS_CLEANUP",
+    "target": "Dism /online /Cleanup-Image /StartComponentCleanup /ResetBase",
+    "details": "Purging superseded Windows Update packages and WinSxS delta files",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243395499_fc1x",
+    "timestamp": "2026-08-20T16:29:55.499Z",
+    "category": "MEMORY",
+    "action": "STANDBY_PURGED",
+    "target": "Standby List & Working Sets Flushed",
+    "details": "Reclaimed ~1286 MB RAM",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243395498_c88h",
+    "timestamp": "2026-08-20T16:29:55.498Z",
+    "category": "STANDBY_PURGE",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      [System.GC]::Collect()\n      [System.GC]::WaitForPendingFinalizers()\n      Clear-RecycleBin -Force -ErrorAction S",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243395333_0tvw",
+    "timestamp": "2026-08-20T16:29:55.333Z",
+    "category": "CLEANER",
+    "action": "FLUSH_ALL_JUNK",
+    "target": "DNS, DirectX DXCache, Temp, Prefetch, SoftwareDistribution",
+    "details": "Deep cleanup completed silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243395332_4oga",
+    "timestamp": "2026-08-20T16:29:55.332Z",
+    "category": "CLEANER",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      ipconfig /flushdns 2>$null\n      \n      $tempPaths = @($env:TEMP, \"C:\\Windows\\Temp\")\n      foreach ($tp in $tempP",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243395162_v2y8",
+    "timestamp": "2026-08-20T16:29:55.162Z",
+    "category": "SYSTEM_SNAPSHOT",
+    "action": "RESTORE_POINT",
+    "target": "snap_initial_clean",
+    "details": "System configuration rollback applied",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243395160_24rk",
+    "timestamp": "2026-08-20T16:29:55.160Z",
+    "category": "SYSTEM_SNAPSHOT",
+    "action": "CREATE_POINT",
+    "target": "Automated Test Restore Point",
+    "details": "Created Windows Restore Point and registry backup",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243395159_zvdk",
+    "timestamp": "2026-08-20T16:29:55.159Z",
+    "category": "CREATE_RESTORE_POINT",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      try {\n        Enable-ComputerRestore -Drive \"C:\" -ErrorAction SilentlyContinue\n        Checkpoint-Computer -Descr",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243395000_fpl9",
+    "timestamp": "2026-08-20T16:29:55.000Z",
+    "category": "DRIVER_STORE",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      $output = pnputil /enum-drivers\n      $drivers = @()\n      $current = @{}\n      \n      foreach ($line in ($output",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243394841_rddr",
+    "timestamp": "2026-08-20T16:29:54.841Z",
+    "category": "POWER_PLAN",
+    "action": "ACTIVATE_POWER_SCHEME",
+    "target": "igromanoff_amd_vip",
+    "details": "Activated high performance power plan",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243394838_4c7r",
+    "timestamp": "2026-08-20T16:29:54.838Z",
+    "category": "HARDWARE_PRESET",
+    "action": "APPLY_TAILORED_PROFILE",
+    "target": "AMD Ryzen 7 9800X3D + NVIDIA RTX 5070 (Esports S-Tier Flagship)",
+    "details": "Applied custom tuning for AMD Ryzen 7 9800X3D (8C/16T, 2nd Gen 3D V-Cache) + NVIDIA GeForce RTX 5070 12GB GDDR7",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243394837_di3v",
+    "timestamp": "2026-08-20T16:29:54.837Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\cs2.exe\\PerfOptions\\IoPriority",
+    "details": "Data: 3 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243394634_297r",
+    "timestamp": "2026-08-20T16:29:54.634Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\cs2.exe\\PerfOptions\\CpuPriorityClass",
+    "details": "Data: 3 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243394403_zoh2",
+    "timestamp": "2026-08-20T16:29:54.403Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\PriorityControl\\Win32PrioritySeparation",
+    "details": "Data: 0x18 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243394182_n490",
+    "timestamp": "2026-08-20T16:29:54.182Z",
+    "category": "GPU_DETECT",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243393972_yy1z",
+    "timestamp": "2026-08-20T16:29:53.972Z",
+    "category": "BIOS_TPM",
+    "action": "EXEC_SYSTEM",
+    "target": "try { (Get-CimInstance -Namespace \"root\\CIMV2\\Security\\MicrosoftTpm\" -ClassName Win32_Tpm -ErrorAction SilentlyContinue)",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243393768_9duo",
+    "timestamp": "2026-08-20T16:29:53.768Z",
+    "category": "BIOS_SECBOOT",
+    "action": "EXEC_SYSTEM",
+    "target": "try { Confirm-SecureBootUEFI } catch { $false }",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243393556_m67x",
+    "timestamp": "2026-08-20T16:29:53.556Z",
+    "category": "BIOS_CPU",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_Processor | Select-Object VirtualizationFirmwareEnabled, Name | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243393341_y5pn",
+    "timestamp": "2026-08-20T16:29:53.341Z",
+    "category": "BIOS_RAM",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_PhysicalMemory | Select-Object Capacity, Speed, ConfiguredClockSpeed, PartNumber, Manufacturer | C",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243393065_9rgk",
+    "timestamp": "2026-08-20T16:29:53.065Z",
+    "category": "BIOS_INFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_BIOS | Select-Object SMBIOSBIOSVersion, ReleaseDate, Manufacturer, SMBIOSMajorVersion, SMBIOSMinor",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243391908_6ys2",
+    "timestamp": "2026-08-20T16:29:51.908Z",
+    "category": "BIOS_MB",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_BaseBoard | Select-Object Manufacturer, Product, Version, SerialNumber | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243391626_nttz",
+    "timestamp": "2026-08-20T16:29:51.626Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterRss -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Enabled",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243391612_iuma",
+    "timestamp": "2026-08-20T16:29:51.612Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Flow Control*\" -ErrorAction SilentlyContinue | Select-Object -ExpandProper",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243391608_4011",
+    "timestamp": "2026-08-20T16:29:51.608Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Interrupt Moderation*\" -ErrorAction SilentlyContinue | Select-Object -Expa",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243391605_phjy",
+    "timestamp": "2026-08-20T16:29:51.605Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243391604_txbe",
+    "timestamp": "2026-08-20T16:29:51.604Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243391584_tl9z",
+    "timestamp": "2026-08-20T16:29:51.584Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243391564_ezae",
+    "timestamp": "2026-08-20T16:29:51.564Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243391553_zo7c",
+    "timestamp": "2026-08-20T16:29:51.553Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "powercfg -getactivescheme",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243391548_q9k2",
+    "timestamp": "2026-08-20T16:29:51.548Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243391541_01j8",
+    "timestamp": "2026-08-20T16:29:51.541Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243391538_f479",
+    "timestamp": "2026-08-20T16:29:51.538Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243391525_rpyv",
+    "timestamp": "2026-08-20T16:29:51.525Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-MMAgent",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243391287_njta",
+    "timestamp": "2026-08-20T16:29:51.287Z",
+    "category": "SYSINFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243364373_zxz5",
+    "timestamp": "2026-08-20T16:29:24.373Z",
+    "category": "SECURITY",
+    "action": "DISABLE_CFG_GAME",
+    "target": "cs2.exe",
+    "details": "CFG & ASLR mitigations removed for max 1% Low FPS",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243364372_oe7q",
+    "timestamp": "2026-08-20T16:29:24.372Z",
+    "category": "EXPLOIT_PROTECTION",
+    "action": "EXEC_SYSTEM",
+    "target": "Set-ProcessMitigation -Name \"cs2.exe\" -Disable CFG,DEP,SEHOP,StrictHandle,BottomUpASLR -ErrorAction SilentlyContinue",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243364230_me0z",
+    "timestamp": "2026-08-20T16:29:24.230Z",
+    "category": "DEFENDER",
+    "action": "ADD_GAME_EXCLUSIONS",
+    "target": "1 Directories Whitelisted",
+    "details": "Zero real-time disk scanning overhead during gameplay",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243364229_rvmd",
+    "timestamp": "2026-08-20T16:29:24.229Z",
+    "category": "DEFENDER_EXCLUSION",
+    "action": "EXEC_SYSTEM",
+    "target": "Add-MpPreference -ExclusionPath \"C:\\Program Files (x86)\\Steam\" -ErrorAction SilentlyContinue",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243364091_pl3m",
+    "timestamp": "2026-08-20T16:29:24.091Z",
+    "category": "DEFENDER",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      $pref = Get-MpPreference -ErrorAction SilentlyContinue\n      [PSCustomObject]@{\n        realTimeProtection = (-no",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243363945_ivo9",
+    "timestamp": "2026-08-20T16:29:23.945Z",
+    "category": "CYBERSPORT",
+    "action": "FINISH_CALIBRATION",
+    "target": "✅ Профиль Киберспорта 100% Применён",
+    "details": "Все настройки выполнены бесшумно в фоновом режиме",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243363944_dbof",
+    "timestamp": "2026-08-20T16:29:23.944Z",
+    "category": "CS2_ENGINE",
+    "action": "WRITE_AUTOEXEC",
+    "target": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\cfg\\autoexec.cfg",
+    "details": "Sub-tick rate 786432 injected silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243363943_e0hh",
+    "timestamp": "2026-08-20T16:29:23.943Z",
+    "category": "NVIDIA_DRIVER",
+    "action": "IMPORT_NIP_PROFILE",
+    "target": "LLC-OPTIMIZED-V2.nip",
+    "details": "Ultra low-latency NVIDIA driver settings imported silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243363243_8ve8",
+    "timestamp": "2026-08-20T16:29:23.243Z",
+    "category": "CYBERSPORT",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      bcdedit /set disabledynamictick yes 2>$null\n      bcdedit /set useplatformtick yes 2>$null\n      bcdedit /deletev",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243363091_egzm",
+    "timestamp": "2026-08-20T16:29:23.091Z",
+    "category": "REGISTRY",
+    "action": "APPLY_FULL_REG_BATCH",
+    "target": "Consolidated Tweaks Database",
+    "details": "35+ Registry & IFEO keys applied silently in background",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243362934_3zkh",
+    "timestamp": "2026-08-20T16:29:22.934Z",
+    "category": "CYBERSPORT",
+    "action": "START_ULTIMATE_CALIBRATION",
+    "target": "🚀 Запуск Профиля Киберспорта Максимум (100% Silent Background)",
+    "details": "FACEIT Mode: false",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243362908_0t7p",
+    "timestamp": "2026-08-20T16:29:22.908Z",
+    "category": "DISM",
+    "action": "START_WINSXS_CLEANUP",
+    "target": "Dism /online /Cleanup-Image /StartComponentCleanup /ResetBase",
+    "details": "Purging superseded Windows Update packages and WinSxS delta files",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243362906_vfen",
+    "timestamp": "2026-08-20T16:29:22.906Z",
+    "category": "MEMORY",
+    "action": "STANDBY_PURGED",
+    "target": "Standby List & Working Sets Flushed",
+    "details": "Reclaimed ~1907 MB RAM",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243362904_03i3",
+    "timestamp": "2026-08-20T16:29:22.904Z",
+    "category": "STANDBY_PURGE",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      [System.GC]::Collect()\n      [System.GC]::WaitForPendingFinalizers()\n      Clear-RecycleBin -Force -ErrorAction S",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243362751_68cl",
+    "timestamp": "2026-08-20T16:29:22.751Z",
+    "category": "CLEANER",
+    "action": "FLUSH_ALL_JUNK",
+    "target": "DNS, DirectX DXCache, Temp, Prefetch, SoftwareDistribution",
+    "details": "Deep cleanup completed silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243362750_rtvj",
+    "timestamp": "2026-08-20T16:29:22.750Z",
+    "category": "CLEANER",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      ipconfig /flushdns 2>$null\n      \n      $tempPaths = @($env:TEMP, \"C:\\Windows\\Temp\")\n      foreach ($tp in $tempP",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243362572_muiu",
+    "timestamp": "2026-08-20T16:29:22.572Z",
+    "category": "SYSTEM_SNAPSHOT",
+    "action": "RESTORE_POINT",
+    "target": "snap_initial_clean",
+    "details": "System configuration rollback applied",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243362570_quob",
+    "timestamp": "2026-08-20T16:29:22.570Z",
+    "category": "SYSTEM_SNAPSHOT",
+    "action": "CREATE_POINT",
+    "target": "Automated Test Restore Point",
+    "details": "Created Windows Restore Point and registry backup",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243362568_mq18",
+    "timestamp": "2026-08-20T16:29:22.568Z",
+    "category": "CREATE_RESTORE_POINT",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      try {\n        Enable-ComputerRestore -Drive \"C:\" -ErrorAction SilentlyContinue\n        Checkpoint-Computer -Descr",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243362411_wp9g",
+    "timestamp": "2026-08-20T16:29:22.411Z",
+    "category": "DRIVER_STORE",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      $output = pnputil /enum-drivers\n      $drivers = @()\n      $current = @{}\n      \n      foreach ($line in ($output",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243362254_x5m7",
+    "timestamp": "2026-08-20T16:29:22.254Z",
+    "category": "POWER_PLAN",
+    "action": "ACTIVATE_POWER_SCHEME",
+    "target": "igromanoff_amd_vip",
+    "details": "Activated high performance power plan",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243362251_0vtp",
+    "timestamp": "2026-08-20T16:29:22.251Z",
+    "category": "HARDWARE_PRESET",
+    "action": "APPLY_TAILORED_PROFILE",
+    "target": "AMD Ryzen 7 9800X3D + NVIDIA RTX 5070 (Esports S-Tier Flagship)",
+    "details": "Applied custom tuning for AMD Ryzen 7 9800X3D (8C/16T, 2nd Gen 3D V-Cache) + NVIDIA GeForce RTX 5070 12GB GDDR7",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243362250_fcrc",
+    "timestamp": "2026-08-20T16:29:22.250Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\cs2.exe\\PerfOptions\\IoPriority",
+    "details": "Data: 3 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243362075_76co",
+    "timestamp": "2026-08-20T16:29:22.075Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\cs2.exe\\PerfOptions\\CpuPriorityClass",
+    "details": "Data: 3 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243361835_rqld",
+    "timestamp": "2026-08-20T16:29:21.835Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\PriorityControl\\Win32PrioritySeparation",
+    "details": "Data: 0x18 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243361586_pga0",
+    "timestamp": "2026-08-20T16:29:21.586Z",
+    "category": "GPU_DETECT",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243361338_mtvd",
+    "timestamp": "2026-08-20T16:29:21.338Z",
+    "category": "BIOS_TPM",
+    "action": "EXEC_SYSTEM",
+    "target": "try { (Get-CimInstance -Namespace \"root\\CIMV2\\Security\\MicrosoftTpm\" -ClassName Win32_Tpm -ErrorAction SilentlyContinue)",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243361126_nuex",
+    "timestamp": "2026-08-20T16:29:21.126Z",
+    "category": "BIOS_SECBOOT",
+    "action": "EXEC_SYSTEM",
+    "target": "try { Confirm-SecureBootUEFI } catch { $false }",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243360929_vg4b",
+    "timestamp": "2026-08-20T16:29:20.929Z",
+    "category": "BIOS_CPU",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_Processor | Select-Object VirtualizationFirmwareEnabled, Name | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243360742_csq6",
+    "timestamp": "2026-08-20T16:29:20.742Z",
+    "category": "BIOS_RAM",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_PhysicalMemory | Select-Object Capacity, Speed, ConfiguredClockSpeed, PartNumber, Manufacturer | C",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243360502_ahv1",
+    "timestamp": "2026-08-20T16:29:20.502Z",
+    "category": "BIOS_INFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_BIOS | Select-Object SMBIOSBIOSVersion, ReleaseDate, Manufacturer, SMBIOSMajorVersion, SMBIOSMinor",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243359287_3cc6",
+    "timestamp": "2026-08-20T16:29:19.287Z",
+    "category": "BIOS_MB",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_BaseBoard | Select-Object Manufacturer, Product, Version, SerialNumber | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243358983_w8vs",
+    "timestamp": "2026-08-20T16:29:18.983Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Interrupt Moderation*\" -ErrorAction SilentlyContinue | Select-Object -Expa",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243358982_jzx5",
+    "timestamp": "2026-08-20T16:29:18.982Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Flow Control*\" -ErrorAction SilentlyContinue | Select-Object -ExpandProper",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243358981_mbkk",
+    "timestamp": "2026-08-20T16:29:18.981Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterRss -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Enabled",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243358971_gijk",
+    "timestamp": "2026-08-20T16:29:18.971Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243358961_crqr",
+    "timestamp": "2026-08-20T16:29:18.961Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243358955_10n3",
+    "timestamp": "2026-08-20T16:29:18.955Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243358915_s7xw",
+    "timestamp": "2026-08-20T16:29:18.915Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243358910_7b1i",
+    "timestamp": "2026-08-20T16:29:18.910Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "powercfg -getactivescheme",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243358901_40im",
+    "timestamp": "2026-08-20T16:29:18.901Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243358896_wcop",
+    "timestamp": "2026-08-20T16:29:18.896Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243358886_h62t",
+    "timestamp": "2026-08-20T16:29:18.886Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243358859_8hkw",
+    "timestamp": "2026-08-20T16:29:18.859Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-MMAgent",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243358613_u6xs",
+    "timestamp": "2026-08-20T16:29:18.613Z",
+    "category": "SYSINFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243321094_r3sl",
+    "timestamp": "2026-08-20T16:28:41.094Z",
+    "category": "SECURITY",
+    "action": "DISABLE_CFG_GAME",
+    "target": "cs2.exe",
+    "details": "CFG & ASLR mitigations removed for max 1% Low FPS",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243321093_mykb",
+    "timestamp": "2026-08-20T16:28:41.093Z",
+    "category": "EXPLOIT_PROTECTION",
+    "action": "EXEC_SYSTEM",
+    "target": "Set-ProcessMitigation -Name \"cs2.exe\" -Disable CFG,DEP,SEHOP,StrictHandle,BottomUpASLR -ErrorAction SilentlyContinue",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243320947_vujo",
+    "timestamp": "2026-08-20T16:28:40.947Z",
+    "category": "DEFENDER",
+    "action": "ADD_GAME_EXCLUSIONS",
+    "target": "1 Directories Whitelisted",
+    "details": "Zero real-time disk scanning overhead during gameplay",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243320946_dj2i",
+    "timestamp": "2026-08-20T16:28:40.946Z",
+    "category": "DEFENDER_EXCLUSION",
+    "action": "EXEC_SYSTEM",
+    "target": "Add-MpPreference -ExclusionPath \"C:\\Program Files (x86)\\Steam\" -ErrorAction SilentlyContinue",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243320804_uuxo",
+    "timestamp": "2026-08-20T16:28:40.804Z",
+    "category": "DEFENDER",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      $pref = Get-MpPreference -ErrorAction SilentlyContinue\n      [PSCustomObject]@{\n        realTimeProtection = (-no",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243320658_kmik",
+    "timestamp": "2026-08-20T16:28:40.658Z",
+    "category": "CYBERSPORT",
+    "action": "FINISH_CALIBRATION",
+    "target": "✅ Профиль Киберспорта 100% Применён",
+    "details": "Все настройки выполнены бесшумно в фоновом режиме",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243320657_7cn4",
+    "timestamp": "2026-08-20T16:28:40.657Z",
+    "category": "CS2_ENGINE",
+    "action": "WRITE_AUTOEXEC",
+    "target": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\cfg\\autoexec.cfg",
+    "details": "Sub-tick rate 786432 injected silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243320655_8x8m",
+    "timestamp": "2026-08-20T16:28:40.655Z",
+    "category": "NVIDIA_DRIVER",
+    "action": "IMPORT_NIP_PROFILE",
+    "target": "LLC-OPTIMIZED-V2.nip",
+    "details": "Ultra low-latency NVIDIA driver settings imported silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243319914_owt1",
+    "timestamp": "2026-08-20T16:28:39.914Z",
+    "category": "CYBERSPORT",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      bcdedit /set disabledynamictick yes 2>$null\n      bcdedit /set useplatformtick yes 2>$null\n      bcdedit /deletev",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243319745_f6gt",
+    "timestamp": "2026-08-20T16:28:39.745Z",
+    "category": "REGISTRY",
+    "action": "APPLY_FULL_REG_BATCH",
+    "target": "Consolidated Tweaks Database",
+    "details": "35+ Registry & IFEO keys applied silently in background",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243319569_hixn",
+    "timestamp": "2026-08-20T16:28:39.569Z",
+    "category": "CYBERSPORT",
+    "action": "START_ULTIMATE_CALIBRATION",
+    "target": "🚀 Запуск Профиля Киберспорта Максимум (100% Silent Background)",
+    "details": "FACEIT Mode: false",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243319536_abnc",
+    "timestamp": "2026-08-20T16:28:39.536Z",
+    "category": "DISM",
+    "action": "START_WINSXS_CLEANUP",
+    "target": "Dism /online /Cleanup-Image /StartComponentCleanup /ResetBase",
+    "details": "Purging superseded Windows Update packages and WinSxS delta files",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243319534_1h77",
+    "timestamp": "2026-08-20T16:28:39.534Z",
+    "category": "MEMORY",
+    "action": "STANDBY_PURGED",
+    "target": "Standby List & Working Sets Flushed",
+    "details": "Reclaimed ~1271 MB RAM",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243319532_p0pi",
+    "timestamp": "2026-08-20T16:28:39.532Z",
+    "category": "STANDBY_PURGE",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      [System.GC]::Collect()\n      [System.GC]::WaitForPendingFinalizers()\n      Clear-RecycleBin -Force -ErrorAction S",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243319365_27i0",
+    "timestamp": "2026-08-20T16:28:39.365Z",
+    "category": "CLEANER",
+    "action": "FLUSH_ALL_JUNK",
+    "target": "DNS, DirectX DXCache, Temp, Prefetch, SoftwareDistribution",
+    "details": "Deep cleanup completed silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243319364_6xo4",
+    "timestamp": "2026-08-20T16:28:39.364Z",
+    "category": "CLEANER",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      ipconfig /flushdns 2>$null\n      \n      $tempPaths = @($env:TEMP, \"C:\\Windows\\Temp\")\n      foreach ($tp in $tempP",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243319184_1wco",
+    "timestamp": "2026-08-20T16:28:39.184Z",
+    "category": "SYSTEM_SNAPSHOT",
+    "action": "RESTORE_POINT",
+    "target": "snap_initial_clean",
+    "details": "System configuration rollback applied",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243319182_lr14",
+    "timestamp": "2026-08-20T16:28:39.182Z",
+    "category": "CREATE_RESTORE_POINT",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      try {\n        Enable-ComputerRestore -Drive \"C:\" -ErrorAction SilentlyContinue\n        Checkpoint-Computer -Descr",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243319028_jjod",
+    "timestamp": "2026-08-20T16:28:39.028Z",
+    "category": "DRIVER_STORE",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      $output = pnputil /enum-drivers\n      $drivers = @()\n      $current = @{}\n      \n      foreach ($line in ($output",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243318856_ga1a",
+    "timestamp": "2026-08-20T16:28:38.856Z",
+    "category": "POWER_PLAN",
+    "action": "ACTIVATE_POWER_SCHEME",
+    "target": "igromanoff_amd_vip",
+    "details": "Activated high performance power plan",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243318852_k3rk",
+    "timestamp": "2026-08-20T16:28:38.852Z",
+    "category": "HARDWARE_PRESET",
+    "action": "APPLY_TAILORED_PROFILE",
+    "target": "AMD Ryzen 7 9800X3D + NVIDIA RTX 5070 (Esports S-Tier Flagship)",
+    "details": "Applied custom tuning for AMD Ryzen 7 9800X3D (8C/16T, 2nd Gen 3D V-Cache) + NVIDIA GeForce RTX 5070 12GB GDDR7",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243318851_byww",
+    "timestamp": "2026-08-20T16:28:38.851Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\cs2.exe\\PerfOptions\\IoPriority",
+    "details": "Data: 3 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243318643_93tu",
+    "timestamp": "2026-08-20T16:28:38.643Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\cs2.exe\\PerfOptions\\CpuPriorityClass",
+    "details": "Data: 3 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243318421_0z51",
+    "timestamp": "2026-08-20T16:28:38.421Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\PriorityControl\\Win32PrioritySeparation",
+    "details": "Data: 0x18 (Silent Background)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243318182_rtpd",
+    "timestamp": "2026-08-20T16:28:38.182Z",
+    "category": "GPU_DETECT",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243317955_85dk",
+    "timestamp": "2026-08-20T16:28:37.955Z",
+    "category": "BIOS_TPM",
+    "action": "EXEC_SYSTEM",
+    "target": "try { (Get-CimInstance -Namespace \"root\\CIMV2\\Security\\MicrosoftTpm\" -ClassName Win32_Tpm -ErrorAction SilentlyContinue)",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243317753_duxf",
+    "timestamp": "2026-08-20T16:28:37.753Z",
+    "category": "BIOS_SECBOOT",
+    "action": "EXEC_SYSTEM",
+    "target": "try { Confirm-SecureBootUEFI } catch { $false }",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243317568_ecl7",
+    "timestamp": "2026-08-20T16:28:37.568Z",
+    "category": "BIOS_CPU",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_Processor | Select-Object VirtualizationFirmwareEnabled, Name | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243317360_tc7l",
+    "timestamp": "2026-08-20T16:28:37.360Z",
+    "category": "BIOS_RAM",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_PhysicalMemory | Select-Object Capacity, Speed, ConfiguredClockSpeed, PartNumber, Manufacturer | C",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243316926_xpda",
+    "timestamp": "2026-08-20T16:28:36.926Z",
+    "category": "BIOS_INFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_BIOS | Select-Object SMBIOSBIOSVersion, ReleaseDate, Manufacturer, SMBIOSMajorVersion, SMBIOSMinor",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243315855_2rx6",
+    "timestamp": "2026-08-20T16:28:35.855Z",
+    "category": "BIOS_MB",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_BaseBoard | Select-Object Manufacturer, Product, Version, SerialNumber | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243315581_v58t",
+    "timestamp": "2026-08-20T16:28:35.581Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterRss -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Enabled",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243315569_x2iz",
+    "timestamp": "2026-08-20T16:28:35.569Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Flow Control*\" -ErrorAction SilentlyContinue | Select-Object -ExpandProper",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243315565_ud7z",
+    "timestamp": "2026-08-20T16:28:35.565Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243315564_lqkk",
+    "timestamp": "2026-08-20T16:28:35.564Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Interrupt Moderation*\" -ErrorAction SilentlyContinue | Select-Object -Expa",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243315561_7f0h",
+    "timestamp": "2026-08-20T16:28:35.561Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243315554_258f",
+    "timestamp": "2026-08-20T16:28:35.554Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243315515_4zdx",
+    "timestamp": "2026-08-20T16:28:35.515Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243315509_wewj",
+    "timestamp": "2026-08-20T16:28:35.509Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243315504_hx3l",
+    "timestamp": "2026-08-20T16:28:35.504Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "powercfg -getactivescheme",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243315502_wz05",
+    "timestamp": "2026-08-20T16:28:35.502Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243315477_izen",
+    "timestamp": "2026-08-20T16:28:35.477Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243315474_ivwq",
+    "timestamp": "2026-08-20T16:28:35.474Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-MMAgent",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243315230_c67z",
+    "timestamp": "2026-08-20T16:28:35.230Z",
+    "category": "SYSINFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243276635_qfaa",
+    "timestamp": "2026-08-20T16:27:56.635Z",
+    "category": "CLEANER",
+    "action": "FLUSH_ALL_JUNK",
+    "target": "DNS, DirectX DXCache, Temp, Prefetch, SoftwareDistribution",
+    "details": "Deep cleanup completed silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243276634_vqvx",
+    "timestamp": "2026-08-20T16:27:56.634Z",
+    "category": "CLEANER",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      ipconfig /flushdns 2>$null\n      \n      $tempPaths = @($env:TEMP, \"C:\\Windows\\Temp\")\n      foreach ($tp in $tempP",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243276348_lm05",
+    "timestamp": "2026-08-20T16:27:56.348Z",
+    "category": "DRIVER_STORE",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      $output = pnputil /enum-drivers\n      $drivers = @()\n      $current = @{}\n      \n      foreach ($line in ($output",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243276067_f69b",
+    "timestamp": "2026-08-20T16:27:56.067Z",
+    "category": "GPU_DETECT",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243275819_uhqh",
+    "timestamp": "2026-08-20T16:27:55.819Z",
+    "category": "BIOS_TPM",
+    "action": "EXEC_SYSTEM",
+    "target": "try { (Get-CimInstance -Namespace \"root\\CIMV2\\Security\\MicrosoftTpm\" -ClassName Win32_Tpm -ErrorAction SilentlyContinue)",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243275606_ror6",
+    "timestamp": "2026-08-20T16:27:55.606Z",
+    "category": "BIOS_SECBOOT",
+    "action": "EXEC_SYSTEM",
+    "target": "try { Confirm-SecureBootUEFI } catch { $false }",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243275402_flll",
+    "timestamp": "2026-08-20T16:27:55.402Z",
+    "category": "BIOS_CPU",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_Processor | Select-Object VirtualizationFirmwareEnabled, Name | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243275220_ylf7",
+    "timestamp": "2026-08-20T16:27:55.220Z",
+    "category": "BIOS_RAM",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_PhysicalMemory | Select-Object Capacity, Speed, ConfiguredClockSpeed, PartNumber, Manufacturer | C",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243274977_af8w",
+    "timestamp": "2026-08-20T16:27:54.977Z",
+    "category": "BIOS_INFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_BIOS | Select-Object SMBIOSBIOSVersion, ReleaseDate, Manufacturer, SMBIOSMajorVersion, SMBIOSMinor",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243273959_t8sg",
+    "timestamp": "2026-08-20T16:27:53.959Z",
+    "category": "BIOS_MB",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_BaseBoard | Select-Object Manufacturer, Product, Version, SerialNumber | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243273606_gkbu",
+    "timestamp": "2026-08-20T16:27:53.606Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterRss -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Enabled",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243273605_sz6l",
+    "timestamp": "2026-08-20T16:27:53.605Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Flow Control*\" -ErrorAction SilentlyContinue | Select-Object -ExpandProper",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243273592_hkuc",
+    "timestamp": "2026-08-20T16:27:53.592Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243273587_4nqq",
+    "timestamp": "2026-08-20T16:27:53.587Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-NetAdapterAdvancedProperty -DisplayName \"*Interrupt Moderation*\" -ErrorAction SilentlyContinue | Select-Object -Expa",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243273583_psyd",
+    "timestamp": "2026-08-20T16:27:53.583Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243273581_2t4x",
+    "timestamp": "2026-08-20T16:27:53.581Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243273539_qond",
+    "timestamp": "2026-08-20T16:27:53.539Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243273526_xgr4",
+    "timestamp": "2026-08-20T16:27:53.526Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243273522_d42t",
+    "timestamp": "2026-08-20T16:27:53.522Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "powercfg -getactivescheme",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243273516_gxbk",
+    "timestamp": "2026-08-20T16:27:53.516Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243273495_k4k3",
+    "timestamp": "2026-08-20T16:27:53.495Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243273477_1vuh",
+    "timestamp": "2026-08-20T16:27:53.477Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-MMAgent",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787243273231_g5ba",
+    "timestamp": "2026-08-20T16:27:53.231Z",
+    "category": "SYSINFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112941384_xcd0",
+    "timestamp": "2026-08-19T04:15:41.384Z",
+    "category": "CYBERSPORT",
+    "action": "FINISH_CALIBRATION",
+    "target": "✅ Профиль Киберспорта 100% Применён",
+    "details": "Все настройки выполнены бесшумно в фоновом режиме",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112941384_t3ct",
+    "timestamp": "2026-08-19T04:15:41.384Z",
+    "category": "CS2_ENGINE",
+    "action": "WRITE_AUTOEXEC",
+    "target": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\cfg\\autoexec.cfg",
+    "details": "Sub-tick rate 786432 injected silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112941383_k5j1",
+    "timestamp": "2026-08-19T04:15:41.383Z",
+    "category": "NVIDIA_DRIVER",
+    "action": "IMPORT_NIP_PROFILE",
+    "target": "LLC-OPTIMIZED-V2.nip",
+    "details": "Ultra low-latency NVIDIA driver settings imported silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112940692_i4w4",
+    "timestamp": "2026-08-19T04:15:40.692Z",
+    "category": "CYBERSPORT",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      bcdedit /set disabledynamictick yes 2>$null\n      bcdedit /set useplatformtick yes 2>$null\n      bcdedit /deletev",
+    "details": "Done [Silent Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112940558_4t6a",
+    "timestamp": "2026-08-19T04:15:40.558Z",
+    "category": "REGISTRY",
+    "action": "APPLY_FULL_REG_BATCH",
+    "target": "Consolidated Tweaks Database",
+    "details": "35+ Registry & IFEO keys applied silently in background",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112940412_domu",
+    "timestamp": "2026-08-19T04:15:40.412Z",
+    "category": "CYBERSPORT",
+    "action": "START_ULTIMATE_CALIBRATION",
+    "target": "🚀 Запуск Профиля Киберспорта Максимум (100% Silent Background)",
+    "details": "FACEIT Mode: false",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112879090_382d",
+    "timestamp": "2026-08-19T04:14:39.090Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done [Silent/Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112879078_euih",
+    "timestamp": "2026-08-19T04:14:39.078Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "powercfg -getactivescheme",
+    "details": "Done [Silent/Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112879073_fzsc",
+    "timestamp": "2026-08-19T04:14:39.073Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent/Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112879070_rjzd",
+    "timestamp": "2026-08-19T04:14:39.070Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent/Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112879067_3qbi",
+    "timestamp": "2026-08-19T04:14:39.067Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [Silent/Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112879059_t3v9",
+    "timestamp": "2026-08-19T04:14:39.059Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-MMAgent",
+    "details": "Done [Silent/Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112879058_s9at",
+    "timestamp": "2026-08-19T04:14:39.058Z",
+    "category": "SYSINFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "Done [Silent/Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112747497_4luy",
+    "timestamp": "2026-08-19T04:12:27.497Z",
+    "category": "CYBERSPORT",
+    "action": "FINISH_CALIBRATION",
+    "target": "✅ Профиль Киберспорта 100% Применён",
+    "details": "Все настройки выполнены бесшумно в фоновом режиме",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112747496_iyi1",
+    "timestamp": "2026-08-19T04:12:27.496Z",
+    "category": "CS2_ENGINE",
+    "action": "WRITE_AUTOEXEC",
+    "target": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\cfg\\autoexec.cfg",
+    "details": "Sub-tick rate 786432 injected silently",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112747495_jbjq",
+    "timestamp": "2026-08-19T04:12:27.495Z",
+    "category": "CYBERSPORT",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      bcdedit /set disabledynamictick yes 2>$null\n      bcdedit /set useplatformtick yes 2>$null\n      bcdedit /deletev",
+    "details": "Done [Silent/Background]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112747361_nucy",
+    "timestamp": "2026-08-19T04:12:27.361Z",
+    "category": "REGISTRY",
+    "action": "APPLY_FULL_REG_BATCH",
+    "target": "Consolidated Tweaks Database",
+    "details": "30+ Registry keys applied silently in background",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112747214_owf0",
+    "timestamp": "2026-08-19T04:12:27.214Z",
+    "category": "CYBERSPORT",
+    "action": "START_ULTIMATE_CALIBRATION",
+    "target": "🚀 Запуск Профиля Киберспорта Максимум (100% Silent Background)",
+    "details": "FACEIT Mode: false",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112718885_wkp3",
+    "timestamp": "2026-08-19T04:11:58.885Z",
+    "category": "SYSINFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112718744_im0b",
+    "timestamp": "2026-08-19T04:11:58.744Z",
+    "category": "CLEANER",
+    "action": "FLUSH_CACHE",
+    "target": "DNS, DirectX Cache & Temp Files",
+    "details": "1850 MB reclaimed from SSD",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112697461_8vzt",
+    "timestamp": "2026-08-19T04:11:37.461Z",
+    "category": "PCI",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      $devices = Get-PnpDevice -PresentOnly | Where-Object { $_.InstanceId -like \"PCI*\" }\n      $list = @()\n      forea",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112648878_flgd",
+    "timestamp": "2026-08-19T04:10:48.878Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-ItemProperty \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\*\" | Select-Object -ExpandProperty",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112648876_kvty",
+    "timestamp": "2026-08-19T04:10:48.876Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "powercfg -getactivescheme",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112648869_i13z",
+    "timestamp": "2026-08-19T04:10:48.869Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112648865_p6zt",
+    "timestamp": "2026-08-19T04:10:48.865Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112648856_jbge",
+    "timestamp": "2026-08-19T04:10:48.856Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "bcdedit /enum {current}",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112648854_3g2h",
+    "timestamp": "2026-08-19T04:10:48.854Z",
+    "category": "SYSINFO",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-CimInstance Win32_VideoController | Select-Object -Property Name, DriverVersion | ConvertTo-Json",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112648840_5oyt",
+    "timestamp": "2026-08-19T04:10:48.840Z",
+    "category": "POWERSHELL",
+    "action": "EXEC_SYSTEM",
+    "target": "Get-MMAgent",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112629346_zd84",
+    "timestamp": "2026-08-19T04:10:29.346Z",
+    "category": "CYBERSPORT",
+    "action": "FINISH_CALIBRATION",
+    "target": "✅ Профиль Киберспорта 100% Активирован (Все ключи записаны через TrustedInstaller/SYSTEM)",
+    "details": "Система и игра переведены в режим минимальной задержки",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112629345_phls",
+    "timestamp": "2026-08-19T04:10:29.345Z",
+    "category": "CS2_ENGINE",
+    "action": "WRITE_AUTOEXEC",
+    "target": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\cfg\\autoexec.cfg",
+    "details": "Sub-tick rate 786432 injected",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112629344_4ohw",
+    "timestamp": "2026-08-19T04:10:29.344Z",
+    "category": "POWERCFG",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61 2>$null\n      powercfg -setactive e9a42b02-d5df-44",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112629172_8we9",
+    "timestamp": "2026-08-19T04:10:29.172Z",
+    "category": "DEVICE_POWER",
+    "action": "EXEC_SYSTEM",
+    "target": "\n      $devices = Get-WmiObject Win32_PnPEntity\n      $powerMgmt = Get-WmiObject MSPower_DeviceEnable -Namespace root\\wm",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112629015_gmh4",
+    "timestamp": "2026-08-19T04:10:29.015Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"XboxNetApiSvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112628865_o15w",
+    "timestamp": "2026-08-19T04:10:28.865Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\XboxNetApiSvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112628710_txi6",
+    "timestamp": "2026-08-19T04:10:28.710Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"XboxGipSvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112628560_4awf",
+    "timestamp": "2026-08-19T04:10:28.560Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\XboxGipSvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112628413_gv32",
+    "timestamp": "2026-08-19T04:10:28.413Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"XblGameSave\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112628265_nqni",
+    "timestamp": "2026-08-19T04:10:28.265Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\XblGameSave\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112628117_bou6",
+    "timestamp": "2026-08-19T04:10:28.117Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"XblAuthManager\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112627969_bwwb",
+    "timestamp": "2026-08-19T04:10:27.969Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\XblAuthManager\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112627818_3r1n",
+    "timestamp": "2026-08-19T04:10:27.818Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"WwanSvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112627668_8oa2",
+    "timestamp": "2026-08-19T04:10:27.668Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WwanSvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112627515_hfy3",
+    "timestamp": "2026-08-19T04:10:27.515Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"wuauserv\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112627367_u3sa",
+    "timestamp": "2026-08-19T04:10:27.367Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\wuauserv\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112627213_d1cb",
+    "timestamp": "2026-08-19T04:10:27.213Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"WSService\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112627065_u3u4",
+    "timestamp": "2026-08-19T04:10:27.065Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WSService\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112626916_gtef",
+    "timestamp": "2026-08-19T04:10:26.916Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"wscsvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112626765_frae",
+    "timestamp": "2026-08-19T04:10:26.765Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\wscsvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112626611_sucm",
+    "timestamp": "2026-08-19T04:10:26.611Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"workfolderssvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112626459_q50m",
+    "timestamp": "2026-08-19T04:10:26.459Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\workfolderssvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112626309_a84o",
+    "timestamp": "2026-08-19T04:10:26.309Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"WMPNetworkSvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112626158_2jke",
+    "timestamp": "2026-08-19T04:10:26.158Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WMPNetworkSvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112626005_96y1",
+    "timestamp": "2026-08-19T04:10:26.005Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"wmiApSrv\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112625855_qhm9",
+    "timestamp": "2026-08-19T04:10:25.855Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\wmiApSrv\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112625702_f72h",
+    "timestamp": "2026-08-19T04:10:25.702Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"wlidsvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112625552_u8qh",
+    "timestamp": "2026-08-19T04:10:25.552Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\wlidsvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112625393_63ne",
+    "timestamp": "2026-08-19T04:10:25.393Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"WlanSvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112625234_o42s",
+    "timestamp": "2026-08-19T04:10:25.234Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WlanSvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112625086_8yq8",
+    "timestamp": "2026-08-19T04:10:25.086Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"wisvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112624938_9da4",
+    "timestamp": "2026-08-19T04:10:24.938Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\wisvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112624780_k6qe",
+    "timestamp": "2026-08-19T04:10:24.780Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"WinHttpAutoProxySvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112624620_jpni",
+    "timestamp": "2026-08-19T04:10:24.620Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WinHttpAutoProxySvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112624471_ahz2",
+    "timestamp": "2026-08-19T04:10:24.471Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"WinDefend\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112624319_dyph",
+    "timestamp": "2026-08-19T04:10:24.319Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WinDefend\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112624164_wb33",
+    "timestamp": "2026-08-19T04:10:24.164Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"WiaRpc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112624019_7r9u",
+    "timestamp": "2026-08-19T04:10:24.019Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WiaRpc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112623869_3pqu",
+    "timestamp": "2026-08-19T04:10:23.869Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"WFDSConMgrSvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112623714_74ma",
+    "timestamp": "2026-08-19T04:10:23.714Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WFDSConMgrSvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112623563_i5xl",
+    "timestamp": "2026-08-19T04:10:23.563Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"WerSvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112623415_3sib",
+    "timestamp": "2026-08-19T04:10:23.415Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WerSvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112623268_0oyt",
+    "timestamp": "2026-08-19T04:10:23.268Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"wercplsupport\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112623104_o4c7",
+    "timestamp": "2026-08-19T04:10:23.104Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\wercplsupport\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112622946_2u18",
+    "timestamp": "2026-08-19T04:10:22.946Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"WEPHOSTSVC\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112622795_vqs7",
+    "timestamp": "2026-08-19T04:10:22.795Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WEPHOSTSVC\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112622638_fqk0",
+    "timestamp": "2026-08-19T04:10:22.638Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"WecSVC\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112622478_rut3",
+    "timestamp": "2026-08-19T04:10:22.478Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WecSVC\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112622301_kkwn",
+    "timestamp": "2026-08-19T04:10:22.301Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"WdNisSvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112622145_hztq",
+    "timestamp": "2026-08-19T04:10:22.145Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WdNisSvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112621992_hz9z",
+    "timestamp": "2026-08-19T04:10:21.992Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"WcsPlugInService\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112621844_w2dp",
+    "timestamp": "2026-08-19T04:10:21.844Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WcsPlugInService\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112621683_ee3x",
+    "timestamp": "2026-08-19T04:10:21.683Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"WbioSrvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112621534_2icn",
+    "timestamp": "2026-08-19T04:10:21.534Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WbioSrvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112621384_0m84",
+    "timestamp": "2026-08-19T04:10:21.384Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"WarpJITSvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112621235_phar",
+    "timestamp": "2026-08-19T04:10:21.235Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WarpJITSvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112621087_d6dw",
+    "timestamp": "2026-08-19T04:10:21.087Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"WalletService\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112620939_ye0w",
+    "timestamp": "2026-08-19T04:10:20.939Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WalletService\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112620792_3tpi",
+    "timestamp": "2026-08-19T04:10:20.792Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"W32Time\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112620640_87kx",
+    "timestamp": "2026-08-19T04:10:20.640Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\W32Time\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112620491_xk4n",
+    "timestamp": "2026-08-19T04:10:20.491Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"vmicvss\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112620345_7cpu",
+    "timestamp": "2026-08-19T04:10:20.345Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\vmicvss\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112620197_ebtt",
+    "timestamp": "2026-08-19T04:10:20.197Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"vmicvmsession\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112620047_09rq",
+    "timestamp": "2026-08-19T04:10:20.047Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\vmicvmsession\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112619900_fs8c",
+    "timestamp": "2026-08-19T04:10:19.900Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"vmictimesync\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112619744_ynm7",
+    "timestamp": "2026-08-19T04:10:19.744Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\vmictimesync\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112619595_7pae",
+    "timestamp": "2026-08-19T04:10:19.595Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"vmicshutdown\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112619450_v27e",
+    "timestamp": "2026-08-19T04:10:19.450Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\vmicshutdown\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112619298_wnhi",
+    "timestamp": "2026-08-19T04:10:19.298Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"vmicrdv\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112619146_2som",
+    "timestamp": "2026-08-19T04:10:19.146Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\vmicrdv\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112618991_tsmo",
+    "timestamp": "2026-08-19T04:10:18.991Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"vmickvpexchange\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112618839_n430",
+    "timestamp": "2026-08-19T04:10:18.839Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\vmickvpexchange\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112618683_ya5g",
+    "timestamp": "2026-08-19T04:10:18.683Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"vmicheartbeat\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112618530_f7z8",
+    "timestamp": "2026-08-19T04:10:18.530Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\vmicheartbeat\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112618381_k8ek",
+    "timestamp": "2026-08-19T04:10:18.381Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"vmicguestinterface\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112618231_m9cn",
+    "timestamp": "2026-08-19T04:10:18.231Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\vmicguestinterface\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112618078_eppy",
+    "timestamp": "2026-08-19T04:10:18.078Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"VaultSvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112617932_ud2k",
+    "timestamp": "2026-08-19T04:10:17.932Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\VaultSvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112617782_mf04",
+    "timestamp": "2026-08-19T04:10:17.782Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"upnphost\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112617631_mucx",
+    "timestamp": "2026-08-19T04:10:17.631Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\upnphost\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112617480_spmt",
+    "timestamp": "2026-08-19T04:10:17.480Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"UevAgentService\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112617329_2313",
+    "timestamp": "2026-08-19T04:10:17.329Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\UevAgentService\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112617179_hla4",
+    "timestamp": "2026-08-19T04:10:17.179Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"tzautoupdate\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112617033_9wbm",
+    "timestamp": "2026-08-19T04:10:17.033Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\tzautoupdate\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112616878_mui6",
+    "timestamp": "2026-08-19T04:10:16.878Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"TroubleshootingSvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112616726_eyfs",
+    "timestamp": "2026-08-19T04:10:16.726Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\TroubleshootingSvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112616575_1tju",
+    "timestamp": "2026-08-19T04:10:16.575Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"TrkWks\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112616425_w6yp",
+    "timestamp": "2026-08-19T04:10:16.425Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\TrkWks\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112616272_1hf0",
+    "timestamp": "2026-08-19T04:10:16.272Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"Telemetry\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112616127_s96d",
+    "timestamp": "2026-08-19T04:10:16.127Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\Telemetry\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112615978_xur1",
+    "timestamp": "2026-08-19T04:10:15.978Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"TapiSrv\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112615829_t669",
+    "timestamp": "2026-08-19T04:10:15.829Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\TapiSrv\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112615682_rl35",
+    "timestamp": "2026-08-19T04:10:15.682Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"TabletInputService\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112615529_c4ic",
+    "timestamp": "2026-08-19T04:10:15.529Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\TabletInputService\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112615374_vqea",
+    "timestamp": "2026-08-19T04:10:15.374Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"SysMain\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112615223_ovut",
+    "timestamp": "2026-08-19T04:10:15.223Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SysMain\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112615066_onob",
+    "timestamp": "2026-08-19T04:10:15.066Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"SmartCard\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112614917_797n",
+    "timestamp": "2026-08-19T04:10:14.917Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SmartCard\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112614766_rqqv",
+    "timestamp": "2026-08-19T04:10:14.766Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"SharedAccess\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112614619_u0ff",
+    "timestamp": "2026-08-19T04:10:14.619Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112614468_ywvn",
+    "timestamp": "2026-08-19T04:10:14.468Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"SensrSvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112614319_equi",
+    "timestamp": "2026-08-19T04:10:14.319Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SensrSvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112614149_mb02",
+    "timestamp": "2026-08-19T04:10:14.149Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"SensorDataService\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112614000_giv0",
+    "timestamp": "2026-08-19T04:10:14.000Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SensorDataService\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112613832_l1up",
+    "timestamp": "2026-08-19T04:10:13.832Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"RetailDemo\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112613680_xrp1",
+    "timestamp": "2026-08-19T04:10:13.680Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\RetailDemo\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112613519_7kp1",
+    "timestamp": "2026-08-19T04:10:13.519Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"QWAVE\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112613346_dicc",
+    "timestamp": "2026-08-19T04:10:13.346Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\QWAVE\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112613196_rnd7",
+    "timestamp": "2026-08-19T04:10:13.196Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"PushToInstall\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112613051_n9tc",
+    "timestamp": "2026-08-19T04:10:13.051Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\PushToInstall\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112612898_cpwo",
+    "timestamp": "2026-08-19T04:10:12.898Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"PrintNotify\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112612747_znr9",
+    "timestamp": "2026-08-19T04:10:12.747Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\PrintNotify\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112612595_67bu",
+    "timestamp": "2026-08-19T04:10:12.595Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"PhoneSvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112612443_q6ht",
+    "timestamp": "2026-08-19T04:10:12.443Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\PhoneSvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112612292_gdhn",
+    "timestamp": "2026-08-19T04:10:12.292Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"PcaSvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112612138_pmi4",
+    "timestamp": "2026-08-19T04:10:12.138Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\PcaSvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112611982_i9t4",
+    "timestamp": "2026-08-19T04:10:11.982Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"NetTcpPortSharing\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112611839_2h16",
+    "timestamp": "2026-08-19T04:10:11.839Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\NetTcpPortSharing\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112611688_3jvj",
+    "timestamp": "2026-08-19T04:10:11.688Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"NcdAutoSetup\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112611539_pd1s",
+    "timestamp": "2026-08-19T04:10:11.539Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\NcdAutoSetup\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112611380_fjs0",
+    "timestamp": "2026-08-19T04:10:11.380Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"NaturalAuthentication\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112611233_k8un",
+    "timestamp": "2026-08-19T04:10:11.233Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\NaturalAuthentication\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112611084_def6",
+    "timestamp": "2026-08-19T04:10:11.084Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"MessagingService\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112610935_4ut6",
+    "timestamp": "2026-08-19T04:10:10.935Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\MessagingService\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112610783_dbx0",
+    "timestamp": "2026-08-19T04:10:10.783Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"MapsBroker\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112610630_3b6c",
+    "timestamp": "2026-08-19T04:10:10.630Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\MapsBroker\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112610481_hnnj",
+    "timestamp": "2026-08-19T04:10:10.481Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"LMS\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112610331_v087",
+    "timestamp": "2026-08-19T04:10:10.331Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\LMS\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112610175_6n1v",
+    "timestamp": "2026-08-19T04:10:10.175Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"lltdsvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112610026_7f4s",
+    "timestamp": "2026-08-19T04:10:10.026Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\lltdsvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112609878_zloz",
+    "timestamp": "2026-08-19T04:10:09.878Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"LicenseManager\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112609728_s7bs",
+    "timestamp": "2026-08-19T04:10:09.728Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\LicenseManager\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112609579_qsmx",
+    "timestamp": "2026-08-19T04:10:09.579Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"KtmRm\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112609432_xv4v",
+    "timestamp": "2026-08-19T04:10:09.432Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\KtmRm\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112609282_o12i",
+    "timestamp": "2026-08-19T04:10:09.282Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"iphlpsvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112609133_dpqb",
+    "timestamp": "2026-08-19T04:10:09.133Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\iphlpsvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112608983_grkv",
+    "timestamp": "2026-08-19T04:10:08.983Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"InstallService\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112608834_xtfd",
+    "timestamp": "2026-08-19T04:10:08.834Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\InstallService\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112608678_ffaj",
+    "timestamp": "2026-08-19T04:10:08.678Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"IKEEXT\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112608532_bzhk",
+    "timestamp": "2026-08-19T04:10:08.532Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\IKEEXT\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112608380_c9a1",
+    "timestamp": "2026-08-19T04:10:08.380Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"icssvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112608230_m3dw",
+    "timestamp": "2026-08-19T04:10:08.230Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\icssvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112608078_x43k",
+    "timestamp": "2026-08-19T04:10:08.078Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"HvHost\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112607932_o6wh",
+    "timestamp": "2026-08-19T04:10:07.932Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\HvHost\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112607786_1wzm",
+    "timestamp": "2026-08-19T04:10:07.786Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"GraphicsPerfSvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112607633_iv5k",
+    "timestamp": "2026-08-19T04:10:07.633Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\GraphicsPerfSvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112607485_hgv2",
+    "timestamp": "2026-08-19T04:10:07.485Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"GameDVR\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112607338_gojm",
+    "timestamp": "2026-08-19T04:10:07.338Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\GameDVR\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112607181_6v64",
+    "timestamp": "2026-08-19T04:10:07.181Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"FrameServer\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112607029_jhod",
+    "timestamp": "2026-08-19T04:10:07.029Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\FrameServer\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112606882_mcvj",
+    "timestamp": "2026-08-19T04:10:06.882Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"FontCache3.0.0.0\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112606726_cldg",
+    "timestamp": "2026-08-19T04:10:06.726Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\FontCache3.0.0.0\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112606574_cwck",
+    "timestamp": "2026-08-19T04:10:06.574Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"FontCache\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112606420_sc16",
+    "timestamp": "2026-08-19T04:10:06.420Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\FontCache\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112606268_0y9s",
+    "timestamp": "2026-08-19T04:10:06.268Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"fhsvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112606119_fi0b",
+    "timestamp": "2026-08-19T04:10:06.119Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\fhsvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112605966_7kqw",
+    "timestamp": "2026-08-19T04:10:05.966Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"EventLogAnalyzer\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112605821_fuqb",
+    "timestamp": "2026-08-19T04:10:05.821Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\EventLogAnalyzer\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112605659_fxdl",
+    "timestamp": "2026-08-19T04:10:05.659Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"EntAppSvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112605502_z4nh",
+    "timestamp": "2026-08-19T04:10:05.502Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\EntAppSvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112605348_19ds",
+    "timestamp": "2026-08-19T04:10:05.348Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"Eaphost\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112605203_xque",
+    "timestamp": "2026-08-19T04:10:05.203Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\Eaphost\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112605057_r7am",
+    "timestamp": "2026-08-19T04:10:05.057Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"DusmSvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112604908_uod0",
+    "timestamp": "2026-08-19T04:10:04.908Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\DusmSvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112604748_4qgi",
+    "timestamp": "2026-08-19T04:10:04.748Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"dot3svc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112604587_pt35",
+    "timestamp": "2026-08-19T04:10:04.587Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\dot3svc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112604429_8g4m",
+    "timestamp": "2026-08-19T04:10:04.429Z",
+    "category": "SERVICE",
+    "action": "EXEC_SYSTEM",
+    "target": "Stop-Service -Name \"DoSvc\" -Force -ErrorAction SilentlyContinue",
+    "details": "Done [TrustedInstaller/SYSTEM]",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "log_1787112604272_0smu",
+    "timestamp": "2026-08-19T04:10:04.272Z",
+    "category": "REGISTRY",
+    "action": "REG_SET_TI",
+    "target": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\DoSvc\\Start",
+    "details": "Data: 4 (Applied as TrustedInstaller/SYSTEM)",
+    "status": "SUCCESS"
+  }
+]

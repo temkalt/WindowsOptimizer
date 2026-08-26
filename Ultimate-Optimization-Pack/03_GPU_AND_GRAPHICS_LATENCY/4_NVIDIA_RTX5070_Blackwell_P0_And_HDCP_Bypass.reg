@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000]
+"DisableDynamicPstate"=dword:00000001
+"RMHdcpKeyglobZero"=dword:00000001
+"PowerMizerEnable"=dword:00000001
+"PowerMizerLevel"=dword:00000001
+"PowerMizerLevelAC"=dword:00000001
+"PerfLevelSrc"=dword:00003322

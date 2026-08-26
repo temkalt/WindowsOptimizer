@@ -1,0 +1,54 @@
+[
+  {
+    "id": "snap_1787244072245",
+    "name": "Automated Test Restore Point",
+    "timestamp": "2026-08-20T16:41:12.245Z",
+    "tweaksCount": 50,
+    "type": "SYSTEM_RESTORE_POINT",
+    "description": "Точка восстановления Windows и полный снимок реестра BCD/Services."
+  },
+  {
+    "id": "snap_1787243490606",
+    "name": "Automated Test Restore Point",
+    "timestamp": "2026-08-20T16:31:30.606Z",
+    "tweaksCount": 50,
+    "type": "SYSTEM_RESTORE_POINT",
+    "description": "Точка восстановления Windows и полный снимок реестра BCD/Services."
+  },
+  {
+    "id": "snap_1787243443421",
+    "name": "Automated Test Restore Point",
+    "timestamp": "2026-08-20T16:30:43.421Z",
+    "tweaksCount": 50,
+    "type": "SYSTEM_RESTORE_POINT",
+    "description": "Точка восстановления Windows и полный снимок реестра BCD/Services."
+  },
+  {
+    "id": "snap_1787243395160",
+    "name": "Automated Test Restore Point",
+    "timestamp": "2026-08-20T16:29:55.160Z",
+    "tweaksCount": 50,
+    "type": "SYSTEM_RESTORE_POINT",
+    "description": "Точка восстановления Windows и полный снимок реестра BCD/Services."
+  },
+  {
+    "id": "snap_1787243362570",
+    "name": "Automated Test Restore Point",
+    "timestamp": "2026-08-20T16:29:22.570Z",
+    "tweaksCount": 50,
+    "type": "SYSTEM_RESTORE_POINT",
+    "description": "Точка восстановления Windows и полный снимок реестра BCD/Services."
+  },
+  {
+    "id": "snap_1787110881690",
+    "label": "CS2 Final Tournament",
+    "timestamp": "2026-08-19T03:41:21.690Z",
+    "appliedTweaksCount": 25
+  },
+  {
+    "id": "snap_1787110202834",
+    "label": "Before CS2 Tuning",
+    "timestamp": "2026-08-19T03:30:02.834Z",
+    "appliedTweaksCount": 22
+  }
+]

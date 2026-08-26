@@ -1,0 +1,41 @@
+WorkPreference=0
+StressTester=1
+UsePrimenet=0
+TortureHyperthreading=0
+MinTortureFFT=146
+MaxTortureFFT=8277
+TortureMem=8
+TortureTime=3
+TortureWeak=0
+CoresPerTest=4
+ComputerGUID=6c70e51b750f6dff2c615093a566ce08
+NumWorkers=2
+
+[PrimeNet]
+Debug=0
+
+[Internals]
+V30OptionsConverted=1
+OldCpuSpeed=5025
+NewCpuSpeed=4125
+NewCpuSpeedCount=4
+RollingAverage=1000
+RollingHash=0
+RollingStartTime=1719302461
+RollingCompleteTime=0
+WGUID_version=2
+
+[Windows]
+Left=307
+Right=1747
+Top=79
+Bottom=838
+W1=0 0 1422 339 0 -1 -1 -1 -1
+W2=0 339 1422 679 0 -1 -1 -1 -1
+W3=0 150 1422 226 0 -1 -1 -1 -1
+W4=0 226 1422 301 0 -1 -1 -1 -1
+W5=0 301 1422 377 0 -1 -1 -1 -1
+W6=0 377 1422 452 0 -1 -1 -1 -1
+W7=0 452 1422 528 0 -1 -1 -1 -1
+W8=0 528 1422 603 0 -1 -1 -1 -1
+W9=0 603 1422 679 0 -1 -1 -1 -1
