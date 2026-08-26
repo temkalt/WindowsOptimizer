@@ -12,6 +12,11 @@ export const BlackOnyxApp: React.FC = () => {
   const [appliedTweaks, setAppliedTweaks] = useState<Record<string, boolean>>({});
   const [isBookViewOpen, setIsBookViewOpen] = useState<boolean>(false);
   const [isApplying, setIsApplying] = useState<boolean>(false);
+  const [isScanning, setIsScanning] = useState<boolean>(false);
+  const [optimizationPercentage, setOptimizationPercentage] = useState<number>(0);
+  const [appliedChecksCount, setAppliedChecksCount] = useState<number>(0);
+  const [totalChecksCount, setTotalChecksCount] = useState<number>(18);
+  const [activePowerPlan, setActivePowerPlan] = useState<string>('Сбалансированная');
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
   const showToast = (msg: string) => {
@@ -19,16 +24,30 @@ export const BlackOnyxApp: React.FC = () => {
     setTimeout(() => setToastMessage(null), 3000);
   };
 
-  // Initial Sync with System Status
-  useEffect(() => {
+  // 100% Real Windows System Audit
+  const performSystemAudit = () => {
+    setIsScanning(true);
     fetch('/api/system/status')
       .then(res => res.json())
       .then(data => {
-        if (data && data.appliedTweaks) {
-          setAppliedTweaks(data.appliedTweaks);
+        setIsScanning(false);
+        if (data && data.success) {
+          if (data.appliedTweaks) setAppliedTweaks(data.appliedTweaks);
+          if (typeof data.optimizationPercentage === 'number') setOptimizationPercentage(data.optimizationPercentage);
+          if (typeof data.appliedChecksCount === 'number') setAppliedChecksCount(data.appliedChecksCount);
+          if (typeof data.auditedChecksCount === 'number') setTotalChecksCount(data.auditedChecksCount);
+          if (data.activePowerPlan) setActivePowerPlan(data.activePowerPlan);
+          showToast(`Аудит завершен: оптимизация системы ${data.optimizationPercentage}% (${data.appliedChecksCount}/${data.auditedChecksCount})`);
         }
       })
-      .catch(() => {});
+      .catch(() => {
+        setIsScanning(false);
+      });
+  };
+
+  // Perform full real audit automatically on utility launch
+  useEffect(() => {
+    performSystemAudit();
   }, []);
 
   // Filtered Tweaks
@@ -67,7 +86,7 @@ export const BlackOnyxApp: React.FC = () => {
     return BLACK_ONYX_CATEGORIES.find(c => c.id === activeCategory) || BLACK_ONYX_CATEGORIES[0];
   }, [activeCategory]);
 
-  // Direct Tweak Execution (Instant, No Delay)
+  // Direct Tweak Execution (Instant & Auto-rescan)
   const handleToggleTweak = async (tweak: TweakItem) => {
     const newState = !appliedTweaks[tweak.id];
     setAppliedTweaks(prev => ({ ...prev, [tweak.id]: newState }));
@@ -79,6 +98,13 @@ export const BlackOnyxApp: React.FC = () => {
         body: JSON.stringify({ tweakId: tweak.id, action: newState ? 'apply' : 'revert', fileRelPath: tweak.fileRelPath })
       });
       showToast(`${newState ? 'Применено' : 'Отключено'}: ${tweak.title}`);
+      // Refresh audit
+      fetch('/api/system/status')
+        .then(r => r.json())
+        .then(d => {
+          if (d.optimizationPercentage) setOptimizationPercentage(d.optimizationPercentage);
+          if (d.appliedChecksCount) setAppliedChecksCount(d.appliedChecksCount);
+        }).catch(() => {});
     } catch {
       showToast(`Ошибка применения: ${tweak.title}`);
     }
@@ -95,6 +121,13 @@ export const BlackOnyxApp: React.FC = () => {
         body: JSON.stringify({ tweakId: tweak.id, fileRelPath: tweak.fileRelPath })
       });
       showToast(`Успешно: ${tweak.title}`);
+      // Refresh audit
+      fetch('/api/system/status')
+        .then(r => r.json())
+        .then(d => {
+          if (d.optimizationPercentage) setOptimizationPercentage(d.optimizationPercentage);
+          if (d.appliedChecksCount) setAppliedChecksCount(d.appliedChecksCount);
+        }).catch(() => {});
     } catch {
       showToast(`Выполнено: ${tweak.title}`);
     }
@@ -117,6 +150,7 @@ export const BlackOnyxApp: React.FC = () => {
     setAppliedTweaks(newStates);
     setIsApplying(false);
     showToast(`Все твики раздела ${currentCategoryInfo.name} применены!`);
+    performSystemAudit();
   };
 
   // 1-Click Master Presets
@@ -132,6 +166,7 @@ export const BlackOnyxApp: React.FC = () => {
     setAppliedTweaks(allApplied);
     setIsApplying(false);
     showToast('⚡ Режим Киберспорт успешно активирован!');
+    performSystemAudit();
   };
 
   const handleApplySafe = () => {
@@ -142,6 +177,7 @@ export const BlackOnyxApp: React.FC = () => {
     });
     setAppliedTweaks(safeApplied);
     showToast('🛡️ Безопасный профиль активирован!');
+    performSystemAudit();
   };
 
   const handleRestoreAll = () => {
@@ -149,6 +185,7 @@ export const BlackOnyxApp: React.FC = () => {
       fetch('/api/pack/revert-all', { method: 'POST' }).catch(() => {});
       setAppliedTweaks({});
       showToast('🔄 Все настройки сброшены к заводским значениям!');
+      performSystemAudit();
     }
   };
 
@@ -177,7 +214,13 @@ export const BlackOnyxApp: React.FC = () => {
           onApplySafe={handleApplySafe}
           onRestoreAll={handleRestoreAll}
           onOpenBook={() => setIsBookViewOpen(true)}
+          onRescan={performSystemAudit}
+          isScanning={isScanning}
           isApplying={isApplying}
+          optimizationPercentage={optimizationPercentage}
+          appliedCount={appliedChecksCount}
+          totalCount={totalChecksCount}
+          activePowerPlan={activePowerPlan}
         />
 
         {/* Content Body */}

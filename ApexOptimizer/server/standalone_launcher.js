@@ -1409,6 +1409,11 @@ app.get('/api/metrics/live', async (req, res) => {
 
 app.get(['/book', '/academy', '/reader'], (req, res) => {
   const bookPaths = [
+    path.resolve(process.cwd(), '..', 'CHITAT_KNIGU.html'),
+    path.resolve(process.cwd(), '..', 'WINDOWS_OPTIMIZATION_BOOK.html'),
+    path.resolve(process.cwd(), '..', 'INDEX.html'),
+    path.resolve(process.cwd(), 'CHITAT_KNIGU.html'),
+    path.resolve(process.cwd(), 'WINDOWS_OPTIMIZATION_BOOK.html'),
     'd:\\winvan\\CHITAT_KNIGU.html',
     'd:\\winvan\\WINDOWS_OPTIMIZATION_BOOK.html',
     'd:\\winvan\\INDEX.html'
